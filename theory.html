@@ -408,6 +408,7 @@ function render(){
     const pa=PARTORDER.indexOf(qa.part),pb=PARTORDER.indexOf(qb.part);
     if(pa!==pb)return pa-pb;
     const ta=GT(a),tb=GT(b);if(ta!==tb)return ta-tb;  // 개념→기본예제→족보→2026자작
+    if(ta===0){const cn=g=>{const m=(groups[g][0].topic||'').match(/개념카드\s*(\d+)/);return m?+m[1]:999;};const ca=cn(a),cb=cn(b);if(ca!==cb)return ca-cb;return a<b?-1:1;}
     const fa=Math.max(...groups[a].map(x=>x.freq||0)),fb=Math.max(...groups[b].map(x=>x.freq||0));
     return fb-fa;
   });

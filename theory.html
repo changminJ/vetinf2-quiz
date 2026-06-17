@@ -152,6 +152,22 @@
   .qcard.src-preview .explanation{font-size:14px;line-height:1.74}
   .preview-title{font-size:18px;font-weight:900;color:#ffd54f;margin-bottom:11px;display:flex;align-items:center;gap:8px;letter-spacing:-.3px}
   [data-theme="light"] .preview-title{color:#c79100}
+  /* 3-depth 구조도 트리 */
+  .pintro{font-size:14px;line-height:1.65;margin-bottom:13px;color:var(--text-primary)}
+  .pintro b{color:var(--text-primary);font-weight:800}
+  .ptree{margin:4px 0 14px}
+  .proot{display:inline-block;background:var(--accent-soft);border:1.5px solid var(--accent);border-radius:10px;padding:8px 15px;font-weight:800;font-size:14.5px;color:var(--text-primary);margin-bottom:2px}
+  .proot em{font-style:normal;font-weight:600;color:var(--text-muted);font-size:11.5px;margin-left:7px;letter-spacing:.2px}
+  .pbranches{margin-left:22px;border-left:2.5px solid var(--border)}
+  .pb{display:flex;align-items:center;padding:6px 0;position:relative;flex-wrap:wrap}
+  .pb::before{content:'';position:absolute;left:0;top:50%;width:18px;border-top:2.5px solid var(--border)}
+  .pc{flex:0 0 auto;margin-left:20px;background:rgba(255,213,79,.18);color:#b88f00;font-weight:800;font-size:12.5px;padding:5px 12px;border-radius:8px;min-width:54px;text-align:center;align-self:center;border:1px solid rgba(255,213,79,.4)}
+  [data-theme="dark"] .pc{color:#ffd866}
+  .pls{display:flex;flex-wrap:wrap;gap:6px;padding-left:14px;flex:1;min-width:200px}
+  .pl{display:inline-block;background:var(--choice-bg);border:1px solid var(--border);border-radius:7px;padding:4px 10px;font-size:12.8px;line-height:1.45;color:var(--text-primary)}
+  .pl b{color:var(--accent);font-weight:800}
+  .pcmp{font-size:13px;line-height:1.55;background:var(--explanation-bg);border-radius:8px;padding:9px 13px;color:var(--text-primary)}
+  .pcmp b{color:var(--accent)}
   .explanation table.md-t{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.5px;display:block;overflow-x:auto}
   .explanation table.md-t th,.explanation table.md-t td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;white-space:normal}
   .explanation table.md-t th{background:var(--tag-bg);font-weight:800;white-space:nowrap}
@@ -348,7 +364,7 @@ function cardHtml(q){
   let h=`<div class="qcard ${srcCls}"><div class="qmeta">${pillsHtml(q)}<span class="qno">#${q.id}</span><button class="bm${ST.bookmarks[q.id]?' on':''}" onclick="toggleBm(${q.id})">🔖</button></div>`;
   if(q.flagReason)h+=`<div class="flagr">⚠️ ${esc(q.flagReason)}</div>`;
   if(q.origin==='preview'){
-    h+=`<div class="preview-title">🗺 ${esc(q.topic)}</div><div class="explanation" style="margin-top:0;border-left-color:#ffd54f">${md(q.explain)}</div>`;
+    h+=`<div class="preview-title">🗺 ${esc(q.topic)}</div>${q.explain}`;
     return h+`</div>`;
   }
   if(q.origin==='summary'){

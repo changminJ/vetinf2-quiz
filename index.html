@@ -2,41 +2,430 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
-<title>🦠 수의전염병학2 기말 퀴즈</title>
+<title>🧬 수의전염병학2 실습 기말 퀴즈</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache" />
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#121212;--card:#1f1f1f;--accent:#1DB954;--text:#fff;--muted:#b3b3b3;--border:#2a2a2a;--warn:#ffd54f}
+  :root, [data-theme="dark"]{
+    --bg-base:#121212; --bg-elevated:#181818; --bg-card:#1f1f1f; --bg-sidebar:#000;
+    --text-primary:#fff; --text-muted:#b3b3b3; --text-subdued:#6a6a6a;
+    --accent:#1DB954; --accent-hover:#1ED760; --accent-soft:rgba(29,185,84,.15);
+    --correct:#1DB954; --correct-text:#c5fad6; --wrong:#f15e6c; --wrong-text:#ffd0d6;
+    --wrong-soft:rgba(241,94,108,.15); --warn:#ffa116; --warn-soft:rgba(255,161,22,.15);
+    --border:#2a2a2a; --grad-main:linear-gradient(180deg,#1a1a1a 0%,var(--bg-base) 280px);
+    --shadow-card:0 4px 20px rgba(0,0,0,.3);
+    --tag-bg:rgba(255,255,255,.06); --tag-text:#b3b3b3; --explanation-bg:rgba(255,255,255,.04);
+    --choice-bg:rgba(255,255,255,.03); --hover-card:rgba(255,255,255,.07);
+    --c-jokbo:#ffb74d; --c-multi:#a884ff; --c-2024:#bf7bff;
+  }
+  [data-theme="light"]{
+    --bg-base:#f7f7f5; --bg-elevated:#fff; --bg-card:#fafafa; --bg-sidebar:#fff;
+    --text-primary:#121212; --text-muted:#555; --text-subdued:#888;
+    --accent:#1aa84b; --accent-hover:#16933f; --accent-soft:rgba(26,168,75,.12);
+    --correct:#1aa84b; --correct-text:#14532d; --wrong:#d63b48; --wrong-text:#991b1b;
+    --wrong-soft:rgba(214,59,72,.1); --warn:#d97706; --warn-soft:rgba(217,119,6,.12);
+    --border:#e2e2e0; --grad-main:linear-gradient(180deg,#ececea 0%,var(--bg-base) 280px);
+    --shadow-card:0 2px 12px rgba(0,0,0,.06);
+    --tag-bg:rgba(0,0,0,.05); --tag-text:#4b5563; --explanation-bg:rgba(0,0,0,.03);
+    --choice-bg:rgba(0,0,0,.02); --hover-card:rgba(0,0,0,.05);
+  }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Pretendard','Apple SD Gothic Neo',system-ui,sans-serif;background:linear-gradient(180deg,#1a1a1a,#121212 320px);color:var(--text);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:40px 18px 60px}
-  .logo{font-size:54px;margin-bottom:6px}
-  h1{font-size:25px;font-weight:900;letter-spacing:-.5px;text-align:center}
-  .sub{color:var(--muted);font-size:13.5px;margin:8px 0 30px;text-align:center;line-height:1.6}
-  .cards{display:flex;flex-direction:column;gap:14px;width:100%;max-width:440px}
-  a.card{display:block;background:var(--card);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:14px;padding:20px 22px;text-decoration:none;color:var(--text);transition:.15s}
-  a.card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 6px 22px rgba(0,0,0,.35)}
-  a.card.soon{border-left-color:var(--warn);opacity:.92}
-  .card .t{font-size:18px;font-weight:800;display:flex;align-items:center;gap:9px}
-  .card .d{color:var(--muted);font-size:13px;margin-top:7px;line-height:1.55}
-  .badge{font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;background:rgba(29,185,84,.18);color:var(--accent);margin-left:auto}
-  .badge.w{background:rgba(255,213,79,.18);color:var(--warn)}
-  .foot{color:#6a6a6a;font-size:11.5px;margin-top:34px;text-align:center;line-height:1.7}
+  html,body{height:100%;font-family:'Pretendard','Apple SD Gothic Neo','Noto Sans KR',system-ui,sans-serif;
+    background:var(--bg-base);color:var(--text-primary);-webkit-font-smoothing:antialiased;line-height:1.5}
+  button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  .app{display:grid;grid-template-columns:260px 1fr;height:100vh;gap:8px;padding:8px}
+  .collapse-btn{margin-left:auto;background:var(--tag-bg);border:none;border-radius:6px;width:26px;height:26px;color:var(--text-muted);font-size:13px;cursor:pointer;flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+  .collapse-btn:hover{color:var(--text-primary);background:var(--hover-card)}
+  .expand-btn{display:none;position:fixed;top:14px;left:14px;z-index:45;width:38px;height:38px;border-radius:9px;background:var(--bg-elevated);border:1px solid var(--border);color:var(--text-primary);font-size:18px;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+  @media(min-width:769px){
+    .app.side-collapsed{grid-template-columns:0 1fr;gap:0}
+    .app.side-collapsed .sidebar{padding:0;border:none;overflow:hidden;opacity:0;pointer-events:none}
+    .app.side-collapsed .expand-btn{display:flex}
+  }
+  @media(max-width:768px){.collapse-btn{display:none}.expand-btn{display:none!important}}
+  .menu-btn{display:none;position:fixed;top:12px;left:12px;width:44px;height:44px;border-radius:10px;
+    background:var(--bg-elevated);border:1px solid var(--border);color:var(--text-primary);font-size:22px;
+    z-index:50;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+  .sidebar-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99}
+  .sidebar-backdrop.active{display:block}
+  .sidebar{background:var(--bg-sidebar);border-radius:8px;padding:22px 16px;overflow-y:auto;
+    display:flex;flex-direction:column;gap:18px;border:1px solid var(--border)}
+  .logo{display:flex;align-items:center;gap:10px;padding:0 6px 14px;border-bottom:1px solid var(--border)}
+  .logo-icon{font-size:26px}
+  .logo-text{font-size:17px;font-weight:800;letter-spacing:-.3px}
+  .logo-sub{font-size:11px;color:var(--text-subdued);margin-top:2px}
+  .user-info{display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(128,128,128,.06);border-radius:8px}
+  .user-name{flex:1;font-size:12.5px;font-weight:700}
+  .icon-btn{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;
+    color:var(--text-muted);font-size:16px;transition:.15s;background:rgba(128,128,128,.08)}
+  .icon-btn:hover{color:var(--text-primary);background:rgba(128,128,128,.16)}
+  .xlink{display:block;text-align:center;padding:9px;background:var(--accent-soft);color:var(--accent);
+    border:1px solid var(--accent);border-radius:8px;font-size:12.5px;font-weight:800;text-decoration:none}
+  .sidebar-section h3{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-subdued);
+    padding:0 8px 8px;font-weight:700}
+  .nav-list{display:flex;flex-direction:column;gap:2px}
+  .nav-item{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:6px;
+    font-weight:600;font-size:14px;color:var(--text-muted);transition:.15s;text-align:left;width:100%}
+  .nav-item:hover{color:var(--text-primary);background:var(--hover-card)}
+  .nav-item.active{color:var(--text-primary);background:var(--accent-soft)}
+  .nav-item .count{font-size:12px;color:var(--text-subdued);background:var(--tag-bg);padding:2px 8px;border-radius:10px;font-weight:700}
+  .nav-item.active .count{color:var(--accent);background:var(--accent-soft)}
+  .nav-dot{width:9px;height:9px;border-radius:50%;margin-right:9px;flex:0 0 auto}
+  .stats-card{background:linear-gradient(135deg,var(--accent-soft),rgba(29,185,84,.05));border-radius:8px;padding:14px;margin-top:auto}
+  .stats-card h4{font-size:12px;color:var(--accent);margin-bottom:8px;font-weight:700}
+  .stats-row{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;color:var(--text-muted)}
+  .stats-row span:last-child{color:var(--text-primary);font-weight:700}
+  .reset-btn{width:100%;margin-top:12px;padding:8px;background:var(--wrong-soft);color:var(--wrong);
+    border:1px solid var(--wrong);border-radius:6px;font-size:12px;font-weight:700}
+  .main{background:var(--grad-main);border-radius:8px;overflow-y:auto;padding:22px 30px 60px;border:1px solid var(--border)}
+  .topbar{position:sticky;top:-22px;z-index:10;background:linear-gradient(180deg,var(--bg-base) 70%,transparent);
+    margin:-22px -30px 8px;padding:18px 30px 12px}
+  .topbar h1{font-size:21px;font-weight:800;letter-spacing:-.5px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .topbar h1 .cnt{font-size:13px;color:var(--text-muted);font-weight:600}
+  .search{margin-top:11px;width:100%;background:var(--choice-bg);border:1px solid var(--border);border-radius:10px;
+    padding:10px 14px;color:var(--text-primary);font-size:14px;font-family:inherit}
+  .topicnav{display:flex;gap:7px;overflow-x:auto;padding:11px 0 4px;margin-top:4px;scrollbar-width:thin}
+  .topicnav::-webkit-scrollbar{height:5px}
+  .tchip{flex:0 0 auto;display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;
+    background:var(--choice-bg);border:1.5px solid var(--border);color:var(--text-primary);font-size:12.5px;font-weight:700;white-space:nowrap;transition:.12s;cursor:pointer}
+  .tchip:hover{border-color:var(--cc);background:var(--hover-card);transform:translateY(-1px)}
+  .tchip .tc{font-size:10.5px;color:var(--text-subdued);font-weight:800;background:var(--tag-bg);padding:1px 6px;border-radius:8px}
+  .grp{margin:20px 0 6px;scroll-margin-top:132px}
+  .grphd{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;padding-bottom:7px;border-bottom:1px solid var(--border)}
+  .grphd .pl{font-size:11px;font-weight:800}
+  .grphd h2{font-size:16.5px;font-weight:800;margin:0;letter-spacing:-.3px}
+  .pill{font-size:11px;padding:3px 9px;border-radius:999px;font-weight:700;letter-spacing:.3px}
+  .pill-tag{background:var(--tag-bg);color:var(--tag-text);font-weight:600}
+  .pill-multi{background:var(--c-multi);color:#0d1320}
+  .pill-jokbo{background:var(--c-jokbo);color:#0d1320}
+  .pill-jakja{background:rgba(29,185,84,.22);color:var(--accent)}
+  .pill-freq{background:#f15e6c;color:#fff}
+  .pill-var{background:#a884ff;color:#0d1320}
+  .pill-short{background:#7ee0c0;color:#0d1320}
+  .pill-2024{background:var(--c-2024);color:#fff}
+  .pill-concept{background:var(--accent);color:#0d1320}
+  .qcard{background:var(--bg-elevated);border-radius:11px;padding:17px 19px;margin:10px 0;box-shadow:var(--shadow-card);border:1px solid var(--border);border-left-width:4px}
+  .qcard.src-jokbo{border-left-color:var(--c-jokbo)}
+  .qcard.src-jakja{border-left-color:var(--accent)}
+  .qcard.src-concept{border-left-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft),var(--bg-elevated) 70px)}
+  .qcard.hl2024{box-shadow:0 0 0 1.5px var(--c-2024),var(--shadow-card)}
+  .qmeta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:11px}
+  .qno{color:var(--text-subdued);font-size:11px;font-weight:700;margin-left:auto}
+  .bm{font-size:16px;margin-left:6px;opacity:.32;transition:.15s;background:none;line-height:1}
+  .bm.on{opacity:1}.bm:hover{opacity:.85;transform:scale(1.12)}
+  .qtext{font-size:15.5px;font-weight:700;line-height:1.5;margin-bottom:13px;white-space:pre-wrap}
+  .concept-title{font-size:16px;font-weight:800;color:var(--accent);margin-bottom:9px}
+  .exams{font-size:11.5px;color:var(--text-subdued);margin:-4px 0 11px;font-weight:600}
+  .choices{display:flex;flex-direction:column;gap:8px}
+  .choice{display:flex;align-items:flex-start;gap:11px;padding:11px 15px;background:var(--choice-bg);border:1px solid transparent;border-radius:8px;text-align:left;width:100%;transition:.12s;color:var(--text-primary);font-size:14.5px}
+  .choice:hover:not(.locked){background:var(--hover-card);border-color:var(--border)}
+  .choice .num{font-weight:800;color:var(--text-muted);min-width:20px;font-size:15px}
+  .choice.sel{border-color:var(--accent);background:var(--accent-soft)}
+  .choice.sel .num{color:var(--accent)}
+  .choice.locked{cursor:default}
+  .choice.correct{background:var(--accent-soft);border-color:var(--accent);color:var(--correct-text)}
+  .choice.correct .num{color:var(--accent)}
+  .choice.wrong{background:var(--wrong-soft);border-color:var(--wrong);color:var(--wrong-text)}
+  .choice.wrong .num{color:var(--wrong)}
+  .choice.miss{border-color:var(--warn);background:var(--warn-soft)}
+  .choice.miss .num{color:var(--warn)}
+  .checkbtn{margin-top:9px;padding:9px 16px;background:var(--accent);color:#000;border-radius:999px;font-weight:800;font-size:13px}
+  .checkbtn.ghost{background:var(--tag-bg);color:var(--text-primary)}
+  .shortans-btn{margin-top:2px;padding:11px;width:100%;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent);border-radius:8px;font-weight:800;font-size:13.5px}
+  .explanation{margin-top:13px;padding:14px 16px;background:var(--explanation-bg);border-radius:8px;border-left:3px solid var(--accent);font-size:13.5px;line-height:1.62;color:var(--text-primary)}
+  .explanation .md-p{margin:2px 0}
+  .explanation .md-h{font-weight:800;font-size:14px;margin:12px 0 5px;color:var(--accent)}
+  .explanation .md-sp{height:8px}
+  .explanation .md-u{margin:4px 0 6px;padding-left:20px}
+  .explanation .md-u li{margin:2.5px 0}
+  .explanation code{background:var(--tag-bg);padding:1px 5px;border-radius:4px;font-family:ui-monospace,Consolas,monospace;font-size:12.5px;color:var(--text-primary)}
+  .explanation table.md-t{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.5px;display:block;overflow-x:auto}
+  .explanation table.md-t th,.explanation table.md-t td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;white-space:normal}
+  .explanation table.md-t th{background:var(--tag-bg);font-weight:800;white-space:nowrap}
+  .explanation .md-p:first-child{margin-top:0}
+  .solo-prog{height:5px;background:var(--tag-bg);border-radius:999px;overflow:hidden;margin:6px 0 16px}
+  .solo-prog>div{height:100%;background:var(--accent);transition:width .3s}
+  .solo-nav{display:flex;gap:10px;justify-content:space-between;margin-top:18px;align-items:center}
+  .solo-btn{padding:11px 20px;background:var(--tag-bg);border-radius:999px;font-weight:800;font-size:14px;color:var(--text-primary)}
+  .solo-btn.primary{background:var(--accent);color:#000}
+  .solo-hint{font-size:11.5px;color:var(--text-subdued);text-align:center;margin-top:12px;font-weight:600}
+  .verdict{font-weight:800;margin-bottom:7px;font-size:14px;display:flex;align-items:center;gap:7px}
+  .verdict.correct{color:var(--accent)} .verdict.wrong{color:var(--wrong)}
+  .explanation strong{font-weight:800}
+  .selfgrade{display:flex;gap:8px;margin-top:11px}
+  .sg{flex:1;padding:9px;border:1px solid var(--border);background:var(--choice-bg);border-radius:8px;font-weight:700;font-size:12.5px;color:var(--text-muted)}
+  .sg.o.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+  .sg.x.on{background:var(--wrong-soft);border-color:var(--wrong);color:var(--wrong)}
+  .empty-card{background:var(--bg-elevated);border-radius:12px;padding:60px 32px;text-align:center;color:var(--text-muted)}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-thumb{background:rgba(128,128,128,.25);border-radius:999px}
+  @media(max-width:768px){
+    .app{grid-template-columns:1fr;padding:4px}
+    .menu-btn{display:flex}
+    .sidebar{position:fixed;top:8px;bottom:8px;left:8px;width:280px;max-width:calc(100vw - 16px);z-index:100;transform:translateX(calc(-100% - 16px));transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+    .sidebar.open{transform:translateX(0)}
+    .main{padding:56px 14px 40px}
+    .topbar{margin:-56px -14px 8px;padding:14px 16px 10px;top:-56px}
+    .topbar h1{font-size:18px}
+    .qcard{padding:15px 15px}
+  }
 </style>
 </head>
 <body>
-  <div class="logo">🦠</div>
-  <h1>수의전염병학2 기말 퀴즈</h1>
-  <div class="sub">2026 강의안 기준 · 족보/시험 출제부위 기반 독립풀이<br>강의안 외 자료 미사용 · 족보답은 강의안 기준 재판정</div>
-  <div class="cards">
-    <a class="card" href="lab.html">
-      <div class="t">🧬 실습 퀴즈 <span class="badge">완성 · 41문항</span></div>
-      <div class="d">2025·2024 시험 출제부위(보라 형광펜)+복기 기반. spin column·RT-qPCR·PCR·전기영동·BLAST·PRRS. 객관 18 · 주관 13 · 개념 10</div>
-    </a>
-    <a class="card" href="theory.html">
-      <div class="t">🦠 이론 퀴즈 <span class="badge">완성 · 268문항</span></div>
-      <div class="d">기말범위 12개 family(Herpes·Pox·Picorna/FMD·Rhabdo/광견병·Reo·Arteri/PRRS·Bunya/SFTS·Calici·Retro·Pneumo·Toga·Prion). 🗺미리보기12 · 개념32 · 기본예제96(카드당3) · 족보73 · 🆕2026자작55 · 찐핵심</div>
-    </a>
-  </div>
-  <div class="foot">건국대 수의과대학 · 본과2학년 1학기<br>출제부위는 선배 표시(보라 형광)+복기 기반 · ⚠️ 표시는 강의안↔과학 충돌/재구성 문항</div>
+<div class="app" id="app">
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+  <button class="expand-btn" onclick="toggleSideCollapse()" title="메뉴 펼치기">☰</button>
+  <div class="sidebar-backdrop" id="backdrop" onclick="toggleSidebar()"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">
+      <div class="logo-icon">🧬</div>
+      <div><div class="logo-text">전염병학2 실습 퀴즈</div><div class="logo-sub">기말 · 2024·2025 출제표시 기반</div></div>
+      <button class="collapse-btn" onclick="toggleSideCollapse()" title="사이드바 접기">◀</button>
+    </div>
+    <div class="user-info">
+      <span class="user-name">기출 31 · 개념 10 · ⚠️2</span>
+      <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="테마">🌙</button>
+    </div>
+    <div class="sidebar-section">
+      <h3>개념 카테고리</h3>
+      <nav class="nav-list" id="filterNav"></nav>
+    </div>
+    <div class="stats-card">
+      <h4>📊 진행 상황</h4>
+      <div class="stats-row"><span>정답</span><span id="stCorrect">0</span></div>
+      <div class="stats-row"><span>오답</span><span id="stWrong">0</span></div>
+      <div class="stats-row"><span>푼 문제</span><span><span id="stAns">0</span> / <span id="stTotal">0</span></span></div>
+      <div class="stats-row"><span>정답률</span><span id="stRate">0%</span></div>
+      <button class="reset-btn" onclick="resetAll()">🗑️ 전체 초기화</button>
+    </div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+
+<script src="lab.js"></script>
+<script>
+const QUESTIONS = LABLAB;
+const CIRC=['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
+const PARTORDER=['핵산구조','RNA추출','RTqPCR','PCR','전기영동','BLAST계통','PRRS','부검유제'];
+const PARTLBL={'핵산구조':'핵산·분자구조','RNA추출':'RNA 추출(spin column)','RTqPCR':'RT-qPCR·probe','PCR':'PCR·thermocycle','전기영동':'전기영동·Gel추출','BLAST계통':'BLAST·계통수','PRRS':'PRRS·strain','부검유제':'부검·유제·virus isolation'};
+const PARTCOL={'핵산구조':'#ff6b6b','RNA추출':'#4fc3f7','RTqPCR':'#c792ea','PCR':'#ffb74d','전기영동':'#81c784','BLAST계통':'#5ca8ff','PRRS':'#f47fb0','부검유제':'#a884ff'};
+const FILTERS=[
+  ['⚡ 몰아풀기 ① 객관식','#ffd54f','MC'],
+  ['⚡ 몰아풀기 ② 주관식','#ffce54','SA'],
+  ['전체','#1DB954',q=>true],
+  ['핵산·분자구조','#ff6b6b',q=>q.part==='핵산구조'],
+  ['RNA 추출(spin column)','#4fc3f7',q=>q.part==='RNA추출'],
+  ['RT-qPCR·probe','#c792ea',q=>q.part==='RTqPCR'],
+  ['PCR·thermocycle','#ffb74d',q=>q.part==='PCR'],
+  ['전기영동·Gel추출','#81c784',q=>q.part==='전기영동'],
+  ['BLAST·계통수','#5ca8ff',q=>q.part==='BLAST계통'],
+  ['PRRS·strain','#f47fb0',q=>q.part==='PRRS'],
+  ['부검·유제·virus isolation','#a884ff',q=>q.part==='부검유제'],
+  ['📕 족보 기출','var(--c-jokbo)',q=>q.origin==='jokbo'],
+  ['📝 자작 문제','#1ED760',q=>q.origin==='concept'],
+  ['🟡 2025 기출','#ffd54f',q=>!!q.hl2025],
+  ['🟣 2024 기출','#bf7bff',q=>q.hl2024===true],
+  ['🔴 빈출(2회+)','#f15e6c',q=>(q.freq||0)>=2],
+  ['⭕ OX 문제','#7ee0c0',q=>q.type==='ox'],
+  ['✍️ 주관식','#ffb74d',q=>['short','calc','essay'].includes(q.type)],
+  ['📖 개념만','#1ED760',q=>q.origin==='summary'],
+  ['🔖 북마크','#ff9e64',q=>!!(ST.bookmarks&&ST.bookmarks[q.id])],
+  ['❌ 오답만','#f15e6c',q=>{const s=ST.ans[q.id];return s&&s.checked&&s.correct===false;}],
+];
+const NOSUM=q=>q.origin!=='summary';
+const LS='vetinf2PracV1';
+let ST=load();
+function load(){try{const j=JSON.parse(localStorage.getItem(LS));if(j&&j.ans){if(!j.bookmarks)j.bookmarks={};if(j.soloIdx==null)j.soloIdx=0;return j;}}catch(e){}
+  return{ans:{},filter:2,theme:'dark',bookmarks:{},soloIdx:0};}
+function isSolo(){return typeof FILTERS[ST.filter][2]==='string';}
+function soloMode(){return FILTERS[ST.filter][2];}
+function soloListFor(m){return QUESTIONS.filter(q=>q.origin==='jokbo'&&(m==='SA'?['short','calc','essay']:['ox','single','multi']).includes(q.type));}
+function soloList(){return soloListFor(soloMode());}
+function save(){localStorage.setItem(LS,JSON.stringify(ST));}
+const TOTALQ=QUESTIONS.filter(q=>['ox','single','multi'].includes(q.type)).length;
+const QMAP={};QUESTIONS.forEach(q=>QMAP[q.id]=q);
+function applyTheme(){document.documentElement.setAttribute('data-theme',ST.theme);document.getElementById('themeBtn').textContent=ST.theme==='dark'?'🌙':'☀️';}
+function esc(s){return(s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function inl(t){return t
+  .replace(/🔴\s*\*\*([^*]+)\*\*/g,'<b style="color:#ff6b6b">🔴$1</b>')
+  .replace(/🔵\s*\*\*([^*]+)\*\*/g,'<b style="color:#5ca8ff">🔵$1</b>')
+  .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+  .replace(/`([^`]+)`/g,'<code>$1</code>')
+  .replace(/🔴/g,'<span style="color:#ff6b6b">🔴</span>')
+  .replace(/🔵/g,'<span style="color:#5ca8ff">🔵</span>')
+  .replace(/✓/g,'<span style="color:var(--accent);font-weight:800">✓</span>')
+  .replace(/✗/g,'<span style="color:var(--wrong);font-weight:800">✗</span>');}
+function md(s){
+  if(!s)return'';
+  const lines=esc(s).split('\n');let html='',i=0,inUl=false;
+  const flush=()=>{if(inUl){html+='</ul>';inUl=false;}};
+  while(i<lines.length){
+    const ln=lines[i];
+    if(/^\s*\|/.test(ln)&&i+1<lines.length&&/^\s*\|[\s:|-]+\|\s*$/.test(lines[i+1])){
+      flush();const head=ln.split('|').slice(1,-1).map(c=>c.trim());i+=2;const rows=[];
+      while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i].split('|').slice(1,-1).map(c=>c.trim()));i++;}
+      html+='<table class="md-t"><thead><tr>'+head.map(h=>'<th>'+inl(h)+'</th>').join('')+'</tr></thead><tbody>'+
+        rows.map(r=>'<tr>'+r.map(c=>'<td>'+inl(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';continue;}
+    const hm=ln.match(/^(#{2,4})\s+(.*)/);
+    if(hm){flush();html+='<div class="md-h">'+inl(hm[2])+'</div>';i++;continue;}
+    const bm=ln.match(/^\s*[-*]\s+(.*)/);
+    if(bm){if(!inUl){html+='<ul class="md-u">';inUl=true;}html+='<li>'+inl(bm[1])+'</li>';i++;continue;}
+    flush();
+    if(ln.trim()==='')html+='<div class="md-sp"></div>';else html+='<div class="md-p">'+inl(ln)+'</div>';
+    i++;
+  }
+  flush();return html;}
+function setEq(a,b){a=[...a].sort();b=[...b].sort();return a.length===b.length&&a.every((v,i)=>v===b[i]);}
+const TLBL={ox:'⭕ OX',short:'✍️ 단답',calc:'🧮 계산',essay:'📝 서술',single:'객관식',multi:'모두고르기'};
+
+function renderSidebar(){
+  const nav=document.getElementById('filterNav');nav.innerHTML='';
+  FILTERS.forEach((f,idx)=>{
+    const n=(typeof f[2]==='function')?QUESTIONS.filter(f[2]).length:soloListFor(f[2]).length;
+    const b=document.createElement('button');
+    b.className='nav-item'+(ST.filter===idx?' active':'');
+    b.innerHTML=`<span style="display:flex;align-items:center"><span class="nav-dot" style="background:${f[1]}"></span>${f[0]}</span><span class="count">${n}</span>`;
+    b.onclick=()=>{ST.filter=idx;ST.soloIdx=0;save();render();document.getElementById('main').scrollTop=0;if(window.innerWidth<=768)toggleSidebar(true);};
+    nav.appendChild(b);
+  });
+  const ansd=Object.values(ST.ans).filter(a=>a.checked&&(a.correct===true||a.correct===false));
+  const cor=ansd.filter(a=>a.correct).length;
+  document.getElementById('stCorrect').textContent=cor;
+  document.getElementById('stWrong').textContent=ansd.length-cor;
+  document.getElementById('stAns').textContent=ansd.length;
+  document.getElementById('stTotal').textContent=TOTALQ;
+  document.getElementById('stRate').textContent=(ansd.length?Math.round(cor/ansd.length*100):0)+'%';
+}
+function pillsHtml(q){
+  let p=`<span class="pill" style="background:${PARTCOL[q.part]||'#999'};color:#0d1320">${PARTLBL[q.part]||q.part}</span>`;
+  if(q.origin==='summary')p+=`<span class="pill pill-concept">📖 개념</span>`;
+  else if(q.origin==='jokbo')p+=`<span class="pill pill-jokbo">📕 족보 ${esc(q.exam||'')}</span>`;
+  else p+=`<span class="pill pill-jakja">📝 자작</span>`;
+  if(q.origin!=='summary'){
+    if(q.hl2025)p+=`<span class="pill" style="background:#ffd54f;color:#0d1320">🟡 2025기출</span>`;
+    if(q.hl2024)p+=`<span class="pill pill-2024">🟣 2024기출</span>`;
+    if((q.freq||0)>=2)p+=`<span class="pill pill-freq">🔴 ${q.freq}회</span>`;
+    if(TLBL[q.type]&&q.type!=='single')p+=`<span class="pill pill-short">${TLBL[q.type]}</span>`;
+    if(q.variant)p+=`<span class="pill pill-var">🔀 변형</span>`;
+  }
+  return p;
+}
+function cardHtml(q){
+  const st=ST.ans[q.id]||{selected:[],checked:false,correct:false};
+  const srcCls=q.origin==='summary'?'src-concept':(q.origin==='jokbo'?'src-jokbo':'src-jakja');
+  let h=`<div class="qcard ${srcCls}${q.hl2024?' hl2024':''}"><div class="qmeta">${pillsHtml(q)}<span class="qno">#${q.id}</span><button class="bm${ST.bookmarks[q.id]?' on':''}" onclick="toggleBm(${q.id})">🔖</button></div>`;
+  if(q.origin==='summary'){
+    h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div><div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
+    return h+`</div>`;
+  }
+  h+=`<div class="qtext">${md(q.q)}</div>`;
+  if(q.exams&&q.exams.length>1)h+=`<div class="exams">출제: ${q.exams.join(' · ')}</div>`;
+  if(['short','calc','essay'].includes(q.type)){
+    if(st.checked){h+=`<div class="explanation"><div class="verdict correct">${TLBL[q.type]} 모범답안</div>${md(q.explain)}</div>`+selfGrade(q,st);}
+    else h+=`<button class="shortans-btn" onclick="reveal(${q.id})">${TLBL[q.type]} 모범답안 보기</button>`;
+    return h+`</div>`;
+  }
+  // ox / single / multi
+  if(q.type==='multi')h+=`<div class="exams" style="color:var(--c-multi)">⚠️ 정답 1개 이상</div>`;
+  h+=`<div class="choices">`;
+  q.choices.forEach((ch,i)=>{
+    const n=i+1;let cls='choice';const sel=st.selected.includes(n);
+    if(st.checked){cls+=' locked';const isA=q.answer.includes(n);
+      if(isA&&sel)cls+=' correct';else if(!isA&&sel)cls+=' wrong';else if(isA&&!sel)cls+=' miss';}
+    else if(sel)cls+=' sel';
+    h+=`<button class="${cls}" onclick="pick(${q.id},${n})"><span class="num">${q.type==='ox'?'':CIRC[i]||n}</span><span>${md(ch)}</span></button>`;
+  });
+  h+=`</div>`;
+  if(q.type==='multi'&&!st.checked)h+=`<button class="checkbtn" onclick="check(${q.id})">✓ 정답 확인</button>`;
+  if(st.checked){
+    const marks=q.answer.map(a=>q.type==='ox'?(a===1?'O':'X'):CIRC[a-1]).join(' ');
+    h+=`<div class="explanation"><div class="verdict ${st.correct?'correct':'wrong'}">${st.correct?'⭕ 정답':'❌ 오답'} · 정답: ${marks}</div>${md(q.explain)}</div>`;
+    h+=`<button class="checkbtn ghost" style="margin-top:9px" onclick="retry(${q.id})">↺ 다시 풀기</button>`;
+  }
+  return h+`</div>`;
+}
+function selfGrade(q,st){const s=st.self;
+  return `<div class="selfgrade"><button class="sg o${s==='o'?' on':''}" onclick="grade(${q.id},'o')">⭕ 맞췄음</button><button class="sg x${s==='x'?' on':''}" onclick="grade(${q.id},'x')">❌ 틀렸음</button></div>`;}
+let curTerm='';
+function renderSolo(){
+  const list=soloList();const main=document.getElementById('main');
+  if(!list.length){main.innerHTML='<div class="empty-card">족보 문항 없음</div>';return;}
+  let idx=Math.min(ST.soloIdx||0,list.length-1);if(idx<0)idx=0;ST.soloIdx=idx;
+  const q=list[idx];const st=ST.ans[q.id]||{checked:false};const pct=Math.round((idx+1)/list.length*100);
+  const mc=soloMode()==='MC';
+  let h=`<div class="topbar"><h1>${FILTERS[ST.filter][0]} <span class="cnt">${idx+1} / ${list.length} · ${pct}%</span></h1></div>`;
+  h+=`<div class="solo-prog"><div style="width:${pct}%"></div></div>`;
+  h+=cardHtml(q);
+  h+=`<div class="solo-nav"><button class="solo-btn" onclick="soloMove(-1)">← 이전</button>`;
+  if(q.type==='multi'&&!st.checked)h+=`<button class="solo-btn primary" onclick="check(${q.id})">✓ 정답 확인</button>`;
+  h+=`<button class="solo-btn primary" onclick="soloMove(1)">다음 →</button></div>`;
+  h+=`<div class="solo-hint">⌨ ${mc?'<b>1~5</b> 답 선택(OX는 1=O·2=X) · ':''}<b>← →</b> 이동${mc?' · 정답 맞히면 자동으로 다음':' · 답은 「모범답안 보기」'}</div>`;
+  main.innerHTML=h;main.scrollTop=0;
+}
+window.soloMove=function(d){const list=soloList();let idx=(ST.soloIdx||0)+d;idx=Math.max(0,Math.min(list.length-1,idx));ST.soloIdx=idx;save();renderSolo();};
+function render(){
+  applyTheme();renderSidebar();
+  if(isSolo())return renderSolo();
+  const f=FILTERS[ST.filter][2];
+  let view=QUESTIONS.filter(f);
+  if(curTerm){const t=curTerm.toLowerCase();view=view.filter(q=>((q.q||'')+(q.topic||'')+(q.explain||'')).toLowerCase().includes(t));}
+  const groups={};const gorder=[];
+  view.forEach(q=>{const k=q.part+'||'+q.topic;if(!groups[k]){groups[k]=[];gorder.push(k);}groups[k].push(q);});
+  gorder.sort((a,b)=>{const qa=groups[a][0],qb=groups[b][0];const pa=PARTORDER.indexOf(qa.part),pb=PARTORDER.indexOf(qb.part);
+    if(pa!==pb)return pa-pb;return Math.max(...groups[b].map(x=>x.freq||0))-Math.max(...groups[a].map(x=>x.freq||0));});
+  let h=`<div class="topbar"><h1>${FILTERS[ST.filter][0]} <span class="cnt">${view.length}개</span></h1>
+    <input class="search" id="search" placeholder="🔍 검색 (예: spin column, probe, PRRS, 94도)" value="${esc(curTerm)}" oninput="onSearch(this.value)">`;
+  if(gorder.length>1){h+=`<div class="topicnav">`;
+    gorder.forEach((k,gi)=>{const items=groups[k];const q0=items[0];const nq=items.filter(NOSUM).length;const maxf=Math.max(...items.map(x=>x.freq||0));
+      if(nq<1)return;
+      const shortT=esc(q0.topic.replace(/\s*[(（].*/,'').replace(/\s*[／/].*/,'').trim());
+      h+=`<button class="tchip" onclick="jumpTo('grp${gi}')" style="--cc:${PARTCOL[q0.part]}">${maxf>=2?'🔴':''}${shortT}<span class="tc">${nq}</span></button>`;});
+    h+=`</div>`;}
+  h+=`</div>`;
+  if(!view.length){h+=`<div class="empty-card"><div style="font-size:42px">📭</div>해당 문항 없음</div>`;document.getElementById('main').innerHTML=h;bindSearch();return;}
+  gorder.forEach((k,gi)=>{
+    const items=groups[k];const q0=items[0];const maxf=Math.max(...items.map(x=>x.freq||0));const nq=items.filter(NOSUM).length;
+    const ordered=items.filter(x=>x.origin==='summary').concat(items.filter(x=>x.origin!=='summary'));
+    h+=`<div class="grp" id="grp${gi}"><div class="grphd"><span class="pl" style="color:${PARTCOL[q0.part]}">${PARTLBL[q0.part]}</span><h2>${esc(q0.topic)}</h2>`;
+    if(maxf>=2)h+=`<span class="pill pill-freq">🔴 ${maxf}회</span>`;
+    h+=`<span class="pill pill-tag">${nq}문항</span></div>`;
+    ordered.forEach(q=>h+=cardHtml(q));
+    h+=`</div>`;
+  });
+  document.getElementById('main').innerHTML=h;bindSearch();
+}
+window.jumpTo=function(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});};
+function bindSearch(){const el=document.getElementById('search');if(el)el.oninput=e=>onSearch(e.target.value);}
+let searchTimer=null;
+function onSearch(v){curTerm=v;clearTimeout(searchTimer);searchTimer=setTimeout(()=>{render();const el=document.getElementById('search');if(el){el.focus();el.setSelectionRange(el.value.length,el.value.length);}},180);}
+window.pick=function(id,n){const q=QMAP[id];let st=ST.ans[id]||{selected:[],checked:false,correct:false};
+  if(st.checked)return;
+  if(q.type==='single'||q.type==='ox'){st.selected=[n];st.checked=true;st.correct=setEq(st.selected,q.answer);
+    ST.ans[id]=st;save();render();if(isSolo())setTimeout(()=>soloMove(1),650);return;}
+  st.selected=st.selected.includes(n)?st.selected.filter(x=>x!==n):[...st.selected,n];
+  ST.ans[id]=st;save();render();};
+document.addEventListener('keydown',e=>{
+  if(!isSolo())return;
+  if(/^[1-9]$/.test(e.key)&&soloMode()==='MC'){const list=soloList();const q=list[ST.soloIdx||0];
+    if(q){const st=ST.ans[q.id];if(!(st&&st.checked)){const n=+e.key;if(n<=(q.choices||[]).length){pick(q.id,n);e.preventDefault();}}}}
+  else if(e.key==='ArrowRight'){soloMove(1);e.preventDefault();}
+  else if(e.key==='ArrowLeft'){soloMove(-1);e.preventDefault();}
+});
+window.check=function(id){const q=QMAP[id];let st=ST.ans[id]||{selected:[],checked:false,correct:false};
+  if(!st.selected||!st.selected.length){alert('선지를 선택하세요');return;}
+  st.checked=true;st.correct=setEq(st.selected,q.answer);ST.ans[id]=st;save();render();};
+window.reveal=function(id){let st=ST.ans[id]||{selected:[],checked:false};st.checked=true;st.correct=null;ST.ans[id]=st;save();render();};
+window.grade=function(id,v){let st=ST.ans[id];if(!st)return;st.self=(st.self===v)?null:v;st.correct=(st.self==='o')?true:(st.self==='x'?false:null);ST.ans[id]=st;save();render();};
+window.retry=function(id){ST.ans[id]={selected:[],checked:false,correct:false};save();render();};
+window.toggleTheme=function(){ST.theme=ST.theme==='dark'?'light':'dark';save();applyTheme();};
+window.toggleSidebar=function(force){const sb=document.getElementById('sidebar'),bd=document.getElementById('backdrop');
+  const open=force===true?false:!sb.classList.contains('open');sb.classList.toggle('open',open);bd.classList.toggle('active',open);};
+window.toggleSideCollapse=function(){ST.sideCollapsed=!ST.sideCollapsed;save();document.getElementById('app').classList.toggle('side-collapsed',ST.sideCollapsed);};
+window.toggleBm=function(id){if(ST.bookmarks[id])delete ST.bookmarks[id];else ST.bookmarks[id]=true;save();render();};
+window.resetAll=function(){if(!confirm('모든 답·점수를 초기화할까요? (북마크는 유지)'))return;ST={ans:{},filter:ST.filter,theme:ST.theme,bookmarks:ST.bookmarks};save();render();};
+if(ST.sideCollapsed)document.getElementById('app').classList.add('side-collapsed');
+render();
+</script>
 </body>
 </html>

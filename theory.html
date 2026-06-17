@@ -172,6 +172,12 @@
   .pl b{color:var(--accent);font-weight:800}
   .pcmp{font-size:13px;line-height:1.55;background:var(--explanation-bg);border-radius:8px;padding:9px 13px;color:var(--text-primary)}
   .pcmp b{color:var(--accent)}
+  /* 개념카드 상단 미니 구조 */
+  .cmini{background:linear-gradient(180deg,var(--accent-soft),transparent);border:1px solid var(--accent);border-radius:11px;padding:11px 14px;margin:3px 0 14px}
+  .cmini-gist{font-size:13.5px;font-weight:800;color:var(--accent);margin-bottom:9px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .cmini-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .cchip{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:4px 11px;font-size:12.6px;line-height:1.45;color:var(--text-primary)}
+  .cchip b{color:var(--accent);font-weight:800}
   .explanation table.md-t{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.5px;display:block;overflow-x:auto}
   .explanation table.md-t th,.explanation table.md-t td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;white-space:normal}
   .explanation table.md-t th{background:var(--tag-bg);font-weight:800;white-space:nowrap}
@@ -372,7 +378,9 @@ function cardHtml(q){
     return h+`</div>`;
   }
   if(q.origin==='summary'){
-    h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div><div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
+    h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div>`;
+    if(q.chips&&q.chips.length){h+=`<div class="cmini"><div class="cmini-gist">📍 ${q.gist?esc(q.gist):'한눈에'}</div><div class="cmini-chips">${q.chips.map(c=>'<span class="cchip">'+c+'</span>').join('')}</div></div>`;}
+    h+=`<div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
     return h+`</div>`;
   }
   h+=`<div class="qtext">${md(q.q)}</div>`;

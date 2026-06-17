@@ -146,6 +146,9 @@
   .explanation .md-u{margin:4px 0 6px;padding-left:20px}
   .explanation .md-u li{margin:2.5px 0}
   .explanation code{background:var(--tag-bg);padding:1px 5px;border-radius:4px;font-family:ui-monospace,Consolas,monospace;font-size:12.5px;color:var(--text-primary)}
+  .explanation .md-pre{font-family:ui-monospace,Consolas,monospace;font-size:12px;line-height:1.45;background:var(--tag-bg);padding:11px 13px;border-radius:8px;overflow-x:auto;white-space:pre;margin:9px 0;color:var(--text-primary)}
+  .qcard.src-preview{border-left-color:#ffd54f;background:linear-gradient(180deg,rgba(255,213,79,.12),var(--bg-elevated) 90px)}
+  .preview-title{font-size:16px;font-weight:800;color:#ffd54f;margin-bottom:9px;display:flex;align-items:center;gap:7px}
   .explanation table.md-t{border-collapse:collapse;width:100%;margin:9px 0;font-size:12.5px;display:block;overflow-x:auto}
   .explanation table.md-t th,.explanation table.md-t td{border:1px solid var(--border);padding:6px 9px;text-align:left;vertical-align:top;white-space:normal}
   .explanation table.md-t th{background:var(--tag-bg);font-weight:800;white-space:nowrap}
@@ -192,7 +195,7 @@
       <button class="collapse-btn" onclick="toggleSideCollapse()" title="사이드바 접기">◀</button>
     </div>
     <div class="user-info">
-      <span class="user-name">개념32·기본24·족보73·자작55</span>
+      <span class="user-name">미리보기12·개념32·기본96·족보73·자작55</span>
       <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="테마">🌙</button>
     </div>
     <a href="lab.html" style="display:block;text-align:center;padding:9px;background:rgba(124,224,192,.15);color:#34c79a;border:1px solid #34c79a;border-radius:8px;font-size:12.5px;font-weight:800;text-decoration:none">🔬 실습 퀴즈로 이동 →</a>
@@ -220,7 +223,7 @@ const CIRC=['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
 const PARTORDER=['Herpesviridae','Poxviridae','Picornaviridae','Arteriviridae','Caliciviridae','Togaviridae','Rhabdoviridae','Bunyavirales','Pneumoviridae','Reoviridae','Retroviridae','Prion'];
 const PARTLBL={'Herpesviridae':'헤르페스 Herpes','Poxviridae':'폭스 Pox(두창)','Picornaviridae':'피코르나 Picorna(FMD)','Rhabdoviridae':'랍도 Rhabdo(광견병)','Reoviridae':'레오 Reo','Arteriviridae':'아테리 Arteri(PRRS)','Bunyavirales':'부니아 Bunya(SFTS)','Caliciviridae':'칼리시 Calici','Retroviridae':'레트로 Retro','Pneumoviridae':'뉴모 Pneumo(BRSV)','Togaviridae':'토가 Toga(말뇌염)','Prion':'프리온 Prion'};
 const PARTCOL={'Herpesviridae':'#ff6b6b','Poxviridae':'#ffb74d','Picornaviridae':'#4fc3f7','Rhabdoviridae':'#f47fb0','Reoviridae':'#81c784','Arteriviridae':'#a884ff','Bunyavirales':'#5ca8ff','Caliciviridae':'#7ee0c0','Retroviridae':'#ff8a65','Pneumoviridae':'#ba68c8','Togaviridae':'#aed581','Prion':'#bdbdbd'};
-const NOSUM=q=>q.origin!=='summary';
+const NOSUM=q=>q.origin!=='summary'&&q.origin!=='preview';
 const FILTERS=[
   ['🔥 찐핵심 객관식 (주제별 1문항)','#ff3b30','CORE_MC'],
   ['✍️ 찐핵심 주관식 (주제별 1문항)','#ff8aae','CORE_SA'],
@@ -284,6 +287,7 @@ function md(s){
   const flush=()=>{if(inUl){html+='</ul>';inUl=false;}};
   while(i<lines.length){
     const ln=lines[i];
+    if(/^\s*```/.test(ln)){flush();i++;const buf=[];while(i<lines.length&&!/^\s*```/.test(lines[i])){buf.push(lines[i]);i++;}i++;html+='<pre class="md-pre">'+buf.join('\n')+'</pre>';continue;}
     if(/^\s*\|/.test(ln)&&i+1<lines.length&&/^\s*\|[\s:|-]+\|\s*$/.test(lines[i+1])){
       flush();const head=ln.split('|').slice(1,-1).map(c=>c.trim());i+=2;const rows=[];
       while(i<lines.length&&/^\s*\|/.test(lines[i])){rows.push(lines[i].split('|').slice(1,-1).map(c=>c.trim()));i++;}
@@ -320,12 +324,13 @@ function renderSidebar(){
 }
 function pillsHtml(q){
   let p=`<span class="pill" style="background:${PARTCOL[q.part]||'#999'};color:#0d1320">${PARTLBL[q.part]||q.part}</span>`;
-  if(q.origin==='summary')p+=`<span class="pill pill-concept">📖 개념</span>`;
+  if(q.origin==='preview')p+=`<span class="pill" style="background:#ffd54f;color:#0d1320">🗺 미리보기</span>`;
+  else if(q.origin==='summary')p+=`<span class="pill pill-concept">📖 개념</span>`;
   else if(q.origin==='core')p+=`<span class="pill pill-freq">⭐ 통합${(q.exams&&q.exams.length>1)?' '+q.exams.length+'회':''}</span>`;
   else if(q.origin==='jokbo')p+=`<span class="pill pill-jokbo">📕 족보 ${esc(q.exam||'')}</span>`;
   else if(q.level==='basic')p+=`<span class="pill" style="background:#7ee0c0;color:#0d1320">📗 기본예제</span>`;
   else p+=`<span class="pill" style="background:#1ED760;color:#0d1320">🆕 2026자작</span>`;
-  if(q.origin!=='summary'){
+  if(q.origin!=='summary'&&q.origin!=='preview'){
     if(q.flag)p+=`<span class="pill" style="background:#ff5c5c;color:#fff">⚠️ 오류주의</span>`;
     if((q.freq||0)>=2&&q.origin!=='core')p+=`<span class="pill pill-freq">🔴 ${q.freq}회</span>`;
     if(q.type==='multi')p+=`<span class="pill pill-multi">모두 고르시오</span>`;
@@ -336,9 +341,13 @@ function pillsHtml(q){
 }
 function cardHtml(q){
   const st=ST.ans[q.id]||{selected:[],checked:false,correct:false};
-  const srcCls=q.origin==='summary'?'src-concept':(q.origin==='jokbo'?'src-jokbo':'src-jakja');
+  const srcCls=q.origin==='preview'?'src-preview':(q.origin==='summary'?'src-concept':(q.origin==='jokbo'?'src-jokbo':'src-jakja'));
   let h=`<div class="qcard ${srcCls}"><div class="qmeta">${pillsHtml(q)}<span class="qno">#${q.id}</span><button class="bm${ST.bookmarks[q.id]?' on':''}" onclick="toggleBm(${q.id})">🔖</button></div>`;
   if(q.flagReason)h+=`<div class="flagr">⚠️ ${esc(q.flagReason)}</div>`;
+  if(q.origin==='preview'){
+    h+=`<div class="preview-title">🗺 ${esc(q.topic)}</div><div class="explanation" style="margin-top:0;border-left-color:#ffd54f">${md(q.explain)}</div>`;
+    return h+`</div>`;
+  }
   if(q.origin==='summary'){
     h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div><div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
     return h+`</div>`;
@@ -400,17 +409,19 @@ function render(){
   if(curTerm){const t=curTerm.toLowerCase();view=list.filter(q=>((q.q||'')+(q.topic||'')+(q.explain||'')).toLowerCase().includes(t));}
   // group by part>topic, preserve order
   const groups={};const gorder=[];
-  view.forEach(q=>{const k=q.part+'||'+q.topic;if(!groups[k]){groups[k]=[];gorder.push(k);}groups[k].push(q);});
-  const TLV=x=>x.origin==='summary'?0:(x.origin==='concept'?(x.level==='basic'?1:3):2);
-  const GT=g=>Math.min(...groups[g].map(TLV));
+  view.forEach(q=>{const k=q.part+'||'+(q.unit||q.topic);if(!groups[k]){groups[k]=[];gorder.push(k);}groups[k].push(q);});
+  // band: 학습(미리보기·개념·기본예제)=0, 족보=1, 2026자작=2
+  const BAND=x=>(x.origin==='preview'||x.origin==='summary'||(x.origin==='concept'&&x.level==='basic'))?0:(x.origin==='jokbo'?1:2);
+  const GB=g=>Math.min(...groups[g].map(BAND));
+  const GORD=g=>Math.min(...groups[g].map(x=>x.cardOrder!=null?x.cardOrder:99));
   gorder.sort((a,b)=>{
     const qa=groups[a][0],qb=groups[b][0];
     const pa=PARTORDER.indexOf(qa.part),pb=PARTORDER.indexOf(qb.part);
     if(pa!==pb)return pa-pb;
-    const ta=GT(a),tb=GT(b);if(ta!==tb)return ta-tb;  // 개념→기본예제→족보→2026자작
-    if(ta===0){const cn=g=>{const m=(groups[g][0].topic||'').match(/개념카드\s*(\d+)/);return m?+m[1]:999;};const ca=cn(a),cb=cn(b);if(ca!==cb)return ca-cb;return a<b?-1:1;}
+    const ba=GB(a),bb=GB(b);if(ba!==bb)return ba-bb;          // 학습→족보→자작
+    if(ba===0){const ca=GORD(a),cb=GORD(b);if(ca!==cb)return ca-cb;return a<b?-1:1;}  // 미리보기→카드순
     const fa=Math.max(...groups[a].map(x=>x.freq||0)),fb=Math.max(...groups[b].map(x=>x.freq||0));
-    return fb-fa;
+    return fb-fa;                                              // 족보·자작은 빈출순
   });
   // topbar + topic 바로가기 칩
   let h=`<div class="topbar"><h1>${FILTERS[ST.filter][0]} <span class="cnt">${view.length}개</span></h1>
@@ -429,7 +440,9 @@ function render(){
   if(!view.length){h+=`<div class="empty-card"><div style="font-size:42px">📭</div>해당 문항 없음</div>`;main.innerHTML=h;bindSearch();return;}
   gorder.forEach((k,gi)=>{
     const items=groups[k];const q0=items[0];const maxf=Math.max(...items.map(x=>x.freq||0));const nq=items.filter(NOSUM).length;
-    const LV=x=>x.origin==='summary'?0:(x.origin==='concept'?(x.level==='basic'?1:3):2);const ordered=[...items].sort((a,b)=>LV(a)-LV(b));
+    const LV=x=>x.origin==='preview'?-1:(x.origin==='summary'?0:(x.origin==='concept'?(x.level==='basic'?1:3):2));const ordered=[...items].sort((a,b)=>LV(a)-LV(b));
+    // 미리보기 단독 그룹은 헤더 없이 카드만
+    if(items.length===1&&q0.origin==='preview'){h+=`<div class="grp" id="grp${gi}">`+cardHtml(q0)+`</div>`;return;}
     h+=`<div class="grp" id="grp${gi}"><div class="grphd"><span class="pl" style="color:${PARTCOL[q0.part]}">${PARTLBL[q0.part]}</span><h2>${esc(q0.topic)}</h2>`;
     if(maxf>=2)h+=`<span class="pill pill-freq">🔴 ${maxf}회</span>`;
     h+=`<span class="pill pill-tag">${nq}문항</span></div>`;

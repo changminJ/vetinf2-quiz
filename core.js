@@ -1,56 +1,6 @@
 const CORE = [
 {
 "part": "Herpesviridae",
-"topic": "Aujeszky's disease (Pseudorabies)",
-"origin": "concept",
-"type": "single",
-"q": "A swine farm reports sudden deaths in 5-day-old suckling piglets showing tremors, convulsions, ataxia and circling. On a neighboring cattle premises, several cows are dying after frantically licking, rubbing and biting at their flanks. Both events are linked to the same agent. Which statement about this agent is most accurate?",
-"choices": [
-"It is caused by Suid herpesvirus 1, with pigs as the only reservoir species even though cattle, dogs and cats can be fatally infected",
-"Cattle serve as the reservoir host and pigs are incidental dead-end hosts",
-"The virus is readily shed in urine and feces, which is the main route of farm-to-farm spread",
-"Adult pigs typically show 100% mortality while piglets remain subclinical",
-"It belongs to the Gammaherpesvirinae and establishes latency in lymphocytes"
-],
-"answer": [
-1
-],
-"explain": "Aujeszky's disease (pseudorabies) is caused by Suid herpesvirus 1 (Alphaherpesvirinae); pigs are the only reservoir species although cattle, sheep/goats, dogs and cats can be infected (slide 300, 301). In non-pig species the hallmark is severe pruritus 'mad itch' with self-trauma, fatal within hours to 6 days in cattle (slide 306). Aujeszky's disease는 Suid herpesvirus 1이 원인이며 돼지가 유일한 reservoir, 타종(소·개·고양이 등)은 치명적이나 reservoir가 아님. ② 소가 reservoir라는 것은 틀림. ③ 바이러스는 urine·feces로는 배출되지 않음(slide 302). ④ 자돈에서 100% 폐사, 성돈은 흔히 불현성(slide 300, 304). ⑤ Alphaherpesvirinae이며 trigeminal ganglia에 잠복(slide 301).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 1
-},
-{
-"part": "Herpesviridae",
-"topic": "B virus disease (Cercopithecine herpesvirus 1)",
-"origin": "concept",
-"type": "single",
-"q": "A laboratory worker is bitten by a macaque and weeks later develops vesicular lesions at the bite site, then muscle weakness, persistent hiccups, severe headache, neck stiffness and ataxia. The source macaque had only mild oral vesicles. Which statement best characterizes this agent?",
-"choices": [
-"It is Cercopithecine herpesvirus 1, causing mild disease in macaques (its natural host) but highly pathogenic, potentially fatal infection in humans",
-"It is Ovine herpesvirus 2 transmitted from sheep to primate handlers",
-"Humans are the natural host and macaques are accidental dead-end hosts",
-"It produces severe disease in macaques but only subclinical infection in humans",
-"Transmission to humans requires arthropod vectors rather than bites or scratches"
-],
-"answer": [
-1
-],
-"explain": "B virus disease is caused by Cercopithecine herpesvirus 1; macaques are the natural host with only mild disease (vesicles on lips/tongue/oral mucosa), but it is a very important zoonosis that is highly pathogenic in humans, progressing from local vesicles/ulcers to muscle weakness, paralysis, persistent hiccups and severe neurological disease (slide 342). B virus disease는 Cercopithecine herpesvirus 1, 자연숙주 macaque에서는 경증이나 사람에서는 highly pathogenic·치명적. ② OvHV-2는 MCF 원인으로 무관(slide 289). ③ 자연숙주는 macaque이지 사람이 아님(slide 342). ④ 숙주별 중증도가 반대로 서술됨 — macaque 경증, human 중증(slide 342, 266). ⑤ 사람 전파는 bite·scratch 및 분비물 접촉이며 절지동물 매개가 아님(slide 342).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 3
-},
-{
-"part": "Herpesviridae",
 "topic": "BHV-1 carrier bull 검출(주관식)",
 "origin": "jokbo",
 "type": "short",
@@ -65,7 +15,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 4
+"unit": "",
+"cardOrder": 99,
+"id": 26
 },
 {
 "part": "Herpesviridae",
@@ -85,7 +37,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 5
+"unit": "",
+"cardOrder": 99,
+"id": 27
 },
 {
 "part": "Herpesviridae",
@@ -111,7 +65,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 6
+"unit": "",
+"cardOrder": 99,
+"id": 28
 },
 {
 "part": "Herpesviridae",
@@ -137,7 +93,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 7
+"unit": "",
+"cardOrder": 99,
+"id": 29
 },
 {
 "part": "Herpesviridae",
@@ -157,32 +115,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 8
-},
-{
-"part": "Herpesviridae",
-"topic": "Equine herpesvirus (EHV-1 vs EHV-4)",
-"origin": "concept",
-"type": "single",
-"q": "A pregnant mare aborts at 9 months of gestation with no prodromal signs; the fetus shows pulmonary edema, hepatic necrosis and petechial hemorrhages in myocardium, spleen and liver. Separately, weanling foals on the farm have fever, pharyngitis and serous nasal discharge. Which statement most accurately distinguishes the two equine herpesviruses involved?",
-"choices": [
-"EHV-1 has tropism for vascular endothelium causing placental vasculitis and abortion and can cause CNS disease, whereas EHV-4 infection is usually limited to the respiratory tract with uncommon viremia",
-"EHV-4 is the major cause of abortion because it has hemagglutinating activity",
-"Serological testing reliably distinguishes EHV-1 from EHV-4 in all cases",
-"EHV-1 lacks the ability to establish latency, unlike EHV-4",
-"Both viruses are gammaherpesviruses latent in lymphoid tissue only"
-],
-"answer": [
-1
-],
-"explain": "EHV-1 has tropism for vascular endothelial cells, causing placental vasculitis leading to abortion (one of the most important viral abortion causes in horses, usually after 7 months gestation) and CNS vasculitis/thrombosis; EHV-4 infection is usually limited to the respiratory tract with uncommon viremia (slide 314, 315). EHV-1은 혈관내피 친화성으로 placental vasculitis→유산 및 CNS 병변을 일으키고, EHV-4는 호흡기에 국한되며 viremia가 드묾. ② 유산의 주원인은 EHV-1이며 hemagglutinating activity는 EHV-1의 특성(slide 312). ③ 대부분의 serology는 항원 교차반응으로 EHV-1/EHV-4를 구별 못함; PCR이 구별 가능(slide 318). ④ 두 바이러스 모두 trigeminal ganglia에 latency를 형성(slide 314). ⑤ EHV-1·EHV-4는 alphaherpesvirus이며 신경절 잠복(slide 314).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 9
+"unit": "",
+"cardOrder": 99,
+"id": 30
 },
 {
 "part": "Herpesviridae",
@@ -208,7 +143,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 10
+"unit": "",
+"cardOrder": 99,
+"id": 31
 },
 {
 "part": "Herpesviridae",
@@ -234,7 +171,9 @@ const CORE = [
 "freq": 1,
 "flag": true,
 "flagReason": "현지연 교수 강의안에 Marek's disease(Gallid HV-2) 단독 슬라이드가 없어 세부 수치(치사율 80% 등)는 강의안으로 직접 검증 불가. 정답(D=육안병변 확인됨)은 일반 병리지식으로 판정. 강의안 보강 필요.",
-"id": 11
+"unit": "",
+"cardOrder": 99,
+"id": 32
 },
 {
 "part": "Herpesviridae",
@@ -260,107 +199,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 12
-},
-{
-"part": "Herpesviridae",
-"topic": "Herpesvirus species matching (sweep)",
-"origin": "concept",
-"type": "single",
-"q": "Match the herpesvirus to the disease it causes, based on the species-disease table. Which pairing is INCORRECT?",
-"choices": [
-"Equine herpesvirus 3 → fatal neonatal systemic disease with renal necrosis",
-"Feline herpesvirus 1 → feline viral rhinotracheitis with severe ocular disease",
-"Caprine herpesvirus 1 → BHV-1-like respiratory and genital disease in goats",
-"Cercopithecine herpesvirus 6/7/9 → simian varicella (chickenpox-like)",
-"Porcine cytomegalovirus → rhinitis/respiratory disease with high carrier rate in pigs"
-],
-"answer": [
-1
-],
-"explain": "Equine herpesvirus 3 causes equine COITAL EXANTHEMA — a sexually transmitted disease with genital papules/vesicles/ulcers that heal in ~2 weeks; fertility is not affected and there is NO abortion or infertility (slide 320). Fatal neonatal systemic disease with renal necrosis is canine herpesvirus 1 (slide 326, 331), so pairing ① is incorrect. ② FHV-1=feline viral rhinotracheitis로 심한 안질환 동반(slide 335, 299). ③ Caprine herpesvirus 1=goats의 BHV-1 유사 호흡기·생식기 질환(slide 325). ④ Cercopithecine herpesvirus 6/7/9=simian varicella, chickenpox 유사(slide 343). ⑤ Porcine cytomegalovirus=돼지 rhinitis·respiratory, 높은 carrier율(slide 310). 따라서 잘못된 짝은 ①.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 13
-},
-{
-"part": "Herpesviridae",
-"topic": "IBR / IPV (BHV-1) DIVA vaccine",
-"origin": "concept",
-"type": "single",
-"q": "A European cattle herd is enrolled in an eradication program for infectious bovine rhinotracheitis. The veterinarian needs a vaccine that allows serological differentiation of vaccinated from naturally infected animals (DIVA). Which vaccine design is most appropriate?",
-"choices": [
-"A gE-deleted (gE-negative) marker vaccine",
-"A whole-inactivated vaccine with full antigenic complement",
-"A combined IBR + PI-3 modified live vaccine",
-"A vaccine that prevents establishment of latency",
-"A thymidine kinase (TK)-enhanced live vaccine"
-],
-"answer": [
-1
-],
-"explain": "DIVA for BHV-1 uses gE-deleted marker vaccines: vaccinated animals lack antibodies to gE, so gE-antibody indicates natural infection, allowing differentiation; these were successfully used in European eradication programs (slide 279). DIVA는 gE-deleted marker vaccine으로 백신접종우(gE 항체 음성)와 자연감염우(gE 항체 양성)를 구별, 유럽 박멸프로그램에서 사용. ② 전항원 inactivated vaccine은 자연감염과 항체 구별 불가. ③ IBR+PI-3 combined MLV는 일반 예방용이지 DIVA 표지 기능이 없음(slide 278). ④ 어떤 BHV-1 백신도 latency를 막지 못함(slide 278). ⑤ TK는 약독화 표적으로 삭제(gE/TK 결손)되는 것이지 'TK 강화'는 틀린 표현(Aujeszky slide 309 참고).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 14
-},
-{
-"part": "Herpesviridae",
-"topic": "Malignant catarrhal fever (MCF, OvHV-2)",
-"origin": "concept",
-"type": "single",
-"q": "A cow develops sudden high fever, profuse foul-smelling nasal discharge, bilateral corneal opacity progressing toward blindness, erosive stomatitis and bloody diarrhea, and dies within a week. There is a sheep flock with young lambs on the same farm. Which statement best describes the pathogenesis of this disease?",
-"choices": [
-"Tissue damage is mainly immune-mediated through uncontrolled activation of cytotoxic CD8+ T cells and NK cells, producing widespread vasculitis",
-"Lesions result from direct cytolytic replication of the virus in vascular endothelium",
-"Cattle are the natural maintenance host and efficiently transmit the virus to sheep",
-"The agent is an alphaherpesvirus latent in the trigeminal ganglion",
-"Cattle infected by lambs become reservoir hosts that spread the virus to other cattle"
-],
-"answer": [
-1
-],
-"explain": "Sheep-associated MCF (OvHV-2) causes disease in which tissue damage is mainly immune-mediated, NOT direct viral cytopathic effect — uncontrolled CD8+ cytotoxic T lymphocyte and NK cell activation drives severe inflammation and widespread vasculitis (slide 292). MCF는 면역매개 손상이 핵심으로, CD8+ CTL·NK 세포의 조절 안 된 활성화가 광범위 vasculitis를 일으킴. ② 직접 cytolytic 효과가 아님이 강조됨(slide 292). ③ 자연숙주는 sheep(어린 lamb)이며 소는 자연숙주가 아님(slide 291). ④ MCF는 gammaherpesvirus(AHV-1, OvHV-2)이며 lymphotropic(slide 289). ⑤ 소·사슴은 dead-end host로 바이러스를 효과적으로 더 전파하지 않음(slide 291).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 16
-},
-{
-"part": "Herpesviridae",
-"topic": "Marek's disease virus (classification)",
-"origin": "concept",
-"type": "single",
-"q": "In the herpesvirus subfamily classification table, Marek's disease virus is grouped together with bovine herpesvirus 1, pseudorabies virus, herpes simplex virus and varicella-zoster virus. Based on this classification, which set of properties does Marek's disease virus share with that group?",
-"choices": [
-"Rapid replication (2-3 days), cytolytic infection, and latency in sensory neurons (Alphaherpesvirinae)",
-"Slow replication over 2-3 weeks with enlargement of infected cells (cytomegaly)",
-"Moderate replication (~1 week) with latency established in lymphoid tissues",
-"Latency primarily in lymphocytes, characteristic of betaherpesviruses",
-"Inability to establish latency of any kind"
-],
-"answer": [
-1
-],
-"explain": "The lecture classifies Marek's disease virus as an example of Alphaherpesvirinae, whose defining features are rapid replication (2-3 days), cytolytic infection, and establishment of latency in sensory neurons (slide 263). 강의안은 Marek's disease virus를 Alphaherpesvirinae 예시로 분류하며, 이 아과의 특징은 빠른 복제(2-3일)·cytolytic 감염·sensory neuron 잠복임. ② cytomegaly·2-3주 느린 복제는 Betaherpesvirinae(slide 263). ③ ~1주 moderate 복제·lymphoid tissue 잠복은 Gammaherpesvirinae(slide 263). ④ lymphocyte 잠복은 beta/gamma 특징. ⑤ 모든 herpesvirus는 latency를 형성함(slide 261). (주: 본 강의안은 Marek병의 림프종·신경병변 등 임상 세부는 다루지 않으므로 분류 기준으로만 판정.)",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 17
+"unit": "",
+"cardOrder": 99,
+"id": 33
 },
 {
 "part": "Herpesviridae",
@@ -386,7 +227,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 18
+"unit": "",
+"cardOrder": 99,
+"id": 34
 },
 {
 "part": "Herpesviridae",
@@ -412,7 +255,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 19
+"unit": "",
+"cardOrder": 99,
+"id": 35
 },
 {
 "part": "Herpesviridae",
@@ -431,7 +276,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 20
+"unit": "",
+"cardOrder": 99,
+"id": 36
 },
 {
 "part": "Herpesviridae",
@@ -460,7 +307,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 21
+"unit": "",
+"cardOrder": 99,
+"id": 37
 },
 {
 "part": "Herpesviridae",
@@ -486,7 +335,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 22
+"unit": "",
+"cardOrder": 99,
+"id": 38
 },
 {
 "part": "Herpesviridae",
@@ -515,7 +366,9 @@ const CORE = [
 "freq": 5,
 "flag": false,
 "flagReason": "",
-"id": 26
+"unit": "",
+"cardOrder": 99,
+"id": 39
 },
 {
 "part": "Herpesviridae",
@@ -544,7 +397,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 27
+"unit": "",
+"cardOrder": 99,
+"id": 40
 },
 {
 "part": "Herpesviridae",
@@ -573,7 +428,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 28
+"unit": "",
+"cardOrder": 99,
+"id": 41
 },
 {
 "part": "Herpesviridae",
@@ -598,7 +455,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 30
+"unit": "",
+"cardOrder": 99,
+"id": 42
 },
 {
 "part": "Herpesviridae",
@@ -616,7 +475,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 32
+"unit": "",
+"cardOrder": 99,
+"id": 43
 },
 {
 "part": "Herpesviridae",
@@ -636,7 +497,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 33
+"unit": "",
+"cardOrder": 99,
+"id": 44
 },
 {
 "part": "Herpesviridae",
@@ -664,7 +527,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 34
+"unit": "",
+"cardOrder": 99,
+"id": 45
 },
 {
 "part": "Herpesviridae",
@@ -682,32 +547,198 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 35
+"unit": "",
+"cardOrder": 99,
+"id": 46
 },
 {
-"part": "Poxviridae",
-"topic": "Capripoxvirus (sheeppox / goatpox / LSDV)",
+"part": "Herpesviridae",
+"topic": "Aujeszky's disease (Pseudorabies)",
 "origin": "concept",
 "type": "single",
-"q": "A goat develops fever, anorexia and generalized cutaneous pox lesions (papules, vesicles, pustules) on the face, ears and around the eyes, with pneumonia and conjunctivitis in severe cases. The diagnostic laboratory notes that this agent is serologically indistinguishable from sheeppox virus and lumpy skin disease virus. Which statement is most accurate?",
+"q": "A swine farm reports sudden deaths in 5-day-old suckling piglets showing tremors, convulsions, ataxia and circling. On a neighboring cattle premises, several cows are dying after frantically licking, rubbing and biting at their flanks. Both events are linked to the same agent. Which statement about this agent is most accurate?",
 "choices": [
-"All three viruses (goatpox, sheeppox, lumpy skin disease) belong to the genus Capripoxvirus and are closely related/serologically indistinguishable, so vaccination is available for control",
-"Goatpox virus is a parapoxvirus, unlike sheeppox virus which is a capripoxvirus",
-"The three viruses are easily separated serologically because they share little genetic similarity",
-"No vaccine is available for any capripoxvirus disease",
-"Goatpox lesions characteristically heal without any systemic signs and never involve the respiratory tract"
+"It is caused by Suid herpesvirus 1, with pigs as the only reservoir species even though cattle, dogs and cats can be fatally infected",
+"Cattle serve as the reservoir host and pigs are incidental dead-end hosts",
+"The virus is readily shed in urine and feces, which is the main route of farm-to-farm spread",
+"Adult pigs typically show 100% mortality while piglets remain subclinical",
+"It belongs to the Gammaherpesvirinae and establishes latency in lymphocytes"
 ],
 "answer": [
 1
 ],
-"explain": "Sheeppox virus, goatpox virus and lumpy skin disease virus are all genus Capripoxvirus, closely related (LSDV ~96% genetic similarity) and serologically/immunologically indistinguishable; vaccination is available for sheeppox & goatpox control (slide 397, 431, 436). 세 바이러스 모두 Capripoxvirus 속, 밀접하게 관련·혈청학적 구별 불가, 백신 사용 가능. ② goatpox virus는 capripoxvirus이지 parapoxvirus가 아님(slide 386, 431). ③ 높은 유전적 유사성으로 혈청학적 구별이 어려움(slide 397, 431). ④ sheeppox/goatpox는 vaccination available(slide 436). ⑤ goatpox는 fever·전신 증상 및 중증 시 pneumonia·conjunctivitis를 동반(slide 433).",
+"explain": "Aujeszky's disease (pseudorabies) is caused by Suid herpesvirus 1 (Alphaherpesvirinae); pigs are the only reservoir species although cattle, sheep/goats, dogs and cats can be infected (slide 300, 301). In non-pig species the hallmark is severe pruritus 'mad itch' with self-trauma, fatal within hours to 6 days in cattle (slide 306). Aujeszky's disease는 Suid herpesvirus 1이 원인이며 돼지가 유일한 reservoir, 타종(소·개·고양이 등)은 치명적이나 reservoir가 아님. ② 소가 reservoir라는 것은 틀림. ③ 바이러스는 urine·feces로는 배출되지 않음(slide 302). ④ 자돈에서 100% 폐사, 성돈은 흔히 불현성(slide 300, 304). ⑤ Alphaherpesvirinae이며 trigeminal ganglia에 잠복(slide 301).",
 "exam": "자작",
 "exams": [],
 "freq": 0,
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 37
+"unit": "",
+"cardOrder": 99,
+"id": 47
+},
+{
+"part": "Herpesviridae",
+"topic": "B virus disease (Cercopithecine herpesvirus 1)",
+"origin": "concept",
+"type": "single",
+"q": "A laboratory worker is bitten by a macaque and weeks later develops vesicular lesions at the bite site, then muscle weakness, persistent hiccups, severe headache, neck stiffness and ataxia. The source macaque had only mild oral vesicles. Which statement best characterizes this agent?",
+"choices": [
+"It is Cercopithecine herpesvirus 1, causing mild disease in macaques (its natural host) but highly pathogenic, potentially fatal infection in humans",
+"It is Ovine herpesvirus 2 transmitted from sheep to primate handlers",
+"Humans are the natural host and macaques are accidental dead-end hosts",
+"It produces severe disease in macaques but only subclinical infection in humans",
+"Transmission to humans requires arthropod vectors rather than bites or scratches"
+],
+"answer": [
+1
+],
+"explain": "B virus disease is caused by Cercopithecine herpesvirus 1; macaques are the natural host with only mild disease (vesicles on lips/tongue/oral mucosa), but it is a very important zoonosis that is highly pathogenic in humans, progressing from local vesicles/ulcers to muscle weakness, paralysis, persistent hiccups and severe neurological disease (slide 342). B virus disease는 Cercopithecine herpesvirus 1, 자연숙주 macaque에서는 경증이나 사람에서는 highly pathogenic·치명적. ② OvHV-2는 MCF 원인으로 무관(slide 289). ③ 자연숙주는 macaque이지 사람이 아님(slide 342). ④ 숙주별 중증도가 반대로 서술됨 — macaque 경증, human 중증(slide 342, 266). ⑤ 사람 전파는 bite·scratch 및 분비물 접촉이며 절지동물 매개가 아님(slide 342).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 48
+},
+{
+"part": "Herpesviridae",
+"topic": "Equine herpesvirus (EHV-1 vs EHV-4)",
+"origin": "concept",
+"type": "single",
+"q": "A pregnant mare aborts at 9 months of gestation with no prodromal signs; the fetus shows pulmonary edema, hepatic necrosis and petechial hemorrhages in myocardium, spleen and liver. Separately, weanling foals on the farm have fever, pharyngitis and serous nasal discharge. Which statement most accurately distinguishes the two equine herpesviruses involved?",
+"choices": [
+"EHV-1 has tropism for vascular endothelium causing placental vasculitis and abortion and can cause CNS disease, whereas EHV-4 infection is usually limited to the respiratory tract with uncommon viremia",
+"EHV-4 is the major cause of abortion because it has hemagglutinating activity",
+"Serological testing reliably distinguishes EHV-1 from EHV-4 in all cases",
+"EHV-1 lacks the ability to establish latency, unlike EHV-4",
+"Both viruses are gammaherpesviruses latent in lymphoid tissue only"
+],
+"answer": [
+1
+],
+"explain": "EHV-1 has tropism for vascular endothelial cells, causing placental vasculitis leading to abortion (one of the most important viral abortion causes in horses, usually after 7 months gestation) and CNS vasculitis/thrombosis; EHV-4 infection is usually limited to the respiratory tract with uncommon viremia (slide 314, 315). EHV-1은 혈관내피 친화성으로 placental vasculitis→유산 및 CNS 병변을 일으키고, EHV-4는 호흡기에 국한되며 viremia가 드묾. ② 유산의 주원인은 EHV-1이며 hemagglutinating activity는 EHV-1의 특성(slide 312). ③ 대부분의 serology는 항원 교차반응으로 EHV-1/EHV-4를 구별 못함; PCR이 구별 가능(slide 318). ④ 두 바이러스 모두 trigeminal ganglia에 latency를 형성(slide 314). ⑤ EHV-1·EHV-4는 alphaherpesvirus이며 신경절 잠복(slide 314).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 49
+},
+{
+"part": "Herpesviridae",
+"topic": "Herpesvirus species matching (sweep)",
+"origin": "concept",
+"type": "single",
+"q": "Match the herpesvirus to the disease it causes, based on the species-disease table. Which pairing is INCORRECT?",
+"choices": [
+"Equine herpesvirus 3 → fatal neonatal systemic disease with renal necrosis",
+"Feline herpesvirus 1 → feline viral rhinotracheitis with severe ocular disease",
+"Caprine herpesvirus 1 → BHV-1-like respiratory and genital disease in goats",
+"Cercopithecine herpesvirus 6/7/9 → simian varicella (chickenpox-like)",
+"Porcine cytomegalovirus → rhinitis/respiratory disease with high carrier rate in pigs"
+],
+"answer": [
+1
+],
+"explain": "Equine herpesvirus 3 causes equine COITAL EXANTHEMA — a sexually transmitted disease with genital papules/vesicles/ulcers that heal in ~2 weeks; fertility is not affected and there is NO abortion or infertility (slide 320). Fatal neonatal systemic disease with renal necrosis is canine herpesvirus 1 (slide 326, 331), so pairing ① is incorrect. ② FHV-1=feline viral rhinotracheitis로 심한 안질환 동반(slide 335, 299). ③ Caprine herpesvirus 1=goats의 BHV-1 유사 호흡기·생식기 질환(slide 325). ④ Cercopithecine herpesvirus 6/7/9=simian varicella, chickenpox 유사(slide 343). ⑤ Porcine cytomegalovirus=돼지 rhinitis·respiratory, 높은 carrier율(slide 310). 따라서 잘못된 짝은 ①.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 50
+},
+{
+"part": "Herpesviridae",
+"topic": "IBR / IPV (BHV-1) DIVA vaccine",
+"origin": "concept",
+"type": "single",
+"q": "A European cattle herd is enrolled in an eradication program for infectious bovine rhinotracheitis. The veterinarian needs a vaccine that allows serological differentiation of vaccinated from naturally infected animals (DIVA). Which vaccine design is most appropriate?",
+"choices": [
+"A gE-deleted (gE-negative) marker vaccine",
+"A whole-inactivated vaccine with full antigenic complement",
+"A combined IBR + PI-3 modified live vaccine",
+"A vaccine that prevents establishment of latency",
+"A thymidine kinase (TK)-enhanced live vaccine"
+],
+"answer": [
+1
+],
+"explain": "DIVA for BHV-1 uses gE-deleted marker vaccines: vaccinated animals lack antibodies to gE, so gE-antibody indicates natural infection, allowing differentiation; these were successfully used in European eradication programs (slide 279). DIVA는 gE-deleted marker vaccine으로 백신접종우(gE 항체 음성)와 자연감염우(gE 항체 양성)를 구별, 유럽 박멸프로그램에서 사용. ② 전항원 inactivated vaccine은 자연감염과 항체 구별 불가. ③ IBR+PI-3 combined MLV는 일반 예방용이지 DIVA 표지 기능이 없음(slide 278). ④ 어떤 BHV-1 백신도 latency를 막지 못함(slide 278). ⑤ TK는 약독화 표적으로 삭제(gE/TK 결손)되는 것이지 'TK 강화'는 틀린 표현(Aujeszky slide 309 참고).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 51
+},
+{
+"part": "Herpesviridae",
+"topic": "Malignant catarrhal fever (MCF, OvHV-2)",
+"origin": "concept",
+"type": "single",
+"q": "A cow develops sudden high fever, profuse foul-smelling nasal discharge, bilateral corneal opacity progressing toward blindness, erosive stomatitis and bloody diarrhea, and dies within a week. There is a sheep flock with young lambs on the same farm. Which statement best describes the pathogenesis of this disease?",
+"choices": [
+"Tissue damage is mainly immune-mediated through uncontrolled activation of cytotoxic CD8+ T cells and NK cells, producing widespread vasculitis",
+"Lesions result from direct cytolytic replication of the virus in vascular endothelium",
+"Cattle are the natural maintenance host and efficiently transmit the virus to sheep",
+"The agent is an alphaherpesvirus latent in the trigeminal ganglion",
+"Cattle infected by lambs become reservoir hosts that spread the virus to other cattle"
+],
+"answer": [
+1
+],
+"explain": "Sheep-associated MCF (OvHV-2) causes disease in which tissue damage is mainly immune-mediated, NOT direct viral cytopathic effect — uncontrolled CD8+ cytotoxic T lymphocyte and NK cell activation drives severe inflammation and widespread vasculitis (slide 292). MCF는 면역매개 손상이 핵심으로, CD8+ CTL·NK 세포의 조절 안 된 활성화가 광범위 vasculitis를 일으킴. ② 직접 cytolytic 효과가 아님이 강조됨(slide 292). ③ 자연숙주는 sheep(어린 lamb)이며 소는 자연숙주가 아님(slide 291). ④ MCF는 gammaherpesvirus(AHV-1, OvHV-2)이며 lymphotropic(slide 289). ⑤ 소·사슴은 dead-end host로 바이러스를 효과적으로 더 전파하지 않음(slide 291).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 52
+},
+{
+"part": "Herpesviridae",
+"topic": "Marek's disease virus (classification)",
+"origin": "concept",
+"type": "single",
+"q": "In the herpesvirus subfamily classification table, Marek's disease virus is grouped together with bovine herpesvirus 1, pseudorabies virus, herpes simplex virus and varicella-zoster virus. Based on this classification, which set of properties does Marek's disease virus share with that group?",
+"choices": [
+"Rapid replication (2-3 days), cytolytic infection, and latency in sensory neurons (Alphaherpesvirinae)",
+"Slow replication over 2-3 weeks with enlargement of infected cells (cytomegaly)",
+"Moderate replication (~1 week) with latency established in lymphoid tissues",
+"Latency primarily in lymphocytes, characteristic of betaherpesviruses",
+"Inability to establish latency of any kind"
+],
+"answer": [
+1
+],
+"explain": "The lecture classifies Marek's disease virus as an example of Alphaherpesvirinae, whose defining features are rapid replication (2-3 days), cytolytic infection, and establishment of latency in sensory neurons (slide 263). 강의안은 Marek's disease virus를 Alphaherpesvirinae 예시로 분류하며, 이 아과의 특징은 빠른 복제(2-3일)·cytolytic 감염·sensory neuron 잠복임. ② cytomegaly·2-3주 느린 복제는 Betaherpesvirinae(slide 263). ③ ~1주 moderate 복제·lymphoid tissue 잠복은 Gammaherpesvirinae(slide 263). ④ lymphocyte 잠복은 beta/gamma 특징. ⑤ 모든 herpesvirus는 latency를 형성함(slide 261). (주: 본 강의안은 Marek병의 림프종·신경병변 등 임상 세부는 다루지 않으므로 분류 기준으로만 판정.)",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 53
 },
 {
 "part": "Poxviridae",
@@ -732,7 +763,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 38
+"unit": "",
+"cardOrder": 99,
+"id": 75
 },
 {
 "part": "Poxviridae",
@@ -762,32 +795,9 @@ const CORE = [
 "freq": 5,
 "flag": false,
 "flagReason": "",
-"id": 40
-},
-{
-"part": "Poxviridae",
-"topic": "Cowpox vs Pseudocowpox",
-"origin": "concept",
-"type": "single",
-"q": "Two dairy herds report teat lesions. In herd A, cows have vesicles and pustules on teats and udder; wild rodents are the major reservoir, cats are frequently infected, and the agent is antigenically related to variola and vaccinia. In herd B, cows have horseshoe-shaped (ring-shaped) scabs on the teats with reinfection common, and milkers develop 'milker's nodules' on the fingers. Which pairing of genus is correct?",
-"choices": [
-"Herd A = Cowpox virus (Orthopoxvirus); Herd B = Pseudocowpox virus (Parapoxvirus)",
-"Herd A = Pseudocowpox virus (Parapoxvirus); Herd B = Cowpox virus (Orthopoxvirus)",
-"Both herds are infected with Cowpox virus (Orthopoxvirus)",
-"Herd A = Cowpox virus (Capripoxvirus); Herd B = Pseudocowpox virus (Orthopoxvirus)",
-"Both herds are infected with Pseudocowpox virus (Parapoxvirus)"
-],
-"answer": [
-1
-],
-"explain": "Cowpox virus is an Orthopoxvirus antigenically related to variola and vaccinia; wild rodents are the major reservoir, cats are frequently infected, and lesions are vesicles/pustules on teats and udder (slide 405, 406, 407). Pseudocowpox virus is a Parapoxvirus producing characteristic horseshoe-/ring-shaped scabs on teats, with frequent reinfection and 'milker's nodules' on human fingers/hands (slide 416, 417, 418). Herd A=Cowpox(Orthopoxvirus), Herd B=Pseudocowpox(Parapoxvirus). ②는 좌우가 뒤바뀜. ③ 두 농장이 서로 다른 속의 바이러스이므로 틀림. ④ cowpox는 Orthopoxvirus이지 Capripoxvirus가 아니고 pseudocowpox는 Parapoxvirus이지 Orthopoxvirus가 아님(slide 386). ⑤ herd A는 vesicle/pustule·설치류 reservoir·variola 관련으로 cowpox에 합치(slide 407).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 41
+"unit": "",
+"cardOrder": 99,
+"id": 76
 },
 {
 "part": "Poxviridae",
@@ -813,7 +823,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "①④⑤(dry/wet form, 치사율 1-2%)는 본 강의안에 기술 없음. 정답 ②(진드기 전파 오류)는 강의안 Slide 392(곤충·모기 기계적 전파) 근거로 확정 가능.",
-"id": 42
+"unit": "",
+"cardOrder": 99,
+"id": 77
 },
 {
 "part": "Poxviridae",
@@ -833,32 +845,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 43
-},
-{
-"part": "Poxviridae",
-"topic": "Lumpy skin disease vs Pseudo-LSD",
-"origin": "concept",
-"type": "single",
-"q": "A cow develops fever (>41°C), enlarged superficial lymph nodes and firm 0.5-5 cm skin nodules over the head, neck and udder; some nodules develop a necrotic central 'sit-fast' plug and heal with deep scars. The disease is a Class I notifiable disease in Korea, first reported there in 2023. Which statement best distinguishes this disease from its herpesviral mimic?",
-"choices": [
-"It is lumpy skin disease caused by a capripoxvirus with necrotic, scarring lesions, whereas pseudo-lumpy skin disease (BHV-2) is milder, self-limiting and heals without scarring",
-"It is caused by bovine herpesvirus 2 and the nodules typically heal without scarring within weeks",
-"Both diseases are caused by orthopoxviruses and are clinically identical",
-"Lumpy skin disease is milder than pseudo-lumpy skin disease and is not notifiable",
-"The causative virus replicates in the host-cell nucleus like other DNA viruses"
-],
-"answer": [
-1
-],
-"explain": "Lumpy skin disease (LSD) is caused by lumpy skin disease virus, a Capripoxvirus, with fever, skin nodules, necrotic 'sit-fast' centers and deep scarring; it is a Class I notifiable disease in Korea (first outbreak 2023) (slide 396, 400). It must be distinguished from pseudo-LSD (BHV-2), which is milder, self-limiting and heals WITHOUT scarring (slide 284, 283). LSD는 capripoxvirus가 원인이며 괴사·흉터성 병변, pseudo-LSD(BHV-2)는 더 경하고 자가제한적·무흉터. ② BHV-2/무흉터 치유는 pseudo-LSD 쪽 설명(slide 283). ③ LSD=Capripoxvirus, pseudo-LSD=herpesvirus(BHV-2)로 서로 다른 과(slide 284). ④ LSD가 더 심하고 한국 제1종 가축전염병(slide 396). ⑤ poxvirus는 대부분의 DNA virus와 달리 cytoplasm에서 복제함(slide 390).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 45
+"unit": "",
+"cardOrder": 99,
+"id": 78
 },
 {
 "part": "Poxviridae",
@@ -884,32 +873,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "①④⑤(Australia 도입·flesh-colored papule·imiquimod)는 본 강의안에 기술 없음. 정답 ②는 강의안 Slide 394(Molluscum=국소 keratinocyte 친화) 근거로 오류 확정 가능.",
-"id": 46
-},
-{
-"part": "Poxviridae",
-"topic": "Orf (contagious ecthyma) / parapoxvirus replication",
-"origin": "concept",
-"type": "single",
-"q": "A shepherd presents with painful targetoid nodules on the dorsal fingers after handling lambs that had proliferative crusty lesions around the mouth and lips. Which statement about the responsible agent is most accurate?",
-"choices": [
-"It is orf virus, a zoonotic parapoxvirus of sheep and goats; pox lesions progress papule -> vesicle -> pustule -> scab and the virus replicates in the cytoplasm",
-"It is a capripoxvirus that causes generalized fatal systemic disease in the shepherd",
-"Like all DNA viruses, it replicates in the host-cell nucleus",
-"It produces lifelong protective immunity, so reinfection of sheep does not occur",
-"It is an orthopoxvirus antigenically related to variola virus"
-],
-"answer": [
-1
-],
-"explain": "Orf (contagious ecthyma) is caused by orf virus, a Parapoxvirus, an important zoonotic disease of sheep and goats producing proliferative crusty lesions around the mouth/lips; human lesions on fingers show a characteristic targetoid appearance (slide 437, 439). As a poxvirus it replicates in the CYTOPLASM, and pox lesions follow papule->vesicle->pustule->scab (slide 390, 439). Orf=parapoxvirus, 인수공통, 세포질 복제. ② orf는 capripoxvirus가 아니라 parapoxvirus이며 보통 self-limiting(slide 437). ③ poxvirus는 nucleus가 아니라 cytoplasm에서 복제(slide 390). ④ orf는 reinfection possible, 면역이 오래가지 않음(slide 437). ⑤ variola와 항원적으로 관련된 것은 cowpox/vaccinia 같은 orthopoxvirus(slide 406)이지 orf가 아님.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 47
+"unit": "",
+"cardOrder": 99,
+"id": 79
 },
 {
 "part": "Poxviridae",
@@ -935,7 +901,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 48
+"unit": "",
+"cardOrder": 99,
+"id": 80
 },
 {
 "part": "Poxviridae",
@@ -961,32 +929,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 50
-},
-{
-"part": "Poxviridae",
-"topic": "Poxvirus replication & inclusion bodies",
-"origin": "concept",
-"type": "single",
-"q": "A veterinary student is asked why poxviruses are unusual among DNA viruses and how their lesions are confirmed histologically. Which combination of statements is correct?",
-"choices": [
-"Replication occurs mainly in the cytoplasm, and infected cells show intracytoplasmic inclusion bodies",
-"Replication occurs in the nucleus, and infected cells show intranuclear inclusion bodies",
-"Replication occurs in the cytoplasm, but diagnostic inclusions are intranuclear",
-"These small enveloped RNA viruses replicate in the cytoplasm without forming inclusions",
-"Replication is restricted to the nucleolus and produces no detectable inclusions"
-],
-"answer": [
-1
-],
-"explain": "Unlike most DNA viruses, poxviruses replicate mainly in the CYTOPLASM — viral enzymes carried in the virion initiate early mRNA synthesis and DNA replication is detected in the cytoplasm within ~2 hours (slide 390). Histologically, pox lesions show INTRACYTOPLASMIC inclusion bodies (e.g., LSD slide 402, feline cowpox eosinophilic intracytoplasmic inclusions slide 413, swinepox slide 428). 대부분의 DNA virus와 달리 poxvirus는 세포질에서 복제하며, 진단 봉입체는 intracytoplasmic임. ② poxvirus는 핵이 아니라 세포질에서 복제하고 봉입체도 세포질 내임(slide 390, 402). ③ 복제 위치는 맞으나 봉입체는 intranuclear가 아니라 intracytoplasmic임. ④ poxvirus는 RNA virus가 아니라 large enveloped dsDNA virus이며 봉입체를 형성함(slide 382, 387). ⑤ 핵소체 국한·무봉입체는 틀림(slide 390).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 53
+"unit": "",
+"cardOrder": 99,
+"id": 81
 },
 {
 "part": "Poxviridae",
@@ -1012,7 +957,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 54
+"unit": "",
+"cardOrder": 99,
+"id": 82
 },
 {
 "part": "Poxviridae",
@@ -1041,7 +988,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 55
+"unit": "",
+"cardOrder": 99,
+"id": 83
 },
 {
 "part": "Poxviridae",
@@ -1068,7 +1017,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 56
+"unit": "",
+"cardOrder": 99,
+"id": 84
 },
 {
 "part": "Poxviridae",
@@ -1094,7 +1045,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 57
+"unit": "",
+"cardOrder": 99,
+"id": 85
 },
 {
 "part": "Poxviridae",
@@ -1120,7 +1073,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 58
+"unit": "",
+"cardOrder": 99,
+"id": 86
 },
 {
 "part": "Poxviridae",
@@ -1146,7 +1101,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 59
+"unit": "",
+"cardOrder": 99,
+"id": 87
 },
 {
 "part": "Poxviridae",
@@ -1172,7 +1129,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 60
+"unit": "",
+"cardOrder": 99,
+"id": 88
 },
 {
 "part": "Poxviridae",
@@ -1192,7 +1151,9 @@ const CORE = [
 "freq": 3,
 "flag": true,
 "flagReason": "Q0625 족보 답안이 '타원형 규칙배열'을 일반 poxvirus 특징으로 잘못 서술. 강의안 Slide 387 기준 타원형·규칙적 표면은 Parapoxvirus의 특징이며 일반 poxvirus는 벽돌형·불규칙 배열이 옳음.",
-"id": 61
+"unit": "",
+"cardOrder": 99,
+"id": 89
 },
 {
 "part": "Poxviridae",
@@ -1218,7 +1179,144 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "①④(Yatapox/Tanapox 세부)는 본 강의안에 기술 없음. 정답 ③은 강의안 Slide 386 분류표(Swinepox=Suipoxvirus≠Capripoxvirus) 근거로 오류 확정 가능.",
-"id": 63
+"unit": "",
+"cardOrder": 99,
+"id": 90
+},
+{
+"part": "Poxviridae",
+"topic": "Capripoxvirus (sheeppox / goatpox / LSDV)",
+"origin": "concept",
+"type": "single",
+"q": "A goat develops fever, anorexia and generalized cutaneous pox lesions (papules, vesicles, pustules) on the face, ears and around the eyes, with pneumonia and conjunctivitis in severe cases. The diagnostic laboratory notes that this agent is serologically indistinguishable from sheeppox virus and lumpy skin disease virus. Which statement is most accurate?",
+"choices": [
+"All three viruses (goatpox, sheeppox, lumpy skin disease) belong to the genus Capripoxvirus and are closely related/serologically indistinguishable, so vaccination is available for control",
+"Goatpox virus is a parapoxvirus, unlike sheeppox virus which is a capripoxvirus",
+"The three viruses are easily separated serologically because they share little genetic similarity",
+"No vaccine is available for any capripoxvirus disease",
+"Goatpox lesions characteristically heal without any systemic signs and never involve the respiratory tract"
+],
+"answer": [
+1
+],
+"explain": "Sheeppox virus, goatpox virus and lumpy skin disease virus are all genus Capripoxvirus, closely related (LSDV ~96% genetic similarity) and serologically/immunologically indistinguishable; vaccination is available for sheeppox & goatpox control (slide 397, 431, 436). 세 바이러스 모두 Capripoxvirus 속, 밀접하게 관련·혈청학적 구별 불가, 백신 사용 가능. ② goatpox virus는 capripoxvirus이지 parapoxvirus가 아님(slide 386, 431). ③ 높은 유전적 유사성으로 혈청학적 구별이 어려움(slide 397, 431). ④ sheeppox/goatpox는 vaccination available(slide 436). ⑤ goatpox는 fever·전신 증상 및 중증 시 pneumonia·conjunctivitis를 동반(slide 433).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 91
+},
+{
+"part": "Poxviridae",
+"topic": "Cowpox vs Pseudocowpox",
+"origin": "concept",
+"type": "single",
+"q": "Two dairy herds report teat lesions. In herd A, cows have vesicles and pustules on teats and udder; wild rodents are the major reservoir, cats are frequently infected, and the agent is antigenically related to variola and vaccinia. In herd B, cows have horseshoe-shaped (ring-shaped) scabs on the teats with reinfection common, and milkers develop 'milker's nodules' on the fingers. Which pairing of genus is correct?",
+"choices": [
+"Herd A = Cowpox virus (Orthopoxvirus); Herd B = Pseudocowpox virus (Parapoxvirus)",
+"Herd A = Pseudocowpox virus (Parapoxvirus); Herd B = Cowpox virus (Orthopoxvirus)",
+"Both herds are infected with Cowpox virus (Orthopoxvirus)",
+"Herd A = Cowpox virus (Capripoxvirus); Herd B = Pseudocowpox virus (Orthopoxvirus)",
+"Both herds are infected with Pseudocowpox virus (Parapoxvirus)"
+],
+"answer": [
+1
+],
+"explain": "Cowpox virus is an Orthopoxvirus antigenically related to variola and vaccinia; wild rodents are the major reservoir, cats are frequently infected, and lesions are vesicles/pustules on teats and udder (slide 405, 406, 407). Pseudocowpox virus is a Parapoxvirus producing characteristic horseshoe-/ring-shaped scabs on teats, with frequent reinfection and 'milker's nodules' on human fingers/hands (slide 416, 417, 418). Herd A=Cowpox(Orthopoxvirus), Herd B=Pseudocowpox(Parapoxvirus). ②는 좌우가 뒤바뀜. ③ 두 농장이 서로 다른 속의 바이러스이므로 틀림. ④ cowpox는 Orthopoxvirus이지 Capripoxvirus가 아니고 pseudocowpox는 Parapoxvirus이지 Orthopoxvirus가 아님(slide 386). ⑤ herd A는 vesicle/pustule·설치류 reservoir·variola 관련으로 cowpox에 합치(slide 407).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 92
+},
+{
+"part": "Poxviridae",
+"topic": "Lumpy skin disease vs Pseudo-LSD",
+"origin": "concept",
+"type": "single",
+"q": "A cow develops fever (>41°C), enlarged superficial lymph nodes and firm 0.5-5 cm skin nodules over the head, neck and udder; some nodules develop a necrotic central 'sit-fast' plug and heal with deep scars. The disease is a Class I notifiable disease in Korea, first reported there in 2023. Which statement best distinguishes this disease from its herpesviral mimic?",
+"choices": [
+"It is lumpy skin disease caused by a capripoxvirus with necrotic, scarring lesions, whereas pseudo-lumpy skin disease (BHV-2) is milder, self-limiting and heals without scarring",
+"It is caused by bovine herpesvirus 2 and the nodules typically heal without scarring within weeks",
+"Both diseases are caused by orthopoxviruses and are clinically identical",
+"Lumpy skin disease is milder than pseudo-lumpy skin disease and is not notifiable",
+"The causative virus replicates in the host-cell nucleus like other DNA viruses"
+],
+"answer": [
+1
+],
+"explain": "Lumpy skin disease (LSD) is caused by lumpy skin disease virus, a Capripoxvirus, with fever, skin nodules, necrotic 'sit-fast' centers and deep scarring; it is a Class I notifiable disease in Korea (first outbreak 2023) (slide 396, 400). It must be distinguished from pseudo-LSD (BHV-2), which is milder, self-limiting and heals WITHOUT scarring (slide 284, 283). LSD는 capripoxvirus가 원인이며 괴사·흉터성 병변, pseudo-LSD(BHV-2)는 더 경하고 자가제한적·무흉터. ② BHV-2/무흉터 치유는 pseudo-LSD 쪽 설명(slide 283). ③ LSD=Capripoxvirus, pseudo-LSD=herpesvirus(BHV-2)로 서로 다른 과(slide 284). ④ LSD가 더 심하고 한국 제1종 가축전염병(slide 396). ⑤ poxvirus는 대부분의 DNA virus와 달리 cytoplasm에서 복제함(slide 390).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 93
+},
+{
+"part": "Poxviridae",
+"topic": "Orf (contagious ecthyma) / parapoxvirus replication",
+"origin": "concept",
+"type": "single",
+"q": "A shepherd presents with painful targetoid nodules on the dorsal fingers after handling lambs that had proliferative crusty lesions around the mouth and lips. Which statement about the responsible agent is most accurate?",
+"choices": [
+"It is orf virus, a zoonotic parapoxvirus of sheep and goats; pox lesions progress papule -> vesicle -> pustule -> scab and the virus replicates in the cytoplasm",
+"It is a capripoxvirus that causes generalized fatal systemic disease in the shepherd",
+"Like all DNA viruses, it replicates in the host-cell nucleus",
+"It produces lifelong protective immunity, so reinfection of sheep does not occur",
+"It is an orthopoxvirus antigenically related to variola virus"
+],
+"answer": [
+1
+],
+"explain": "Orf (contagious ecthyma) is caused by orf virus, a Parapoxvirus, an important zoonotic disease of sheep and goats producing proliferative crusty lesions around the mouth/lips; human lesions on fingers show a characteristic targetoid appearance (slide 437, 439). As a poxvirus it replicates in the CYTOPLASM, and pox lesions follow papule->vesicle->pustule->scab (slide 390, 439). Orf=parapoxvirus, 인수공통, 세포질 복제. ② orf는 capripoxvirus가 아니라 parapoxvirus이며 보통 self-limiting(slide 437). ③ poxvirus는 nucleus가 아니라 cytoplasm에서 복제(slide 390). ④ orf는 reinfection possible, 면역이 오래가지 않음(slide 437). ⑤ variola와 항원적으로 관련된 것은 cowpox/vaccinia 같은 orthopoxvirus(slide 406)이지 orf가 아님.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 94
+},
+{
+"part": "Poxviridae",
+"topic": "Poxvirus replication & inclusion bodies",
+"origin": "concept",
+"type": "single",
+"q": "A veterinary student is asked why poxviruses are unusual among DNA viruses and how their lesions are confirmed histologically. Which combination of statements is correct?",
+"choices": [
+"Replication occurs mainly in the cytoplasm, and infected cells show intracytoplasmic inclusion bodies",
+"Replication occurs in the nucleus, and infected cells show intranuclear inclusion bodies",
+"Replication occurs in the cytoplasm, but diagnostic inclusions are intranuclear",
+"These small enveloped RNA viruses replicate in the cytoplasm without forming inclusions",
+"Replication is restricted to the nucleolus and produces no detectable inclusions"
+],
+"answer": [
+1
+],
+"explain": "Unlike most DNA viruses, poxviruses replicate mainly in the CYTOPLASM — viral enzymes carried in the virion initiate early mRNA synthesis and DNA replication is detected in the cytoplasm within ~2 hours (slide 390). Histologically, pox lesions show INTRACYTOPLASMIC inclusion bodies (e.g., LSD slide 402, feline cowpox eosinophilic intracytoplasmic inclusions slide 413, swinepox slide 428). 대부분의 DNA virus와 달리 poxvirus는 세포질에서 복제하며, 진단 봉입체는 intracytoplasmic임. ② poxvirus는 핵이 아니라 세포질에서 복제하고 봉입체도 세포질 내임(slide 390, 402). ③ 복제 위치는 맞으나 봉입체는 intranuclear가 아니라 intracytoplasmic임. ④ poxvirus는 RNA virus가 아니라 large enveloped dsDNA virus이며 봉입체를 형성함(slide 382, 387). ⑤ 핵소체 국한·무봉입체는 틀림(slide 390).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 95
 },
 {
 "part": "Picornaviridae",
@@ -1243,57 +1341,9 @@ const CORE = [
 "freq": 1,
 "flag": true,
 "flagReason": "③(자돈vs성돈 증상 구분)이 강의안 슬라이드372 근거로 명확한 오답·정답이나, 선지 ①(돼지용 백신 유무)·④(Mulberry disease 육안감별)는 강의안에 직접 근거가 없어 독립 판정 불가. 족보 정답 ③과는 일치.",
-"id": 65
-},
-{
-"part": "Picornaviridae",
-"topic": "FMD control",
-"origin": "concept",
-"type": "single",
-"q": "FMD (serotype O) is confirmed on a pig farm in Korea, a country that has been pursuing an FMD-free status. As FMD is a WOAH List A and Class I notifiable disease, which measure is the most appropriate cornerstone of the official control response?",
-"choices": [
-"Stamping out (culling) infected and in-contact animals with movement restriction and disinfection",
-"Treating affected animals with antiviral drugs until recovery",
-"Allowing recovered carriers to move freely once fever resolves",
-"Relying solely on a single multivalent vaccine for lifelong herd immunity",
-"Ignoring the outbreak because pigs shed only minimal virus"
-],
-"answer": [
-1
-],
-"explain": "FMD prevention and control centers on strict quarantine, movement restriction, stamping out, and disinfection (강의안 Picornaviridae slide 356 Prevention & Control). FMD 통제의 핵심은 살처분(stamping out)·이동제한·소독이다. Vaccination은 serotype-specific이고 면역이 ~6개월에 그치며 접종 동물도 carrier가 될 수 있어 단독으로 충분치 않다. Pigs는 massive shedding을 일으키므로(slide 351) 무시할 수 없어 나머지 선지는 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 66
-},
-{
-"part": "Picornaviridae",
-"topic": "FMD differential diagnosis",
-"origin": "concept",
-"type": "single",
-"q": "Pigs on a farm show snout and foot vesicles with lameness. FMD is suspected but RT-PCR and antigen ELISA rule out FMDV. The lesions are reported as clinically indistinguishable from FMD and the agent is antigenically related to human Coxsackievirus B5. Which is the most likely diagnosis?",
-"choices": [
-"Swine vesicular disease",
-"Encephalomyocarditis",
-"Teschovirus encephalomyelitis",
-"Bovine ephemeral fever",
-"Sacbrood disease"
-],
-"answer": [
-1
-],
-"explain": "Among FMD differentials (vesicular stomatitis, swine vesicular disease, vesicular exanthema of swine, Senecavirus), only swine vesicular disease is described as clinically indistinguishable from FMD AND antigenically related to human Coxsackievirus B5 (강의안 Picornaviridae slide 355 Differential Diagnosis; slides 357-358 SVD Overview/Agent). EMC·Teschovirus는 수포가 아닌 심근/신경 질환, BEF는 소, Sacbrood는 꿀벌이라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 67
+"unit": "",
+"cardOrder": 99,
+"id": 109
 },
 {
 "part": "Picornaviridae",
@@ -1311,7 +1361,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 68
+"unit": "",
+"cardOrder": 99,
+"id": 110
 },
 {
 "part": "Picornaviridae",
@@ -1336,7 +1388,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 69
+"unit": "",
+"cardOrder": 99,
+"id": 111
 },
 {
 "part": "Picornaviridae",
@@ -1357,7 +1411,9 @@ const CORE = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 71
+"unit": "",
+"cardOrder": 99,
+"id": 112
 },
 {
 "part": "Picornaviridae",
@@ -1377,7 +1433,63 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 72
+"unit": "",
+"cardOrder": 99,
+"id": 113
+},
+{
+"part": "Picornaviridae",
+"topic": "FMD control",
+"origin": "concept",
+"type": "single",
+"q": "FMD (serotype O) is confirmed on a pig farm in Korea, a country that has been pursuing an FMD-free status. As FMD is a WOAH List A and Class I notifiable disease, which measure is the most appropriate cornerstone of the official control response?",
+"choices": [
+"Stamping out (culling) infected and in-contact animals with movement restriction and disinfection",
+"Treating affected animals with antiviral drugs until recovery",
+"Allowing recovered carriers to move freely once fever resolves",
+"Relying solely on a single multivalent vaccine for lifelong herd immunity",
+"Ignoring the outbreak because pigs shed only minimal virus"
+],
+"answer": [
+1
+],
+"explain": "FMD prevention and control centers on strict quarantine, movement restriction, stamping out, and disinfection (강의안 Picornaviridae slide 356 Prevention & Control). FMD 통제의 핵심은 살처분(stamping out)·이동제한·소독이다. Vaccination은 serotype-specific이고 면역이 ~6개월에 그치며 접종 동물도 carrier가 될 수 있어 단독으로 충분치 않다. Pigs는 massive shedding을 일으키므로(slide 351) 무시할 수 없어 나머지 선지는 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 114
+},
+{
+"part": "Picornaviridae",
+"topic": "FMD differential diagnosis",
+"origin": "concept",
+"type": "single",
+"q": "Pigs on a farm show snout and foot vesicles with lameness. FMD is suspected but RT-PCR and antigen ELISA rule out FMDV. The lesions are reported as clinically indistinguishable from FMD and the agent is antigenically related to human Coxsackievirus B5. Which is the most likely diagnosis?",
+"choices": [
+"Swine vesicular disease",
+"Encephalomyocarditis",
+"Teschovirus encephalomyelitis",
+"Bovine ephemeral fever",
+"Sacbrood disease"
+],
+"answer": [
+1
+],
+"explain": "Among FMD differentials (vesicular stomatitis, swine vesicular disease, vesicular exanthema of swine, Senecavirus), only swine vesicular disease is described as clinically indistinguishable from FMD AND antigenically related to human Coxsackievirus B5 (강의안 Picornaviridae slide 355 Differential Diagnosis; slides 357-358 SVD Overview/Agent). EMC·Teschovirus는 수포가 아닌 심근/신경 질환, BEF는 소, Sacbrood는 꿀벌이라 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 115
 },
 {
 "part": "Picornaviridae",
@@ -1402,7 +1514,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 74
+"unit": "",
+"cardOrder": 99,
+"id": 116
 },
 {
 "part": "Picornaviridae",
@@ -1427,7 +1541,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 75
+"unit": "",
+"cardOrder": 99,
+"id": 117
 },
 {
 "part": "Picornaviridae",
@@ -1452,7 +1568,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 76
+"unit": "",
+"cardOrder": 99,
+"id": 118
 },
 {
 "part": "Arteriviridae",
@@ -1470,107 +1588,9 @@ const CORE = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 모범답안의 '모체이행항체(mAb)로 인한 vaccine failure 방지 위해 6-8개월령 접종' 내용은 본 Arteriviridae 강의안에 근거 없음(강의안은 사전검사·정액검사·carrier 제한·ARVAC MLV·연1회 재접종만 기술). 강의안 외 지식이라 만들지 않고 flag.",
-"id": 82
-},
-{
-"part": "Arteriviridae",
-"topic": "Equine Viral Arteritis (EVA)",
-"origin": "concept",
-"type": "single",
-"q": "On a breeding farm, an outbreak of abortion and respiratory disease in horses is traced to a clinically normal stallion that continuously sheds equine arteritis virus in semen, infecting mares at breeding. Which statement best explains the persistent carrier state of EVA?",
-"choices": [
-"The carrier state is androgen-dependent, occurring in stallions but not in mares, geldings, or immature males",
-"Both mares and geldings are the main long-term carriers of EAV",
-"Carriers shed virus only through feces, not semen",
-"The carrier state is identical to FMDV carriers in cattle lasting 3 years",
-"EAV cannot establish persistent infection in any horse"
-],
-"answer": [
-1
-],
-"explain": "In EVA, some stallions become long-term carriers; the virus persists in the reproductive tract and is shed continuously in semen, driving venereal transmission via natural breeding or artificial insemination. The carrier state is androgen-dependent and is NOT seen in mares, geldings, or immature males (강의안 Arteriviridae slides 165, 168, 172). 따라서 androgen 의존적 stallion carrier가 핵심. 암말/거세마 carrier, 분변 배출 등은 사실과 달라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 83
-},
-{
-"part": "Arteriviridae",
-"topic": "PRRS case",
-"origin": "concept",
-"type": "single",
-"q": "A swine herd shows late-term abortions, stillbirths, and weak-born piglets in sows, while nursery pigs have fever, dyspnea, and increased mortality; a few pigs show \"blue ear\" cyanosis. The agent infects porcine alveolar macrophages and predisposes to secondary infections. Which agent and pathogenesis best fit?",
-"choices": [
-"PRRSV entering alveolar macrophages via the CD163 receptor, causing macrophage destruction and immune suppression",
-"FMD virus replicating in pharyngeal epithelium causing vesicles",
-"Rotavirus infecting villus enterocytes causing diarrhea",
-"Rabies virus traveling by retrograde axonal transport to the CNS",
-"Bluetongue virus targeting endothelial cells via Culicoides bite"
-],
-"answer": [
-1
-],
-"explain": "PRRSV (Arteriviridae) infects porcine alveolar macrophages (PAMs) via the CD163 receptor; macrophage destruction causes immune suppression, easy secondary infections, interstitial pneumonia, persistent infection, and reproductive disorders. Sows show late-term abortion/stillbirth/weak piglets; piglets/growers show fever, dyspnea, increased mortality, with \"blue ear\" cyanosis as a characteristic sign (강의안 Arteriviridae slides 147, 153, 159). 따라서 PAM/CD163가 핵심. 나머지는 다른 병원체의 기전이라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 84
-},
-{
-"part": "Arteriviridae",
-"topic": "PRRSV EU/NA strains",
-"origin": "concept",
-"type": "single",
-"q": "A herd is found to be co-infected with PRRSV-1 (European type) and PRRSV-2 (North American type). The veterinarian notes the two types differ by about 40% of their genome. Which statement most accurately describes the consequence for vaccination?",
-"choices": [
-"The large genetic divergence and limited cross-protection make a vaccine against one type poorly protective against the other",
-"PRRSV-1 and PRRSV-2 are antigenically identical, so any vaccine fully protects against both",
-"There is only one PRRSV genotype, so co-infection is impossible",
-"Killed vaccines guarantee sterilizing immunity against all lineages",
-"Cross-protection between types is complete because they share ORF5"
-],
-"answer": [
-1
-],
-"explain": "PRRSV-1 (EU) and PRRSV-2 (NA) differ by ~40% of the genome, and PRRSV has an extremely high mutation rate with frequent recombination. A major control challenge is its high genetic diversity and limited cross-protection, so a vaccine matched to one type/lineage protects poorly against divergent strains (강의안 Arteriviridae slides 148, 164). 따라서 큰 유전적 차이→교차방어 제한이 핵심. 동일항원·단일유전형·완전방어 주장은 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 87
-},
-{
-"part": "Arteriviridae",
-"topic": "PRRSV diagnosis ORF5/ORF7",
-"origin": "concept",
-"type": "single",
-"q": "A diagnostic lab confirms PRRSV by RT-PCR and then sequences a specific genomic region to assign the field strain to a lineage and compare it with vaccine strains for a herd's molecular epidemiology. Which region is mainly used for this PRRSV genetic classification?",
-"choices": [
-"ORF5 (encoding GP5), the basis for PRRSV phylogenetic/lineage analysis",
-"ORF1a only, because it encodes the structural proteins",
-"The 3' poly(A) tail, which determines serotype",
-"The CD163 receptor gene of the host",
-"ORF4, because GP4 forms the nucleocapsid"
-],
-"answer": [
-1
-],
-"explain": "PRRSV genetic classification is based mainly on ORF5 phylogenetic analysis (ORF5 encodes GP5); PRRSV-1 has subtypes/clades and PRRSV-2 has lineages/sublineages defined this way (강의안 Arteriviridae slides 149, 152). Diagnosis uses RT-PCR (most common) plus sequencing for lineage analysis (slide 163). ORF1a/1b는 non-structural protein을 암호화하고, N protein이 nucleocapsid를 형성하므로 나머지 선지는 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 88
+"unit": "",
+"cardOrder": 99,
+"id": 132
 },
 {
 "part": "Arteriviridae",
@@ -1588,7 +1608,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 89
+"unit": "",
+"cardOrder": 99,
+"id": 133
 },
 {
 "part": "Arteriviridae",
@@ -1613,7 +1635,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 90
+"unit": "",
+"cardOrder": 99,
+"id": 134
 },
 {
 "part": "Arteriviridae",
@@ -1640,7 +1664,158 @@ const CORE = [
 "freq": 3,
 "flag": true,
 "flagReason": "시험답은 ①PRRS(미보고)이나 본 강의안 slide147은 PRRS를 WOAH-등재로 명시 → 강의안과 모순. 황성수 총론 기준 출제로 추정. 시험답 ①로 외우되 강의안 모순 인지.",
-"id": 91
+"unit": "",
+"cardOrder": 99,
+"id": 135
+},
+{
+"part": "Arteriviridae",
+"topic": "Equine Viral Arteritis (EVA)",
+"origin": "concept",
+"type": "single",
+"q": "On a breeding farm, an outbreak of abortion and respiratory disease in horses is traced to a clinically normal stallion that continuously sheds equine arteritis virus in semen, infecting mares at breeding. Which statement best explains the persistent carrier state of EVA?",
+"choices": [
+"The carrier state is androgen-dependent, occurring in stallions but not in mares, geldings, or immature males",
+"Both mares and geldings are the main long-term carriers of EAV",
+"Carriers shed virus only through feces, not semen",
+"The carrier state is identical to FMDV carriers in cattle lasting 3 years",
+"EAV cannot establish persistent infection in any horse"
+],
+"answer": [
+1
+],
+"explain": "In EVA, some stallions become long-term carriers; the virus persists in the reproductive tract and is shed continuously in semen, driving venereal transmission via natural breeding or artificial insemination. The carrier state is androgen-dependent and is NOT seen in mares, geldings, or immature males (강의안 Arteriviridae slides 165, 168, 172). 따라서 androgen 의존적 stallion carrier가 핵심. 암말/거세마 carrier, 분변 배출 등은 사실과 달라 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 136
+},
+{
+"part": "Arteriviridae",
+"topic": "PRRS case",
+"origin": "concept",
+"type": "single",
+"q": "A swine herd shows late-term abortions, stillbirths, and weak-born piglets in sows, while nursery pigs have fever, dyspnea, and increased mortality; a few pigs show \"blue ear\" cyanosis. The agent infects porcine alveolar macrophages and predisposes to secondary infections. Which agent and pathogenesis best fit?",
+"choices": [
+"PRRSV entering alveolar macrophages via the CD163 receptor, causing macrophage destruction and immune suppression",
+"FMD virus replicating in pharyngeal epithelium causing vesicles",
+"Rotavirus infecting villus enterocytes causing diarrhea",
+"Rabies virus traveling by retrograde axonal transport to the CNS",
+"Bluetongue virus targeting endothelial cells via Culicoides bite"
+],
+"answer": [
+1
+],
+"explain": "PRRSV (Arteriviridae) infects porcine alveolar macrophages (PAMs) via the CD163 receptor; macrophage destruction causes immune suppression, easy secondary infections, interstitial pneumonia, persistent infection, and reproductive disorders. Sows show late-term abortion/stillbirth/weak piglets; piglets/growers show fever, dyspnea, increased mortality, with \"blue ear\" cyanosis as a characteristic sign (강의안 Arteriviridae slides 147, 153, 159). 따라서 PAM/CD163가 핵심. 나머지는 다른 병원체의 기전이라 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 137
+},
+{
+"part": "Arteriviridae",
+"topic": "PRRSV EU/NA strains",
+"origin": "concept",
+"type": "single",
+"q": "A herd is found to be co-infected with PRRSV-1 (European type) and PRRSV-2 (North American type). The veterinarian notes the two types differ by about 40% of their genome. Which statement most accurately describes the consequence for vaccination?",
+"choices": [
+"The large genetic divergence and limited cross-protection make a vaccine against one type poorly protective against the other",
+"PRRSV-1 and PRRSV-2 are antigenically identical, so any vaccine fully protects against both",
+"There is only one PRRSV genotype, so co-infection is impossible",
+"Killed vaccines guarantee sterilizing immunity against all lineages",
+"Cross-protection between types is complete because they share ORF5"
+],
+"answer": [
+1
+],
+"explain": "PRRSV-1 (EU) and PRRSV-2 (NA) differ by ~40% of the genome, and PRRSV has an extremely high mutation rate with frequent recombination. A major control challenge is its high genetic diversity and limited cross-protection, so a vaccine matched to one type/lineage protects poorly against divergent strains (강의안 Arteriviridae slides 148, 164). 따라서 큰 유전적 차이→교차방어 제한이 핵심. 동일항원·단일유전형·완전방어 주장은 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 138
+},
+{
+"part": "Arteriviridae",
+"topic": "PRRSV diagnosis ORF5/ORF7",
+"origin": "concept",
+"type": "single",
+"q": "A diagnostic lab confirms PRRSV by RT-PCR and then sequences a specific genomic region to assign the field strain to a lineage and compare it with vaccine strains for a herd's molecular epidemiology. Which region is mainly used for this PRRSV genetic classification?",
+"choices": [
+"ORF5 (encoding GP5), the basis for PRRSV phylogenetic/lineage analysis",
+"ORF1a only, because it encodes the structural proteins",
+"The 3' poly(A) tail, which determines serotype",
+"The CD163 receptor gene of the host",
+"ORF4, because GP4 forms the nucleocapsid"
+],
+"answer": [
+1
+],
+"explain": "PRRSV genetic classification is based mainly on ORF5 phylogenetic analysis (ORF5 encodes GP5); PRRSV-1 has subtypes/clades and PRRSV-2 has lineages/sublineages defined this way (강의안 Arteriviridae slides 149, 152). Diagnosis uses RT-PCR (most common) plus sequencing for lineage analysis (slide 163). ORF1a/1b는 non-structural protein을 암호화하고, N protein이 nucleocapsid를 형성하므로 나머지 선지는 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 139
+},
+{
+"part": "Caliciviridae",
+"topic": "FCV 감별진단 병원체(FHV-1)",
+"origin": "jokbo",
+"type": "short",
+"q": "고양이 calicivirus(FCV)의 임상증상과 감별진단해야 하는 병원체(바이러스)는?",
+"choices": [],
+"answer": [],
+"explain": "[정답] 🔴Feline herpesvirus-1(FHV-1) — feline viral rhinotracheitis의 원인체.\n\n[해설] FCV 감염은 임상적으로 FHV-1에 의한 feline viral rhinotracheitis와 매우 유사해(상부호흡기 증상·결막염·구강병변) 임상만으로 구별이 어렵다. 중요한 임상 단서는 '구강궤양(oral ulcer)이 FCV에서 더 전형적'이라는 점이지만, FHV-1 감염에서도 구강궤양이 나타날 수 있고 혼합감염도 가능해 확진에는 실험실 진단(virus isolation, RT-PCR, 혈청검사)이 필요하다.\n\n근거: 강의안 슬라이드 244 'FCV resembles feline viral rhinotracheitis caused by FHV-1; oral ulcers are more typical of FCV but may also occur in FHV-1; mixed infections can occur'. 슬라이드 248(FCV 백신이 FHV-1·FPV와 혼합되는 점도 두 병원체가 함께 다뤄짐을 보여줌).\n\n[족보 답안 비교] 2024(#47·#49) 족보 답안 'feline herpesvirus 1과 유사/감별'로 정확(✓). 단 #47 답안에 포함된 '성체에서 높은 폐사율, 황달'은 classic FCV가 아니라 고병원성 전신형(VS-FCVD)·중증 사례에 해당하므로 일반 FCV 감별 맥락과 구분 필요.",
+"exam": "2024-기말",
+"exams": [
+"2024-기말"
+],
+"freq": 2,
+"flag": false,
+"flagReason": "Q0682(2024#47)·Q0684(2024#49) 동일 주제(FHV-1 감별) 병합.",
+"unit": "",
+"cardOrder": 99,
+"id": 145
+},
+{
+"part": "Caliciviridae",
+"topic": "FCV 임상증상(구강궤양·상부호흡기)",
+"origin": "jokbo",
+"type": "essay",
+"q": "Feline calicivirus(FCV) 감염 결과 유발되는 임상증상을 서술하시오.",
+"choices": [],
+"answer": [],
+"explain": "[모범답안] 🔴구강궤양(혀·경구개에 수포가 형성된 뒤 파열되어 궤양으로 진행)이 가장 특징적이다. 그 외 재채기, 심한 콧물(비염), 발열, 구강 미란에 의한 침흘림(타액 과다), 식욕부진, 결막염·비루 등 상부호흡기 증상을 보인다. 어린 자묘에서는 간질성 폐렴으로 진행해 호흡곤란·기침·심한 폐렴·침울이 나타날 수 있다. 일부는 관절염성 파행(limping syndrome)을, 만성형은 만성 구내염(gingivitis·stomatitis·caudal oral cavity의 증식성 궤양성 염증)을 보인다. 고병원성 전신형(VS-FCVD)에서는 머리·사지의 피하부종, 궤양성·가피성 피부병변, 탈모, 간괴사/췌장염에 의한 황달, 점상·반상 출혈, 비출혈, 혈변 등 전신 증상과 높은 폐사율(50~67%)이 나타난다.\n\n근거: 강의안 슬라이드 240(classic FCV: 구강궤양·재채기·콧물·발열·침흘림·식욕부진, 자묘 중증 폐렴), 슬라이드 220·241(만성 구내염·limping syndrome), 슬라이드 242~243(VS-FCVD: 피하부종·황달·DIC·출혈·폐사율 67%).\n\n[족보 답안 비교] 2023(#42)·2022(#21) 족보 답안은 '코점막염·비염·기관염·폐렴, 구강상피와 혀의 수포형성·궤양, 안면부종, 황달' 등으로 핵심을 포착함(✓). 단 2022 답안('궤양, 안면종, 황달')은 지나치게 축약됨. 강의안 기준으로는 '구강궤양·상부호흡기 증상'이 핵심이고, 안면부종·황달은 전신형(VS-FCVD)에 해당함을 명확히 구분해야 한다.",
+"exam": "2023-기말",
+"exams": [
+"2023-기말",
+"2022-기말"
+],
+"freq": 2,
+"flag": false,
+"flagReason": "Q0775(2023#42)·Q0844(2022#21) 동일 주제 병합.",
+"unit": "",
+"cardOrder": 99,
+"id": 146
 },
 {
 "part": "Caliciviridae",
@@ -1665,44 +1840,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 93
-},
-{
-"part": "Caliciviridae",
-"topic": "FCV 감별진단 병원체(FHV-1)",
-"origin": "jokbo",
-"type": "short",
-"q": "고양이 calicivirus(FCV)의 임상증상과 감별진단해야 하는 병원체(바이러스)는?",
-"choices": [],
-"answer": [],
-"explain": "[정답] 🔴Feline herpesvirus-1(FHV-1) — feline viral rhinotracheitis의 원인체.\n\n[해설] FCV 감염은 임상적으로 FHV-1에 의한 feline viral rhinotracheitis와 매우 유사해(상부호흡기 증상·결막염·구강병변) 임상만으로 구별이 어렵다. 중요한 임상 단서는 '구강궤양(oral ulcer)이 FCV에서 더 전형적'이라는 점이지만, FHV-1 감염에서도 구강궤양이 나타날 수 있고 혼합감염도 가능해 확진에는 실험실 진단(virus isolation, RT-PCR, 혈청검사)이 필요하다.\n\n근거: 강의안 슬라이드 244 'FCV resembles feline viral rhinotracheitis caused by FHV-1; oral ulcers are more typical of FCV but may also occur in FHV-1; mixed infections can occur'. 슬라이드 248(FCV 백신이 FHV-1·FPV와 혼합되는 점도 두 병원체가 함께 다뤄짐을 보여줌).\n\n[족보 답안 비교] 2024(#47·#49) 족보 답안 'feline herpesvirus 1과 유사/감별'로 정확(✓). 단 #47 답안에 포함된 '성체에서 높은 폐사율, 황달'은 classic FCV가 아니라 고병원성 전신형(VS-FCVD)·중증 사례에 해당하므로 일반 FCV 감별 맥락과 구분 필요.",
-"exam": "2024-기말",
-"exams": [
-"2024-기말"
-],
-"freq": 2,
-"flag": false,
-"flagReason": "Q0682(2024#47)·Q0684(2024#49) 동일 주제(FHV-1 감별) 병합.",
-"id": 94
-},
-{
-"part": "Caliciviridae",
-"topic": "FCV 임상증상(구강궤양·상부호흡기)",
-"origin": "jokbo",
-"type": "essay",
-"q": "Feline calicivirus(FCV) 감염 결과 유발되는 임상증상을 서술하시오.",
-"choices": [],
-"answer": [],
-"explain": "[모범답안] 🔴구강궤양(혀·경구개에 수포가 형성된 뒤 파열되어 궤양으로 진행)이 가장 특징적이다. 그 외 재채기, 심한 콧물(비염), 발열, 구강 미란에 의한 침흘림(타액 과다), 식욕부진, 결막염·비루 등 상부호흡기 증상을 보인다. 어린 자묘에서는 간질성 폐렴으로 진행해 호흡곤란·기침·심한 폐렴·침울이 나타날 수 있다. 일부는 관절염성 파행(limping syndrome)을, 만성형은 만성 구내염(gingivitis·stomatitis·caudal oral cavity의 증식성 궤양성 염증)을 보인다. 고병원성 전신형(VS-FCVD)에서는 머리·사지의 피하부종, 궤양성·가피성 피부병변, 탈모, 간괴사/췌장염에 의한 황달, 점상·반상 출혈, 비출혈, 혈변 등 전신 증상과 높은 폐사율(50~67%)이 나타난다.\n\n근거: 강의안 슬라이드 240(classic FCV: 구강궤양·재채기·콧물·발열·침흘림·식욕부진, 자묘 중증 폐렴), 슬라이드 220·241(만성 구내염·limping syndrome), 슬라이드 242~243(VS-FCVD: 피하부종·황달·DIC·출혈·폐사율 67%).\n\n[족보 답안 비교] 2023(#42)·2022(#21) 족보 답안은 '코점막염·비염·기관염·폐렴, 구강상피와 혀의 수포형성·궤양, 안면부종, 황달' 등으로 핵심을 포착함(✓). 단 2022 답안('궤양, 안면종, 황달')은 지나치게 축약됨. 강의안 기준으로는 '구강궤양·상부호흡기 증상'이 핵심이고, 안면부종·황달은 전신형(VS-FCVD)에 해당함을 명확히 구분해야 한다.",
-"exam": "2023-기말",
-"exams": [
-"2023-기말",
-"2022-기말"
-],
-"freq": 2,
-"flag": false,
-"flagReason": "Q0775(2023#42)·Q0844(2022#21) 동일 주제 병합.",
-"id": 95
+"unit": "",
+"cardOrder": 99,
+"id": 147
 },
 {
 "part": "Caliciviridae",
@@ -1727,7 +1867,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 97
+"unit": "",
+"cardOrder": 99,
+"id": 148
 },
 {
 "part": "Caliciviridae",
@@ -1752,7 +1894,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 100
+"unit": "",
+"cardOrder": 99,
+"id": 150
 },
 {
 "part": "Caliciviridae",
@@ -1777,7 +1921,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 101
+"unit": "",
+"cardOrder": 99,
+"id": 151
 },
 {
 "part": "Togaviridae",
@@ -1802,7 +1948,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 103
+"unit": "",
+"cardOrder": 99,
+"id": 161
 },
 {
 "part": "Togaviridae",
@@ -1827,7 +1975,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 104
+"unit": "",
+"cardOrder": 99,
+"id": 162
 },
 {
 "part": "Togaviridae",
@@ -1852,7 +2002,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 105
+"unit": "",
+"cardOrder": 99,
+"id": 163
 },
 {
 "part": "Togaviridae",
@@ -1877,7 +2029,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 106
+"unit": "",
+"cardOrder": 99,
+"id": 164
 },
 {
 "part": "Togaviridae",
@@ -1902,7 +2056,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 108
+"unit": "",
+"cardOrder": 99,
+"id": 165
 },
 {
 "part": "Rhabdoviridae",
@@ -1928,82 +2084,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 114
-},
-{
-"part": "Rhabdoviridae",
-"topic": "Bovine Ephemeral Fever (BEF)",
-"origin": "concept",
-"type": "single",
-"q": "In late summer, dairy cattle suddenly develop high fever (40-42°C), excessive salivation, muscle tremors, stiffness, transient lameness with shifting leg pain, and a sharp drop in milk yield; most recover within about 3 days. No vesicles are found in the mouth or on the feet. Which agent and key differentiating feature are correct?",
-"choices": [
-"Bovine ephemeral fever virus; salivation mimics FMD but BEF does NOT produce vesicles",
-"FMD virus; vesicles will appear on the feet within 24 hours",
-"Vesicular stomatitis virus; lesions are restricted to teats",
-"Rabies virus transmitted by vampire bats",
-"Bluetongue virus causing a blue tongue from cyanosis"
-],
-"answer": [
-1
-],
-"explain": "BEF (\"3-day sickness,\" family Rhabdoviridae, genus Ephemerovirus, mosquito/midge-borne) causes sudden high fever, hypersalivation, muscle tremors/stiffness/lameness, and a drastic milk drop with rapid recovery. It is often confused with FMD because of excessive salivation, but the key distinction is that BEF does NOT produce vesicles (강의안 Rhabdoviridae slides 026-029). 따라서 수포 없음이 핵심 감별점이며, FMD·VS는 수포를 만들고 rabies·bluetongue은 임상상이 달라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 116
-},
-{
-"part": "Rhabdoviridae",
-"topic": "Rabies clinical forms",
-"origin": "concept",
-"type": "single",
-"q": "A dog is presented after several days of unprovoked aggression, wandering, and a hoarse bark, then over the next 1-2 days develops a dropped jaw, inability to swallow with frothy salivation, and hind limb weakness before dying of respiratory failure. Which description best fits this clinical course?",
-"choices": [
-"Progression from the excitative (furious) phase to the paralytic (dumb) phase of rabies",
-"Pure paralytic (dumb) rabies with no excitative phase",
-"Bovine ephemeral fever with biphasic fever",
-"Vesicular stomatitis causing oral vesicles",
-"Teschovirus encephalomyelitis in a pig"
-],
-"answer": [
-1
-],
-"explain": "Canine rabies progresses through prodromal, excitative (furious), and paralytic (dumb) phases. The furious form shows unprovoked aggression, wandering, hoarse bark (laryngeal paralysis), and foaming; the paralytic form shows dropped jaw, incoordination, hind limb weakness, and death from respiratory failure (강의안 Rhabdoviridae slide 039). 본 증례는 furious에서 paralytic으로 진행한 형태다. 순수 dumb형은 흥분기가 없고, BEF/VS/Teschovirus는 다른 종·임상상이라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 117
-},
-{
-"part": "Rhabdoviridae",
-"topic": "Rabies post-exposure and prevention",
-"origin": "concept",
-"type": "single",
-"q": "A person is bitten on the hand by a stray dog of unknown vaccination status. Which sequence of post-exposure management is most appropriate according to the lecture?",
-"choices": [
-"Immediate thorough washing of the wound with soap and water, then vaccination (peripheral bite), with the dog isolated and observed for 10-14 days",
-"Wait for clinical signs to appear in the person before starting any treatment",
-"Administer only antibiotics, as rabies is a bacterial disease",
-"Euthanize the person's other pets immediately as a precaution",
-"Give a single inactivated vaccine dose to the dog and release it the same day"
-],
-"answer": [
-1
-],
-"explain": "Human post-exposure management begins with immediate thorough washing of the wound with soap and water; for a peripheral bite, weekly vaccinations are given (head/neck bite → immediate immune globulin). Suspect domestic animals are isolated and observed for 10-14 days, and euthanized for brain testing only if behavioral changes occur (강의안 Rhabdoviridae slides 042-043). Early treatment is critical and rabies is viral, so waiting or antibiotics-only is wrong; the bait/oral approach is for wildlife, not for clearing a suspect biting dog.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 118
+"unit": "",
+"cardOrder": 99,
+"id": 179
 },
 {
 "part": "Rhabdoviridae",
@@ -2022,32 +2105,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 120
-},
-{
-"part": "Rhabdoviridae",
-"topic": "Vesicular Stomatitis (VS)",
-"origin": "concept",
-"type": "single",
-"q": "A mixed cattle-and-horse premises reports vesicles and erosions on the mouth and teats of cattle, with similar oral lesions in horses. Which feature most strongly favors vesicular stomatitis over foot-and-mouth disease?",
-"choices": [
-"Horses are susceptible to VS but not to FMD, so equine vesicular lesions point toward VS",
-"VS never affects cattle, only swine",
-"VS produces tiger-heart myocarditis in calves",
-"VS has no zoonotic potential, unlike FMD",
-"VS lesions are confined to the central nervous system"
-],
-"answer": [
-1
-],
-"explain": "VS affects cattle, horses, and pigs and has zoonotic potential; crucially, horses are susceptible to VS unlike FMD, so vesicular disease in horses argues for VS. However, VS is clinically indistinguishable from FMD in cattle and pigs, so any vesicular outbreak must be handled as FMD until lab-confirmed (강의안 Rhabdoviridae slides 032-034). VS는 소도 침범하고 zoonotic이며 상피(점막) 병변이라, horse 감수성이 핵심 단서다. 나머지 선지는 사실과 반대라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 125
+"unit": "",
+"cardOrder": 99,
+"id": 181
 },
 {
 "part": "Rhabdoviridae",
@@ -2073,57 +2133,117 @@ const CORE = [
 "freq": 4,
 "flag": true,
 "flagReason": "선지② '서늘·습·알칼리에서 안정'도 강의안(slide24, envelope→highly sensitive) 기준 틀린 서술이라 복수정답 소지. 단 ③ positive-sense가 가장 명백한 오류로 정답.",
-"id": 127
+"unit": "",
+"cardOrder": 99,
+"id": 186
 },
 {
-"part": "Bunyavirales",
-"topic": "Akabane virus",
+"part": "Rhabdoviridae",
+"topic": "Bovine Ephemeral Fever (BEF)",
 "origin": "concept",
 "type": "single",
-"q": "A cattle herd in a warm coastal region experiences a sudden cluster of abortions and stillbirths in late summer. Several full-term calves are born alive but show arthrogryposis (joint contractures) and hydranencephaly. Culicoides midges are abundant on the farm, and affected dams themselves are clinically normal. Which of the following is the MOST likely cause?",
+"q": "In late summer, dairy cattle suddenly develop high fever (40-42°C), excessive salivation, muscle tremors, stiffness, transient lameness with shifting leg pain, and a sharp drop in milk yield; most recover within about 3 days. No vesicles are found in the mouth or on the feet. Which agent and key differentiating feature are correct?",
 "choices": [
-"Akabane virus (Peribunyaviridae)",
-"Nairobi sheep disease orthonairovirus",
-"Borna disease virus (Orthobornavirus bornaense)",
-"Bovine respiratory syncytial virus",
-"Rabbit hemorrhagic disease virus"
+"Bovine ephemeral fever virus; salivation mimics FMD but BEF does NOT produce vesicles",
+"FMD virus; vesicles will appear on the feet within 24 hours",
+"Vesicular stomatitis virus; lesions are restricted to teats",
+"Rabies virus transmitted by vampire bats",
+"Bluetongue virus causing a blue tongue from cyanosis"
 ],
 "answer": [
 1
 ],
-"explain": "Akabane virus (Peribunyaviridae, genus Orthobunyavirus) is an arbovirus transmitted by midges and mosquitoes that causes abortion, stillbirth, and congenital malformations such as hydranencephaly and arthrogryposis in cattle, sheep, and goats; adult dams are usually subclinical. Akabane바이러스는 미지(Culicoides)·모기가 매개하는 절지동물매개바이러스로, 어미는 대개 무증상이면서 태아 감염을 통해 유산·사산·관절만곡·수두증 같은 선천성 기형을 일으킨다. NSD·Borna·BRSV·RHDV는 임신 기형 증후군을 일으키지 않는다. 근거: 강의안 Slide 206 'Akabane Disease', Slide 207 'Epidemiology (vectors: midges, mosquitoes)'.",
+"explain": "BEF (\"3-day sickness,\" family Rhabdoviridae, genus Ephemerovirus, mosquito/midge-borne) causes sudden high fever, hypersalivation, muscle tremors/stiffness/lameness, and a drastic milk drop with rapid recovery. It is often confused with FMD because of excessive salivation, but the key distinction is that BEF does NOT produce vesicles (강의안 Rhabdoviridae slides 026-029). 따라서 수포 없음이 핵심 감별점이며, FMD·VS는 수포를 만들고 rabies·bluetongue은 임상상이 달라 오답.",
 "exam": "자작",
 "exams": [],
 "freq": 0,
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 131
+"unit": "",
+"cardOrder": 99,
+"id": 188
 },
 {
-"part": "Bunyavirales",
-"topic": "Borna disease / PDD",
+"part": "Rhabdoviridae",
+"topic": "Rabies clinical forms",
 "origin": "concept",
 "type": "single",
-"q": "A pet macaw presents with chronic weight loss, regurgitation, passage of undigested seeds in the feces, and intermittent ataxia and tremors. Radiographs show marked dilatation of the proventriculus. Histopathology of affected birds typically shows lymphoplasmacytic inflammation of autonomic nerves. Which statement about the causative agent (avian bornavirus / PDD) is correct?",
+"q": "A dog is presented after several days of unprovoked aggression, wandering, and a hoarse bark, then over the next 1-2 days develops a dropped jaw, inability to swallow with frothy salivation, and hind limb weakness before dying of respiratory failure. Which description best fits this clinical course?",
 "choices": [
-"It is an avian bornavirus that damages the autonomic nerves of the GI tract, and there is no effective vaccine or treatment",
-"It is a non-enveloped calicivirus that replicates in the cytoplasm and is prevented by a licensed inactivated vaccine",
-"It is a tick-borne orthonairovirus causing hemorrhagic enteritis",
-"It is a mosquito-borne phenuivirus causing hepatic necrosis",
-"It replicates exclusively in the cytoplasm and never causes neurologic signs"
+"Progression from the excitative (furious) phase to the paralytic (dumb) phase of rabies",
+"Pure paralytic (dumb) rabies with no excitative phase",
+"Bovine ephemeral fever with biphasic fever",
+"Vesicular stomatitis causing oral vesicles",
+"Teschovirus encephalomyelitis in a pig"
 ],
 "answer": [
 1
 ],
-"explain": "Proventricular dilatation disease (PDD) is caused by avian bornaviruses (Orthobornavirus alphapsittaciforme / betapsittaciforme). Bornaviruses are enveloped negative-sense ssRNA viruses that uniquely replicate in the host cell nucleus. PDD results from lymphoplasmacytic (non-suppurative) inflammation damaging the autonomic nerves of the GI tract, causing proventricular dilation; there is no effective vaccine or treatment. PDD(앵무새 선위확장증)는 avian bornavirus가 원인이며, bornavirus는 외피보유 음성가닥 ssRNA로 특이하게 핵에서 복제한다. GI관 자율신경의 림프형질세포성(비화농성) 염증이 선위확장을 일으키고, 효과적인 백신·치료가 없다. 근거: 강의안 Slide 178·185·187 (nucleus replication, avian bornavirus, autonomic nerve damage), Slide 192 (no effective vaccine).",
+"explain": "Canine rabies progresses through prodromal, excitative (furious), and paralytic (dumb) phases. The furious form shows unprovoked aggression, wandering, hoarse bark (laryngeal paralysis), and foaming; the paralytic form shows dropped jaw, incoordination, hind limb weakness, and death from respiratory failure (강의안 Rhabdoviridae slide 039). 본 증례는 furious에서 paralytic으로 진행한 형태다. 순수 dumb형은 흥분기가 없고, BEF/VS/Teschovirus는 다른 종·임상상이라 오답.",
 "exam": "자작",
 "exams": [],
 "freq": 0,
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 133
+"unit": "",
+"cardOrder": 99,
+"id": 189
+},
+{
+"part": "Rhabdoviridae",
+"topic": "Rabies post-exposure and prevention",
+"origin": "concept",
+"type": "single",
+"q": "A person is bitten on the hand by a stray dog of unknown vaccination status. Which sequence of post-exposure management is most appropriate according to the lecture?",
+"choices": [
+"Immediate thorough washing of the wound with soap and water, then vaccination (peripheral bite), with the dog isolated and observed for 10-14 days",
+"Wait for clinical signs to appear in the person before starting any treatment",
+"Administer only antibiotics, as rabies is a bacterial disease",
+"Euthanize the person's other pets immediately as a precaution",
+"Give a single inactivated vaccine dose to the dog and release it the same day"
+],
+"answer": [
+1
+],
+"explain": "Human post-exposure management begins with immediate thorough washing of the wound with soap and water; for a peripheral bite, weekly vaccinations are given (head/neck bite → immediate immune globulin). Suspect domestic animals are isolated and observed for 10-14 days, and euthanized for brain testing only if behavioral changes occur (강의안 Rhabdoviridae slides 042-043). Early treatment is critical and rabies is viral, so waiting or antibiotics-only is wrong; the bait/oral approach is for wildlife, not for clearing a suspect biting dog.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 190
+},
+{
+"part": "Rhabdoviridae",
+"topic": "Vesicular Stomatitis (VS)",
+"origin": "concept",
+"type": "single",
+"q": "A mixed cattle-and-horse premises reports vesicles and erosions on the mouth and teats of cattle, with similar oral lesions in horses. Which feature most strongly favors vesicular stomatitis over foot-and-mouth disease?",
+"choices": [
+"Horses are susceptible to VS but not to FMD, so equine vesicular lesions point toward VS",
+"VS never affects cattle, only swine",
+"VS produces tiger-heart myocarditis in calves",
+"VS has no zoonotic potential, unlike FMD",
+"VS lesions are confined to the central nervous system"
+],
+"answer": [
+1
+],
+"explain": "VS affects cattle, horses, and pigs and has zoonotic potential; crucially, horses are susceptible to VS unlike FMD, so vesicular disease in horses argues for VS. However, VS is clinically indistinguishable from FMD in cattle and pigs, so any vesicular outbreak must be handled as FMD until lab-confirmed (강의안 Rhabdoviridae slides 032-034). VS는 소도 침범하고 zoonotic이며 상피(점막) 병변이라, horse 감수성이 핵심 단서다. 나머지 선지는 사실과 반대라 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 191
 },
 {
 "part": "Bunyavirales",
@@ -2149,7 +2269,9 @@ const CORE = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 정답 ①, 그러나 강의안(슬라이드183 mortality~100%) 근거상 틀린 문장은 ②(자연치유). Claude 정답=②.",
-"id": 134
+"unit": "",
+"cardOrder": 99,
+"id": 201
 },
 {
 "part": "Bunyavirales",
@@ -2175,32 +2297,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 135
-},
-{
-"part": "Bunyavirales",
-"topic": "Nairobi sheep disease virus",
-"origin": "concept",
-"type": "single",
-"q": "A flock of naive sheep is moved into an endemic area of East Africa. Within a week they develop high fever, mucopurulent nasal discharge, fetid hemorrhagic diarrhea (dysentery), and abortion, with mortality approaching 90%. Necropsy shows enlarged edematous mesenteric lymph nodes and petechial/ecchymotic hemorrhages in the cecum and colon. Which agent and vector are MOST consistent with this presentation?",
-"choices": [
-"Nairobi sheep disease orthonairovirus, transmitted by the brown ear tick Rhipicephalus appendiculatus",
-"Akabane virus, transmitted by Culicoides midges",
-"Rift Valley fever virus, transmitted by Aedes mosquitoes",
-"Feline calicivirus, transmitted by fomites",
-"Borna disease virus, transmitted by rodents"
-],
-"answer": [
-1
-],
-"explain": "Nairobi sheep disease (NSD) is caused by NSD orthonairovirus (Nairoviridae) and produces severe hemorrhagic gastroenteritis with high mortality (up to 90% in naive animals); characteristic lesions are enlarged edematous lymph nodes and petechial/ecchymotic hemorrhages of cecum and colon. The principal vector is the brown ear tick Rhipicephalus appendiculatus, not a midge or mosquito. NSD는 진드기(brown ear tick, R. appendiculatus)가 매개하는 orthonairovirus로, naive 양에서 출혈성 위장염·이질·유산과 90% 폐사를 일으키며 맹장·결장 점출혈이 특징이다. 근거: 강의안 Slide 196-199 (NSD Etiology·Epidemiology vector·Clinical Signs·Pathology).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 137
+"unit": "",
+"cardOrder": 99,
+"id": 202
 },
 {
 "part": "Bunyavirales",
@@ -2225,32 +2324,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 138
-},
-{
-"part": "Bunyavirales",
-"topic": "Rift Valley fever virus",
-"origin": "concept",
-"type": "single",
-"q": "Following a period of unusually heavy rainfall and flooding in East Africa, a sheep flock experiences an explosive outbreak of abortions in pregnant ewes and >90% mortality in newborn lambs. Several farm workers who handled aborted material develop fever, myalgia, and flu-like illness. Which statement BEST explains this outbreak?",
-"choices": [
-"Rift Valley fever is a mosquito-borne zoonotic phenuivirus; heavy rain increases mosquito populations, and it causes abortion, hepatic necrosis, and very high neonatal mortality with zoonotic flu-like illness in humans",
-"It is caused by a non-enveloped calicivirus spread by feeding raw marine by-products",
-"It is Akabane disease, transmitted only transovarially by ticks with no human risk",
-"It is Borna disease, a nucleus-replicating neurotropic virus of horses",
-"It is bovine respiratory syncytial virus amplified by winter housing stress"
-],
-"answer": [
-1
-],
-"explain": "Rift Valley fever (RVF, family Phenuiviridae) is a mosquito-borne zoonotic disease of sheep, goats, cattle, and humans. Outbreaks are linked to heavy rainfall and increased mosquito populations; it causes abortion, severe hepatic necrosis, and neonatal lamb mortality >90%, while humans develop influenza-like illness. RVF는 모기매개 인수공통 phenuivirus로, 폭우·홍수가 모기 증가를 통해 폭발적 유행을 유발하고 유산·간괴사·신생 자축 90% 이상 폐사를 일으키며 사람에게 독감유사 증상을 준다. 근거: 강의안 Slide 212-216 (RVF Etiology·Epidemiology·Transmission·Clinical Signs).",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 139
+"unit": "",
+"cardOrder": 99,
+"id": 203
 },
 {
 "part": "Bunyavirales",
@@ -2276,32 +2352,117 @@ const CORE = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 정답 표기가 '4↵3'로 혼란. 강의안(슬라이드187 lymphoplasmacytic inflammation) 근거상 틀린 문장은 ④(염증세포 침윤 없음). Claude 정답=④.",
-"id": 142
+"unit": "",
+"cardOrder": 99,
+"id": 204
 },
 {
-"part": "Pneumoviridae",
-"topic": "BRSV",
+"part": "Bunyavirales",
+"topic": "Akabane virus",
 "origin": "concept",
 "type": "single",
-"q": "A group of 4-month-old beef calves develops fever, coughing, tachypnea, and nasal discharge after transport to a feedlot in winter. Histopathology of a dead calf shows necrosis of bronchiolar epithelium with multinucleated giant cells (syncytia) formed from fused Type II pneumocytes. Which statement BEST explains the syncytium formation and the disease?",
+"q": "A cattle herd in a warm coastal region experiences a sudden cluster of abortions and stillbirths in late summer. Several full-term calves are born alive but show arthrogryposis (joint contractures) and hydranencephaly. Culicoides midges are abundant on the farm, and affected dams themselves are clinically normal. Which of the following is the MOST likely cause?",
 "choices": [
-"BRSV (Orthopneumovirus bovis) causes fusion of infected Type II pneumocytes into multinucleated giant cells (syncytia), a hallmark of infection, and is a primary pathogen in the bovine respiratory disease complex",
-"Syncytia are caused by intranuclear Joest-Degen bodies typical of bornavirus encephalitis",
-"The giant cells are caused by a non-enveloped calicivirus replicating in the nucleus",
-"Syncytia indicate Akabane virus replication in skeletal muscle",
-"The lesion is pathognomonic for foot-and-mouth disease vesicles"
+"Akabane virus (Peribunyaviridae)",
+"Nairobi sheep disease orthonairovirus",
+"Borna disease virus (Orthobornavirus bornaense)",
+"Bovine respiratory syncytial virus",
+"Rabbit hemorrhagic disease virus"
 ],
 "answer": [
 1
 ],
-"explain": "Bovine respiratory syncytial virus (BRSV, Orthopneumovirus bovis) replicates in ciliated/bronchiolar epithelium and causes fusion of infected Type II pneumocytes into multinucleated giant cells (syncytia) - the hallmark of the infection. BRSV is a primary pathogen in the Bovine Respiratory Disease Complex (BRDC) and is worsened by transport/winter stress and mixed infections. BRSV는 감염된 II형 폐포세포의 융합으로 다핵거대세포(syncytia)를 형성하는 것이 특징이며, BRDC의 1차 병원체로 수송·겨울 스트레스와 혼합감염에서 악화된다. 근거: 강의안 Slide 8 (BRDC primary pathogen), Slide 10 (Type II pneumocyte fusion -> syncytia).",
+"explain": "Akabane virus (Peribunyaviridae, genus Orthobunyavirus) is an arbovirus transmitted by midges and mosquitoes that causes abortion, stillbirth, and congenital malformations such as hydranencephaly and arthrogryposis in cattle, sheep, and goats; adult dams are usually subclinical. Akabane바이러스는 미지(Culicoides)·모기가 매개하는 절지동물매개바이러스로, 어미는 대개 무증상이면서 태아 감염을 통해 유산·사산·관절만곡·수두증 같은 선천성 기형을 일으킨다. NSD·Borna·BRSV·RHDV는 임신 기형 증후군을 일으키지 않는다. 근거: 강의안 Slide 206 'Akabane Disease', Slide 207 'Epidemiology (vectors: midges, mosquitoes)'.",
 "exam": "자작",
 "exams": [],
 "freq": 0,
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 144
+"unit": "",
+"cardOrder": 99,
+"id": 205
+},
+{
+"part": "Bunyavirales",
+"topic": "Borna disease / PDD",
+"origin": "concept",
+"type": "single",
+"q": "A pet macaw presents with chronic weight loss, regurgitation, passage of undigested seeds in the feces, and intermittent ataxia and tremors. Radiographs show marked dilatation of the proventriculus. Histopathology of affected birds typically shows lymphoplasmacytic inflammation of autonomic nerves. Which statement about the causative agent (avian bornavirus / PDD) is correct?",
+"choices": [
+"It is an avian bornavirus that damages the autonomic nerves of the GI tract, and there is no effective vaccine or treatment",
+"It is a non-enveloped calicivirus that replicates in the cytoplasm and is prevented by a licensed inactivated vaccine",
+"It is a tick-borne orthonairovirus causing hemorrhagic enteritis",
+"It is a mosquito-borne phenuivirus causing hepatic necrosis",
+"It replicates exclusively in the cytoplasm and never causes neurologic signs"
+],
+"answer": [
+1
+],
+"explain": "Proventricular dilatation disease (PDD) is caused by avian bornaviruses (Orthobornavirus alphapsittaciforme / betapsittaciforme). Bornaviruses are enveloped negative-sense ssRNA viruses that uniquely replicate in the host cell nucleus. PDD results from lymphoplasmacytic (non-suppurative) inflammation damaging the autonomic nerves of the GI tract, causing proventricular dilation; there is no effective vaccine or treatment. PDD(앵무새 선위확장증)는 avian bornavirus가 원인이며, bornavirus는 외피보유 음성가닥 ssRNA로 특이하게 핵에서 복제한다. GI관 자율신경의 림프형질세포성(비화농성) 염증이 선위확장을 일으키고, 효과적인 백신·치료가 없다. 근거: 강의안 Slide 178·185·187 (nucleus replication, avian bornavirus, autonomic nerve damage), Slide 192 (no effective vaccine).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 207
+},
+{
+"part": "Bunyavirales",
+"topic": "Nairobi sheep disease virus",
+"origin": "concept",
+"type": "single",
+"q": "A flock of naive sheep is moved into an endemic area of East Africa. Within a week they develop high fever, mucopurulent nasal discharge, fetid hemorrhagic diarrhea (dysentery), and abortion, with mortality approaching 90%. Necropsy shows enlarged edematous mesenteric lymph nodes and petechial/ecchymotic hemorrhages in the cecum and colon. Which agent and vector are MOST consistent with this presentation?",
+"choices": [
+"Nairobi sheep disease orthonairovirus, transmitted by the brown ear tick Rhipicephalus appendiculatus",
+"Akabane virus, transmitted by Culicoides midges",
+"Rift Valley fever virus, transmitted by Aedes mosquitoes",
+"Feline calicivirus, transmitted by fomites",
+"Borna disease virus, transmitted by rodents"
+],
+"answer": [
+1
+],
+"explain": "Nairobi sheep disease (NSD) is caused by NSD orthonairovirus (Nairoviridae) and produces severe hemorrhagic gastroenteritis with high mortality (up to 90% in naive animals); characteristic lesions are enlarged edematous lymph nodes and petechial/ecchymotic hemorrhages of cecum and colon. The principal vector is the brown ear tick Rhipicephalus appendiculatus, not a midge or mosquito. NSD는 진드기(brown ear tick, R. appendiculatus)가 매개하는 orthonairovirus로, naive 양에서 출혈성 위장염·이질·유산과 90% 폐사를 일으키며 맹장·결장 점출혈이 특징이다. 근거: 강의안 Slide 196-199 (NSD Etiology·Epidemiology vector·Clinical Signs·Pathology).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 208
+},
+{
+"part": "Bunyavirales",
+"topic": "Rift Valley fever virus",
+"origin": "concept",
+"type": "single",
+"q": "Following a period of unusually heavy rainfall and flooding in East Africa, a sheep flock experiences an explosive outbreak of abortions in pregnant ewes and >90% mortality in newborn lambs. Several farm workers who handled aborted material develop fever, myalgia, and flu-like illness. Which statement BEST explains this outbreak?",
+"choices": [
+"Rift Valley fever is a mosquito-borne zoonotic phenuivirus; heavy rain increases mosquito populations, and it causes abortion, hepatic necrosis, and very high neonatal mortality with zoonotic flu-like illness in humans",
+"It is caused by a non-enveloped calicivirus spread by feeding raw marine by-products",
+"It is Akabane disease, transmitted only transovarially by ticks with no human risk",
+"It is Borna disease, a nucleus-replicating neurotropic virus of horses",
+"It is bovine respiratory syncytial virus amplified by winter housing stress"
+],
+"answer": [
+1
+],
+"explain": "Rift Valley fever (RVF, family Phenuiviridae) is a mosquito-borne zoonotic disease of sheep, goats, cattle, and humans. Outbreaks are linked to heavy rainfall and increased mosquito populations; it causes abortion, severe hepatic necrosis, and neonatal lamb mortality >90%, while humans develop influenza-like illness. RVF는 모기매개 인수공통 phenuivirus로, 폭우·홍수가 모기 증가를 통해 폭발적 유행을 유발하고 유산·간괴사·신생 자축 90% 이상 폐사를 일으키며 사람에게 독감유사 증상을 준다. 근거: 강의안 Slide 212-216 (RVF Etiology·Epidemiology·Transmission·Clinical Signs).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 209
 },
 {
 "part": "Pneumoviridae",
@@ -2327,7 +2488,36 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 147
+"unit": "",
+"cardOrder": 99,
+"id": 215
+},
+{
+"part": "Pneumoviridae",
+"topic": "BRSV",
+"origin": "concept",
+"type": "single",
+"q": "A group of 4-month-old beef calves develops fever, coughing, tachypnea, and nasal discharge after transport to a feedlot in winter. Histopathology of a dead calf shows necrosis of bronchiolar epithelium with multinucleated giant cells (syncytia) formed from fused Type II pneumocytes. Which statement BEST explains the syncytium formation and the disease?",
+"choices": [
+"BRSV (Orthopneumovirus bovis) causes fusion of infected Type II pneumocytes into multinucleated giant cells (syncytia), a hallmark of infection, and is a primary pathogen in the bovine respiratory disease complex",
+"Syncytia are caused by intranuclear Joest-Degen bodies typical of bornavirus encephalitis",
+"The giant cells are caused by a non-enveloped calicivirus replicating in the nucleus",
+"Syncytia indicate Akabane virus replication in skeletal muscle",
+"The lesion is pathognomonic for foot-and-mouth disease vesicles"
+],
+"answer": [
+1
+],
+"explain": "Bovine respiratory syncytial virus (BRSV, Orthopneumovirus bovis) replicates in ciliated/bronchiolar epithelium and causes fusion of infected Type II pneumocytes into multinucleated giant cells (syncytia) - the hallmark of the infection. BRSV is a primary pathogen in the Bovine Respiratory Disease Complex (BRDC) and is worsened by transport/winter stress and mixed infections. BRSV는 감염된 II형 폐포세포의 융합으로 다핵거대세포(syncytia)를 형성하는 것이 특징이며, BRDC의 1차 병원체로 수송·겨울 스트레스와 혼합감염에서 악화된다. 근거: 강의안 Slide 8 (BRDC primary pathogen), Slide 10 (Type II pneumocyte fusion -> syncytia).",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 216
 },
 {
 "part": "Pneumoviridae",
@@ -2352,7 +2542,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 149
+"unit": "",
+"cardOrder": 99,
+"id": 218
 },
 {
 "part": "Reoviridae",
@@ -2379,32 +2571,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 150
-},
-{
-"part": "Reoviridae",
-"topic": "African Horse Sickness (AHS)",
-"origin": "concept",
-"type": "single",
-"q": "A horse develops sudden very high fever, severe dyspnea, and frothy nasal discharge, then dies within 24-48 hours. Necropsy shows gelatinous pulmonary edema and hydrothorax. Which clinical form of African horse sickness is this, and what is its expected mortality?",
-"choices": [
-"Pulmonary form (Dunkop); 95-100% mortality, the most fatal form",
-"Cardiac form (Dikkop); about 50% mortality with supraorbital edema",
-"Mixed form; lowest mortality of all forms",
-"Horse sickness fever; subclinical with full recovery",
-"Cardiac form (Dikkop); 95-100% mortality from head edema"
-],
-"answer": [
-1
-],
-"explain": "AHS (Orbivirus, AHSV) pulmonary form \"Dunkop\" is the most fatal (95-100% mortality), with sudden high fever, severe dyspnea, frothy nasal discharge, and death within 24-48 hours; pathology shows gelatinous pulmonary edema and hydrothorax (강의안 Reoviridae slides 119-120). Cardiac form \"Dikkop\" gives head/neck (supraorbital) edema and ~50% mortality, and mixed forms are most common (but not lowest mortality). 따라서 폐형·95-100%만 맞다.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 151
+"unit": "",
+"cardOrder": 99,
+"id": 232
 },
 {
 "part": "Reoviridae",
@@ -2423,7 +2592,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 152
+"unit": "",
+"cardOrder": 99,
+"id": 233
 },
 {
 "part": "Reoviridae",
@@ -2451,7 +2622,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 153
+"unit": "",
+"cardOrder": 99,
+"id": 234
 },
 {
 "part": "Reoviridae",
@@ -2476,32 +2649,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 154
-},
-{
-"part": "Reoviridae",
-"topic": "Bluetongue virus (BTV)",
-"origin": "concept",
-"type": "single",
-"q": "In late summer, sheep in a flock develop fever, congestion of the oral mucosa, excessive frothy salivation, edema of the face and tongue, and lameness from coronary band congestion; severe cases show a cyanotic (blue) tongue. The disease appears even though sick and healthy sheep were never in direct contact. Which statement best describes the agent and its transmission?",
-"choices": [
-"Bluetongue virus (Orbivirus), an infectious but non-contagious disease transmitted by infected female Culicoides midges",
-"Bluetongue virus spread by direct nose-to-nose contact between sheep",
-"Foot-and-mouth disease virus spread by aerosol",
-"Rotavirus transmitted by the fecal-oral route",
-"Rabies virus transmitted by a bite wound"
-],
-"answer": [
-1
-],
-"explain": "BTV (Reoviridae, genus Orbivirus) is an infectious, NON-contagious, midge-borne febrile disease of ruminants, primarily sheep; it is named for the cyanosis (blue tongue) from vascular damage. Transmission is almost exclusively via the bite of infected female Culicoides midges, which is why direct contact is not needed (강의안 Reoviridae slides 106-108). 따라서 Culicoides 매개·비접촉성이 핵심. 직접접촉·aerosol·fecal-oral·bite 전파는 BTV에 해당하지 않아 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 155
+"unit": "",
+"cardOrder": 99,
+"id": 235
 },
 {
 "part": "Reoviridae",
@@ -2519,7 +2669,9 @@ const CORE = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 156
+"unit": "",
+"cardOrder": 99,
+"id": 236
 },
 {
 "part": "Reoviridae",
@@ -2538,7 +2690,9 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 157
+"unit": "",
+"cardOrder": 99,
+"id": 237
 },
 {
 "part": "Reoviridae",
@@ -2564,57 +2718,9 @@ const CORE = [
 "freq": 2,
 "flag": true,
 "flagReason": "Blue tongue은 Reoviridae/Orbivirus 질병으로 본 Picornaviridae 강의안 범위 밖. 정답 ②는 FMD가 발열을 동반한다는 강의안 슬라이드353 근거로 판정 가능(족보와 일치)하나, 선지 ①③④의 blue tongue 특성은 강의안에 근거 없음.",
-"id": 158
-},
-{
-"part": "Reoviridae",
-"topic": "Bovine rotavirus",
-"origin": "concept",
-"type": "single",
-"q": "A 5-day-old calf has acute watery yellow-grey diarrhea and severe dehydration. Histology of the small intestine shows that the virus has infected and destroyed mature enterocytes at the villus tips, causing villous atrophy and fusion. Which statement best explains the diarrhea mechanism and a key control measure?",
-"choices": [
-"Rotavirus destroys villus-tip enterocytes causing malabsorptive/osmotic diarrhea; ensuring adequate colostral (maternal) antibody is a key control",
-"Rotavirus destroys crypt cells causing secretory diarrhea; antibiotics are curative",
-"The virus invades neurons causing diarrhea; rabies vaccination prevents it",
-"Villous atrophy increases nutrient absorption, so no dehydration occurs",
-"Diarrhea results from vesicle rupture in the intestine; stamping out is required"
-],
-"answer": [
-1
-],
-"explain": "Bovine Group A rotavirus selectively infects mature enterocytes at the villus tips; their destruction and shedding cause villous atrophy and fusion, leading to malabsorption and osmotic diarrhea, with peak incidence at 1-3 weeks of age. Control relies on colostrum management (delivering high maternal antibody) plus vaccinating pregnant cows and hygiene (강의안 Reoviridae slides 101-105). 따라서 융모 끝 성숙 장세포 파괴→흡수장애성/osmotic 설사, 초유관리가 핵심. crypt/secretory·신경침범 등은 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 160
-},
-{
-"part": "Reoviridae",
-"topic": "Reoviridae Orbivirus sweep",
-"origin": "concept",
-"type": "single",
-"q": "Both Chuzan and Ibaraki diseases are Culicoides-associated Orbivirus infections of cattle reported in East Asia. Which pairing of disease to its hallmark is correct?",
-"choices": [
-"Chuzan — congenital hydranencephaly-cerebellar hypoplasia (HCH) syndrome in calves",
-"Chuzan — acute dysphagia and pharyngeal paralysis in adult cattle",
-"Ibaraki — congenital hydranencephaly in newborn calves",
-"Ibaraki — neonatal watery diarrhea with villous atrophy",
-"Chuzan — pulmonary edema and 95% mortality in horses"
-],
-"answer": [
-1
-],
-"explain": "Chuzan virus (Orbivirus, vector Culicoides oxystoma) causes a congenital malformation syndrome in calves — hydranencephaly-cerebellar hypoplasia (HCH), with >80% showing hydranencephaly (강의안 Reoviridae slides 111-112). Ibaraki virus (Orbivirus, EHDV serogroup serotype 2) causes acute febrile disease with swallowing disorders (dysphagia), pharyngeal/tongue/esophageal paralysis, and fatal aspiration pneumonia (slide 113). 따라서 Chuzan=HCH만 맞다; dysphagia는 Ibaraki, 설사는 rotavirus, 폐부종은 AHS라 오답.",
-"exam": "자작",
-"exams": [],
-"freq": 0,
-"flag": false,
-"level": "exam",
-"flagReason": "",
-"id": 161
+"unit": "",
+"cardOrder": 99,
+"id": 238
 },
 {
 "part": "Reoviridae",
@@ -2642,7 +2748,9 @@ const CORE = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 162
+"unit": "",
+"cardOrder": 99,
+"id": 239
 },
 {
 "part": "Reoviridae",
@@ -2668,7 +2776,158 @@ const CORE = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 163
+"unit": "",
+"cardOrder": 99,
+"id": 240
+},
+{
+"part": "Reoviridae",
+"topic": "African Horse Sickness (AHS)",
+"origin": "concept",
+"type": "single",
+"q": "A horse develops sudden very high fever, severe dyspnea, and frothy nasal discharge, then dies within 24-48 hours. Necropsy shows gelatinous pulmonary edema and hydrothorax. Which clinical form of African horse sickness is this, and what is its expected mortality?",
+"choices": [
+"Pulmonary form (Dunkop); 95-100% mortality, the most fatal form",
+"Cardiac form (Dikkop); about 50% mortality with supraorbital edema",
+"Mixed form; lowest mortality of all forms",
+"Horse sickness fever; subclinical with full recovery",
+"Cardiac form (Dikkop); 95-100% mortality from head edema"
+],
+"answer": [
+1
+],
+"explain": "AHS (Orbivirus, AHSV) pulmonary form \"Dunkop\" is the most fatal (95-100% mortality), with sudden high fever, severe dyspnea, frothy nasal discharge, and death within 24-48 hours; pathology shows gelatinous pulmonary edema and hydrothorax (강의안 Reoviridae slides 119-120). Cardiac form \"Dikkop\" gives head/neck (supraorbital) edema and ~50% mortality, and mixed forms are most common (but not lowest mortality). 따라서 폐형·95-100%만 맞다.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 241
+},
+{
+"part": "Reoviridae",
+"topic": "Bluetongue virus (BTV)",
+"origin": "concept",
+"type": "single",
+"q": "In late summer, sheep in a flock develop fever, congestion of the oral mucosa, excessive frothy salivation, edema of the face and tongue, and lameness from coronary band congestion; severe cases show a cyanotic (blue) tongue. The disease appears even though sick and healthy sheep were never in direct contact. Which statement best describes the agent and its transmission?",
+"choices": [
+"Bluetongue virus (Orbivirus), an infectious but non-contagious disease transmitted by infected female Culicoides midges",
+"Bluetongue virus spread by direct nose-to-nose contact between sheep",
+"Foot-and-mouth disease virus spread by aerosol",
+"Rotavirus transmitted by the fecal-oral route",
+"Rabies virus transmitted by a bite wound"
+],
+"answer": [
+1
+],
+"explain": "BTV (Reoviridae, genus Orbivirus) is an infectious, NON-contagious, midge-borne febrile disease of ruminants, primarily sheep; it is named for the cyanosis (blue tongue) from vascular damage. Transmission is almost exclusively via the bite of infected female Culicoides midges, which is why direct contact is not needed (강의안 Reoviridae slides 106-108). 따라서 Culicoides 매개·비접촉성이 핵심. 직접접촉·aerosol·fecal-oral·bite 전파는 BTV에 해당하지 않아 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 242
+},
+{
+"part": "Reoviridae",
+"topic": "Bovine rotavirus",
+"origin": "concept",
+"type": "single",
+"q": "A 5-day-old calf has acute watery yellow-grey diarrhea and severe dehydration. Histology of the small intestine shows that the virus has infected and destroyed mature enterocytes at the villus tips, causing villous atrophy and fusion. Which statement best explains the diarrhea mechanism and a key control measure?",
+"choices": [
+"Rotavirus destroys villus-tip enterocytes causing malabsorptive/osmotic diarrhea; ensuring adequate colostral (maternal) antibody is a key control",
+"Rotavirus destroys crypt cells causing secretory diarrhea; antibiotics are curative",
+"The virus invades neurons causing diarrhea; rabies vaccination prevents it",
+"Villous atrophy increases nutrient absorption, so no dehydration occurs",
+"Diarrhea results from vesicle rupture in the intestine; stamping out is required"
+],
+"answer": [
+1
+],
+"explain": "Bovine Group A rotavirus selectively infects mature enterocytes at the villus tips; their destruction and shedding cause villous atrophy and fusion, leading to malabsorption and osmotic diarrhea, with peak incidence at 1-3 weeks of age. Control relies on colostrum management (delivering high maternal antibody) plus vaccinating pregnant cows and hygiene (강의안 Reoviridae slides 101-105). 따라서 융모 끝 성숙 장세포 파괴→흡수장애성/osmotic 설사, 초유관리가 핵심. crypt/secretory·신경침범 등은 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 243
+},
+{
+"part": "Reoviridae",
+"topic": "Reoviridae Orbivirus sweep",
+"origin": "concept",
+"type": "single",
+"q": "Both Chuzan and Ibaraki diseases are Culicoides-associated Orbivirus infections of cattle reported in East Asia. Which pairing of disease to its hallmark is correct?",
+"choices": [
+"Chuzan — congenital hydranencephaly-cerebellar hypoplasia (HCH) syndrome in calves",
+"Chuzan — acute dysphagia and pharyngeal paralysis in adult cattle",
+"Ibaraki — congenital hydranencephaly in newborn calves",
+"Ibaraki — neonatal watery diarrhea with villous atrophy",
+"Chuzan — pulmonary edema and 95% mortality in horses"
+],
+"answer": [
+1
+],
+"explain": "Chuzan virus (Orbivirus, vector Culicoides oxystoma) causes a congenital malformation syndrome in calves — hydranencephaly-cerebellar hypoplasia (HCH), with >80% showing hydranencephaly (강의안 Reoviridae slides 111-112). Ibaraki virus (Orbivirus, EHDV serogroup serotype 2) causes acute febrile disease with swallowing disorders (dysphagia), pharyngeal/tongue/esophageal paralysis, and fatal aspiration pneumonia (slide 113). 따라서 Chuzan=HCH만 맞다; dysphagia는 Ibaraki, 설사는 rotavirus, 폐부종은 AHS라 오답.",
+"exam": "자작",
+"exams": [],
+"freq": 0,
+"flag": false,
+"level": "exam",
+"flagReason": "",
+"unit": "",
+"cardOrder": 99,
+"id": 244
+},
+{
+"part": "Retroviridae",
+"topic": "FIV 임상 진행(3단계/4단계)",
+"origin": "jokbo",
+"type": "essay",
+"q": "FIV(고양이 면역결핍 바이러스)의 임상증상을 단계(step)별로 설명하시오.",
+"choices": [],
+"answer": [],
+"explain": "[모범답안] 강의안은 FIV 감염을 4단계로 제시하나, 무증상·말기를 묶으면 3단계로도 설명된다.\n1) 🔴Acute stage(급성기): 발열, 림프절염(lymphadenitis/lymphadenopathy), 호중구감소(neutropenia)가 수 주~수 개월 지속.\n2) 🔴Asymptomatic stage(무증상 잠복기): 외견상 임상징후 없이 장기간(수개월~수년) 경과. (※ viral load는 감염 8~12주에 정점 후 이 시기에 감소)\n3) Vague clinical signs(모호한 임상징후기): 반복성 발열, 백혈구감소, 빈혈, 행동 변화.\n4) 🔴Immunodeficiency stage(면역결핍기/말기): CD4+ T세포의 진행성 소실로 세포매개면역이 붕괴 → 잦은 기회감염, 만성 구내염(chronic stomatitis), 만성 호흡기·장염·피부염, 종양 발생 가능. FeLV 동시감염 시 면역결핍이 심화되고 진행이 빨라진다.\n\n근거: 강의안 슬라이드 86(Four Stages: acute/asymptomatic/vague signs/immunodeficiency, 만성 구내염, FeLV 동시감염 악화), 슬라이드 87(CD4+ T-cell depletion, viral load 8~12주 정점).\n\n[족보 답안 비교] 2023(#49) 답안은 3단계로 ① acute(lymphadenopathy·fever) ② long subclinical(무증상) ③ terminal(면역약화·기회감염·종양)로 서술 — 강의안 4단계를 3단계로 압축한 형태로 핵심 부합(✓). 강의안 기준으로는 acute→asymptomatic→(vague signs)→immunodeficiency 4단계가 정식이며, 'vague clinical signs' 단계를 추가하면 더 완전하다.",
+"exam": "2023-기말",
+"exams": [
+"2023-기말"
+],
+"freq": 1,
+"flag": false,
+"flagReason": "족보는 3단계, 강의안은 4단계(vague signs 추가)로 제시 — 둘 다 인정되나 4단계가 정식.",
+"unit": "",
+"cardOrder": 99,
+"id": 250
+},
+{
+"part": "Retroviridae",
+"topic": "Retrovirus c-onc 종양유발 기작(insertional mutagenesis)",
+"origin": "jokbo",
+"type": "essay",
+"q": "Family Retroviridae가 c-onc(세포 종양유전자)를 통해 종양을 유발하는 기작에 대해 설명하시오.",
+"choices": [],
+"answer": [],
+"explain": "[모범답안] Retrovirus는 역전사효소로 자신의 RNA를 dsDNA로 바꾼 뒤 숙주 세포 유전체에 provirus로 삽입(integration)된다. 이 provirus가 숙주의 세포 종양유전자(c-onc, proto-oncogene) 근처에 삽입되면, provirus 양 끝의 🔴LTR(Long Terminal Repeat)가 promoter·enhancer로 작용해 인접한 proto-oncogene의 발현을 과도하게 활성화시킨다(insertional mutagenesis). 정상적으로 조절되던 proto-oncogene이 과발현(overexpression)되면 세포 증식 조절이 무너져 종양(예: 림프종/백혈병)으로 진행한다. 이를 '느린 전환(slow/chronic transforming)' 기전이라 하며, 바이러스가 자체 oncogene(v-onc)을 갖지 않고 숙주의 c-onc를 활성화한다는 점이 핵심이다.\n\n대표 예: 🔴FeLV — provirus가 cellular oncogene 근처에 삽입되어 활성화시켜 종양 발생(슬라이드 83 'Tumors occur when the provirus inserts near cellular oncogenes, activating them; LTR act as promoter/enhancer'; proto-oncogene insertion→overexpression→tumor 도식). 🔴BLV는 별도로 전통적 oncogene이 없고 Tax/Rex 조절단백으로 B세포 림프종을 유도하는 변형 기전을 보인다(슬라이드 73).\n\n근거: 강의안 슬라이드 83(FeLV provirus insertion·LTR promoter/enhancer·proto-oncogene overexpression→tumor), 슬라이드 68·71(provirus integration), 슬라이드 73(BLV no traditional oncogene, Tax/Rex).\n\n[족보 답안 비교] 2024(#26) 답안 'chronic transforming에서 숙주 세포 유전자에 integration하면서 insertional mutagenesis 유발'은 핵심을 정확히 짚음(✓). 2023(#46) 답안은 내용 없음(원본 누락). 강의안 기준 보완 포인트: LTR이 promoter/enhancer로 작동해 c-onc를 과발현시킨다는 메커니즘을 반드시 명시.",
+"exam": "2024-기말",
+"exams": [
+"2024-기말",
+"2023-기말"
+],
+"freq": 2,
+"flag": false,
+"flagReason": "Q0663(2024#26)·Q0779(2023#46) 동일 주제 병합. 2023 족보 답안은 원본 누락.",
+"unit": "",
+"cardOrder": 99,
+"id": 251
 },
 {
 "part": "Retroviridae",
@@ -2693,25 +2952,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 168
-},
-{
-"part": "Retroviridae",
-"topic": "FIV 임상 진행(3단계/4단계)",
-"origin": "jokbo",
-"type": "essay",
-"q": "FIV(고양이 면역결핍 바이러스)의 임상증상을 단계(step)별로 설명하시오.",
-"choices": [],
-"answer": [],
-"explain": "[모범답안] 강의안은 FIV 감염을 4단계로 제시하나, 무증상·말기를 묶으면 3단계로도 설명된다.\n1) 🔴Acute stage(급성기): 발열, 림프절염(lymphadenitis/lymphadenopathy), 호중구감소(neutropenia)가 수 주~수 개월 지속.\n2) 🔴Asymptomatic stage(무증상 잠복기): 외견상 임상징후 없이 장기간(수개월~수년) 경과. (※ viral load는 감염 8~12주에 정점 후 이 시기에 감소)\n3) Vague clinical signs(모호한 임상징후기): 반복성 발열, 백혈구감소, 빈혈, 행동 변화.\n4) 🔴Immunodeficiency stage(면역결핍기/말기): CD4+ T세포의 진행성 소실로 세포매개면역이 붕괴 → 잦은 기회감염, 만성 구내염(chronic stomatitis), 만성 호흡기·장염·피부염, 종양 발생 가능. FeLV 동시감염 시 면역결핍이 심화되고 진행이 빨라진다.\n\n근거: 강의안 슬라이드 86(Four Stages: acute/asymptomatic/vague signs/immunodeficiency, 만성 구내염, FeLV 동시감염 악화), 슬라이드 87(CD4+ T-cell depletion, viral load 8~12주 정점).\n\n[족보 답안 비교] 2023(#49) 답안은 3단계로 ① acute(lymphadenopathy·fever) ② long subclinical(무증상) ③ terminal(면역약화·기회감염·종양)로 서술 — 강의안 4단계를 3단계로 압축한 형태로 핵심 부합(✓). 강의안 기준으로는 acute→asymptomatic→(vague signs)→immunodeficiency 4단계가 정식이며, 'vague clinical signs' 단계를 추가하면 더 완전하다.",
-"exam": "2023-기말",
-"exams": [
-"2023-기말"
-],
-"freq": 1,
-"flag": false,
-"flagReason": "족보는 3단계, 강의안은 4단계(vague signs 추가)로 제시 — 둘 다 인정되나 4단계가 정식.",
-"id": 169
+"unit": "",
+"cardOrder": 99,
+"id": 252
 },
 {
 "part": "Retroviridae",
@@ -2736,7 +2979,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 170
+"unit": "",
+"cardOrder": 99,
+"id": 253
 },
 {
 "part": "Retroviridae",
@@ -2761,26 +3006,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 172
-},
-{
-"part": "Retroviridae",
-"topic": "Retrovirus c-onc 종양유발 기작(insertional mutagenesis)",
-"origin": "jokbo",
-"type": "essay",
-"q": "Family Retroviridae가 c-onc(세포 종양유전자)를 통해 종양을 유발하는 기작에 대해 설명하시오.",
-"choices": [],
-"answer": [],
-"explain": "[모범답안] Retrovirus는 역전사효소로 자신의 RNA를 dsDNA로 바꾼 뒤 숙주 세포 유전체에 provirus로 삽입(integration)된다. 이 provirus가 숙주의 세포 종양유전자(c-onc, proto-oncogene) 근처에 삽입되면, provirus 양 끝의 🔴LTR(Long Terminal Repeat)가 promoter·enhancer로 작용해 인접한 proto-oncogene의 발현을 과도하게 활성화시킨다(insertional mutagenesis). 정상적으로 조절되던 proto-oncogene이 과발현(overexpression)되면 세포 증식 조절이 무너져 종양(예: 림프종/백혈병)으로 진행한다. 이를 '느린 전환(slow/chronic transforming)' 기전이라 하며, 바이러스가 자체 oncogene(v-onc)을 갖지 않고 숙주의 c-onc를 활성화한다는 점이 핵심이다.\n\n대표 예: 🔴FeLV — provirus가 cellular oncogene 근처에 삽입되어 활성화시켜 종양 발생(슬라이드 83 'Tumors occur when the provirus inserts near cellular oncogenes, activating them; LTR act as promoter/enhancer'; proto-oncogene insertion→overexpression→tumor 도식). 🔴BLV는 별도로 전통적 oncogene이 없고 Tax/Rex 조절단백으로 B세포 림프종을 유도하는 변형 기전을 보인다(슬라이드 73).\n\n근거: 강의안 슬라이드 83(FeLV provirus insertion·LTR promoter/enhancer·proto-oncogene overexpression→tumor), 슬라이드 68·71(provirus integration), 슬라이드 73(BLV no traditional oncogene, Tax/Rex).\n\n[족보 답안 비교] 2024(#26) 답안 'chronic transforming에서 숙주 세포 유전자에 integration하면서 insertional mutagenesis 유발'은 핵심을 정확히 짚음(✓). 2023(#46) 답안은 내용 없음(원본 누락). 강의안 기준 보완 포인트: LTR이 promoter/enhancer로 작동해 c-onc를 과발현시킨다는 메커니즘을 반드시 명시.",
-"exam": "2024-기말",
-"exams": [
-"2024-기말",
-"2023-기말"
-],
-"freq": 2,
-"flag": false,
-"flagReason": "Q0663(2024#26)·Q0779(2023#46) 동일 주제 병합. 2023 족보 답안은 원본 누락.",
-"id": 173
+"unit": "",
+"cardOrder": 99,
+"id": 254
 },
 {
 "part": "Prion",
@@ -2805,7 +3033,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 176
+"unit": "",
+"cardOrder": 99,
+"id": 264
 },
 {
 "part": "Prion",
@@ -2830,7 +3060,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 178
+"unit": "",
+"cardOrder": 99,
+"id": 265
 },
 {
 "part": "Prion",
@@ -2855,7 +3087,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 180
+"unit": "",
+"cardOrder": 99,
+"id": 266
 },
 {
 "part": "Prion",
@@ -2880,7 +3114,9 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 181
+"unit": "",
+"cardOrder": 99,
+"id": 267
 },
 {
 "part": "Prion",
@@ -2905,6 +3141,8 @@ const CORE = [
 "flag": false,
 "level": "exam",
 "flagReason": "",
-"id": 182
+"unit": "",
+"cardOrder": 99,
+"id": 268
 }
 ];

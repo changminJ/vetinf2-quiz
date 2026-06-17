@@ -1040,32 +1040,6 @@ const LABQ = [
 },
 {
 "part": "Poxviridae",
-"topic": "Squirrelpox·Crocodile pox",
-"origin": "jokbo",
-"type": "single",
-"q": "다음 중 Squirrel poxvirus와 Crocodile poxvirus에 대한 설명 중 가장 알맞지 않은 것은?",
-"choices": [
-"Crocodile pox는 악어의 상피세포가 부풀어 오르는 특징을 갖고 있다.",
-"Squirrelpox는 숙주세포의 면역을 억제하지 못하여 쉽게 회복된다.",
-"Squirrelpox의 치사율은 거의 100%에 가까울 정도로 치명적인 질병이다.",
-"Squirrelpox는 다람쥐에서 입과 눈 주위에 multifocal ulcer를 발생시킨다.",
-"Crocodile pox는 virulence나 숙주 면역에 관계된 유전자가 다수 결여되어 있다."
-],
-"answer": [
-2
-],
-"explain": "**A. 배경** 이 문항이 다루는 Squirrelpox·Crocodile pox의 세부 임상·병독성·면역억제 기전은 **본 강의안(현지연 교수 Poxviridae)에 거의 기술이 없다**. 강의안 분류표(Slide 386)에 Squirrelpox virus가 'Unassigned'로 한 번 언급될 뿐이다.\\n\\n**B. 포인트** Squirrelpox의 치사율과 면역억제 능력의 모순 찾기.\\n\\n**C. 정답 근거(논리적 판정)** ✗ ② 'Squirrelpox는 숙주 면역을 **억제하지 못하여 쉽게 회복**' → **③의 거의 100% 치사율과 모순**된다. 면역을 억제하지 못해 쉽게 회복된다면 치명적일 수 없다. 둘 중 한쪽이 오류이며, poxvirus 일반 특성(강력한 면역회피 단백질 보유, Slide 388-389)과 'squirrelpox가 치명적'이라는 통념에 비춰 ②(면역억제 못함·쉽게 회복)가 틀린 진술로 판정. 족보 정답도 ②.\\n\\n**D. 오답 소거** ①③④⑤ 모두 본 강의안 범위 밖이라 강의안 근거로 직접 검증 불가하나, 내적 논리상 ②가 ③과 충돌하므로 ②가 오답.\\n\\n**E. 함정** Squirrelpox/Crocodile pox는 강의안 본문에 다뤄지지 않은 주제다. 강의안만으로는 ②를 제외한 선지의 진위를 확정할 수 없으므로 **flag** 처리. 족보 정답 ②와 일치하나 근거는 강의안 밖.",
-"exam": "2021-중간",
-"exams": [
-"2021-중간"
-],
-"freq": 1,
-"flag": true,
-"flagReason": "Squirrelpox·Crocodile pox의 세부 임상·치사율·면역억제 기전은 본 강의안(현지연 교수)에 기술 없음(분류표에 Squirrelpox만 1회 언급). 정답 ②는 ③과의 내적 모순으로 추론한 것이며 강의안 직접 근거 부재.",
-"id": 46
-},
-{
-"part": "Poxviridae",
 "topic": "Suipoxvirus·Avipoxvirus·Leporipoxvirus (개념카드)",
 "origin": "summary",
 "type": "summary",
@@ -1078,7 +1052,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 47
+"id": 46
 },
 {
 "part": "Poxviridae",
@@ -1104,7 +1078,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "①④(Yatapox/Tanapox 세부)는 본 강의안에 기술 없음. 정답 ③은 강의안 Slide 386 분류표(Swinepox=Suipoxvirus≠Capripoxvirus) 근거로 오류 확정 가능.",
-"id": 48
+"id": 47
 },
 {
 "part": "Poxviridae",
@@ -1120,33 +1094,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 49
-},
-{
-"part": "Picornaviridae",
-"topic": "Blue tongue (FMD 감별·시험범위 밖)",
-"origin": "jokbo",
-"type": "single",
-"q": "Blue tongue disease에 대한 설명 중 틀린 것은?",
-"choices": [
-"혈청형에 따라 소에서도 발생한다.",
-"고열 증상이 없는 것이 구제역과의 감별 수단이다.",
-"일반적으로 sheep(양)에 감염된다.",
-"구강 내 출혈이 나타난다."
-],
-"answer": [
-2
-],
-"explain": "A.배경: Blue tongue(블루텅, 청설병)은 Orbivirus(Reoviridae)가 일으키는 반추수의 질병으로, 본 Picornaviridae 강의안의 범위 밖 주제다(강의안 어디에도 Blue tongue 항목 없음). 다만 FMD와의 감별 맥락에서 출제되었다. \nB.포인트: '틀린 것'을 고른다. 핵심은 고열 유무가 FMD와의 감별 수단이 될 수 있는가이다. \nC.정답근거: ✓ ② — 족보 해설에 따르면 blue tongue의 임상증상에도 고열(fever)이 포함되므로, '고열이 없는 것이 구제역과의 감별 수단'이라는 서술은 틀렸다. (FMD도 발열을 동반하므로 고열 유무로 둘을 감별한다는 전제 자체가 성립하지 않음 — FMD는 강의안 슬라이드 353에서 fever가 명시됨.) \nD.오답소거: ①·③·④는 blue tongue의 일반적 특성(주로 양에 감염, 혈청형에 따라 소 발생, 구강 점막 충혈·출혈)으로 알려진 내용. \nE.함정 및 flag: 본 문항은 Picornaviridae 강의안 범위를 벗어난 Blue tongue(Reoviridae/Orbivirus) 주제로, 강의안만으로는 ①③④를 독립 검증할 수 없다. 다만 FMD가 발열을 동반한다(슬라이드 353)는 점에서 ②의 전제가 틀렸다는 판정은 강의안과도 부합한다. 족보 정답 ②와 일치. Blue tongue 본체는 별도 과목 범위에서 학습 필요 → flag.",
-"exam": "2025-기말",
-"exams": [
-"2025-기말",
-"2024-기말"
-],
-"freq": 2,
-"flag": true,
-"flagReason": "Blue tongue은 Reoviridae/Orbivirus 질병으로 본 Picornaviridae 강의안 범위 밖. 정답 ②는 FMD가 발열을 동반한다는 강의안 슬라이드353 근거로 판정 가능(족보와 일치)하나, 선지 ①③④의 blue tongue 특성은 강의안에 근거 없음.",
-"id": 50
+"id": 48
 },
 {
 "part": "Picornaviridae",
@@ -1171,7 +1119,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "③(자돈vs성돈 증상 구분)이 강의안 슬라이드372 근거로 명확한 오답·정답이나, 선지 ①(돼지용 백신 유무)·④(Mulberry disease 육안감별)는 강의안에 직접 근거가 없어 독립 판정 불가. 족보 정답 ③과는 일치.",
-"id": 51
+"id": 49
 },
 {
 "part": "Picornaviridae",
@@ -1189,7 +1137,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 52
+"id": 50
 },
 {
 "part": "Picornaviridae",
@@ -1214,7 +1162,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 53
+"id": 51
 },
 {
 "part": "Picornaviridae",
@@ -1230,7 +1178,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 54
+"id": 52
 },
 {
 "part": "Picornaviridae",
@@ -1251,7 +1199,7 @@ const LABQ = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 55
+"id": 53
 },
 {
 "part": "Picornaviridae",
@@ -1271,33 +1219,7 @@ const LABQ = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 56
-},
-{
-"part": "Picornaviridae",
-"topic": "FMDV 세포 침입 기전 (강의안 외)",
-"origin": "jokbo",
-"type": "single",
-"q": "구제역바이러스(FMDV)의 세포 감염(침입) 과정을 설명한 것 중 잘못된 것은?",
-"choices": [
-"세포막에 구멍을 뚫어 핵산을 세포질로 직접 주입한다.",
-"Receptor를 통해 attachment 한다.",
-"Clathrin으로 endocytosis 한다.",
-"pH 의존성으로 genome을 방출한다."
-],
-"answer": [
-1
-],
-"explain": "A.배경: 이 문항은 FMDV의 세포 침입(attachment→endocytosis→uncoating) 기전을 묻는다. 본 Picornaviridae 강의안은 입자 구조(VP1~4)·환경저항성·역학·임상은 다루지만 수용체 매개 endocytosis·pH 의존적 uncoating의 분자 기전은 상세히 다루지 않는다(강의안 범위 일부 밖). \nB.포인트: '잘못된(틀린) 것'을 고른다. 무외피 바이러스가 세포에 들어가는 일반적 방식과 어긋나는 선지를 찾는다. \nC.정답근거: ✓ ① — FMDV는 무외피(non-enveloped) 바이러스로 receptor 매개 endocytosis로 세포 내로 들어가며, 엔도좀의 낮은 pH에서 캡시드 구조 변화로 genome을 방출한다. '세포막에 구멍을 뚫어 핵산을 직접 주입'하는 것은 박테리오파지 방식의 서술로 FMDV에는 맞지 않는다. 따라서 ①이 잘못된 설명(정답). \nD.오답소거: ②수용체 통한 부착 ✗(옳음) — receptor attachment는 바이러스 침입의 일반 단계. ③clathrin 매개 endocytosis ✗(옳음). ④pH 의존적 genome 방출 ✗(옳음) — Picornaviridae는 산성 엔도좀 환경에서 uncoating. \nE.함정 및 flag: 2023-기말은 정답을 ①로, 2024-기말 족보는 '1, 4'(①④)로 표기해 족보 간 답이 엇갈린다. 침입 기전상 ②③④는 정상 과정 서술이고 ①만 명백한 오류이므로 정답은 ① 하나로 보는 것이 타당하다(2024 족보의 ④ 추가는 오류로 판단). 단 이 분자 기전 자체는 본 강의안에 명시되지 않은 내용이므로 강의안만으로 ②③④를 완전 검증할 수는 없다 → flag.",
-"exam": "2024-기말",
-"exams": [
-"2024-기말",
-"2023-기말"
-],
-"freq": 2,
-"flag": true,
-"flagReason": "FMDV 세포 침입의 분자기전(receptor endocytosis·clathrin·pH 의존 uncoating)은 본 강의안에 상세 명시 없음. ①(막에 구멍 뚫어 핵산 주입)은 무외피 바이러스 침입과 어긋나 명백한 오답이나, 족보 답이 2023=①, 2024=①④로 엇갈림. 정답 ① 하나가 타당.",
-"id": 57
+"id": 54
 },
 {
 "part": "Picornaviridae",
@@ -1313,7 +1235,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 58
+"id": 55
 },
 {
 "part": "Picornaviridae",
@@ -1329,7 +1251,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 59
+"id": 56
 },
 {
 "part": "Rhabdoviridae",
@@ -1345,7 +1267,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 60
+"id": 57
 },
 {
 "part": "Rhabdoviridae",
@@ -1371,7 +1293,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 61
+"id": 58
 },
 {
 "part": "Rhabdoviridae",
@@ -1398,7 +1320,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "선지② Lutzomyia(모래파리) 특정 종명은 강의안에 없음(slide32는 '곤충 벡터'만 기술). 큰 틀이 맞아 정답에서 제외했으나 종명 근거는 강의안 외. ⑤ 잠복기 '짧다'는 slide35 회복기간 기반 추론.",
-"id": 62
+"id": 59
 },
 {
 "part": "Rhabdoviridae",
@@ -1414,7 +1336,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 63
+"id": 60
 },
 {
 "part": "Rhabdoviridae",
@@ -1433,7 +1355,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 64
+"id": 61
 },
 {
 "part": "Rhabdoviridae",
@@ -1452,7 +1374,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 65
+"id": 62
 },
 {
 "part": "Rhabdoviridae",
@@ -1478,7 +1400,7 @@ const LABQ = [
 "freq": 2,
 "flag": true,
 "flagReason": "강의안에 광견병의 수용체 결합 표적(아세틸콜린/아드레날린 등) 명시 없음. ②는 강의안 미수록 진술이므로 '근거 없는 오류'로 정답 판정(슬라이드38은 신경침입·축삭수송만 기술).",
-"id": 66
+"id": 63
 },
 {
 "part": "Rhabdoviridae",
@@ -1503,7 +1425,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 67
+"id": 64
 },
 {
 "part": "Rhabdoviridae",
@@ -1521,7 +1443,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 68
+"id": 65
 },
 {
 "part": "Rhabdoviridae",
@@ -1537,7 +1459,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 69
+"id": 66
 },
 {
 "part": "Rhabdoviridae",
@@ -1563,7 +1485,7 @@ const LABQ = [
 "freq": 4,
 "flag": true,
 "flagReason": "선지② '서늘·습·알칼리에서 안정'도 강의안(slide24, envelope→highly sensitive) 기준 틀린 서술이라 복수정답 소지. 단 ③ positive-sense가 가장 명백한 오류로 정답.",
-"id": 70
+"id": 67
 },
 {
 "part": "Rhabdoviridae",
@@ -1581,7 +1503,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "Coronaviridae·Paramyxoviridae·Retroviridae의 그림 식별 근거는 제공된 Rhabdoviridae 단원 강의안에 없음. 'Rhabdo=탄환형' 매칭만 확정 가능.",
-"id": 71
+"id": 68
 },
 {
 "part": "Reoviridae",
@@ -1608,7 +1530,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 72
+"id": 69
 },
 {
 "part": "Reoviridae",
@@ -1627,7 +1549,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 73
+"id": 70
 },
 {
 "part": "Reoviridae",
@@ -1655,7 +1577,7 @@ const LABQ = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 74
+"id": 71
 },
 {
 "part": "Reoviridae",
@@ -1680,7 +1602,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 75
+"id": 72
 },
 {
 "part": "Reoviridae",
@@ -1698,7 +1620,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 76
+"id": 73
 },
 {
 "part": "Reoviridae",
@@ -1717,7 +1639,33 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 77
+"id": 74
+},
+{
+"part": "Reoviridae",
+"topic": "Bluetongue(구제역 감별)",
+"origin": "jokbo",
+"type": "single",
+"q": "Blue tongue disease에 대한 설명 중 틀린 것은?",
+"choices": [
+"혈청형에 따라 소에서도 발생한다.",
+"고열 증상이 없는 것이 구제역과의 감별 수단이다.",
+"일반적으로 sheep(양)에 감염된다.",
+"구강 내 출혈이 나타난다."
+],
+"answer": [
+2
+],
+"explain": "A.배경: Blue tongue(블루텅, 청설병)은 Orbivirus(Reoviridae)가 일으키는 반추수의 질병으로, 본 Picornaviridae 강의안의 범위 밖 주제다(강의안 어디에도 Blue tongue 항목 없음). 다만 FMD와의 감별 맥락에서 출제되었다. \nB.포인트: '틀린 것'을 고른다. 핵심은 고열 유무가 FMD와의 감별 수단이 될 수 있는가이다. \nC.정답근거: ✓ ② — 족보 해설에 따르면 blue tongue의 임상증상에도 고열(fever)이 포함되므로, '고열이 없는 것이 구제역과의 감별 수단'이라는 서술은 틀렸다. (FMD도 발열을 동반하므로 고열 유무로 둘을 감별한다는 전제 자체가 성립하지 않음 — FMD는 강의안 슬라이드 353에서 fever가 명시됨.) \nD.오답소거: ①·③·④는 blue tongue의 일반적 특성(주로 양에 감염, 혈청형에 따라 소 발생, 구강 점막 충혈·출혈)으로 알려진 내용. \nE.함정 및 flag: 본 문항은 Picornaviridae 강의안 범위를 벗어난 Blue tongue(Reoviridae/Orbivirus) 주제로, 강의안만으로는 ①③④를 독립 검증할 수 없다. 다만 FMD가 발열을 동반한다(슬라이드 353)는 점에서 ②의 전제가 틀렸다는 판정은 강의안과도 부합한다. 족보 정답 ②와 일치. Blue tongue 본체는 별도 과목 범위에서 학습 필요 → flag.",
+"exam": "2025-기말",
+"exams": [
+"2025-기말",
+"2024-기말"
+],
+"freq": 2,
+"flag": true,
+"flagReason": "Blue tongue은 Reoviridae/Orbivirus 질병으로 본 Picornaviridae 강의안 범위 밖. 정답 ②는 FMD가 발열을 동반한다는 강의안 슬라이드353 근거로 판정 가능(족보와 일치)하나, 선지 ①③④의 blue tongue 특성은 강의안에 근거 없음.",
+"id": 75
 },
 {
 "part": "Reoviridae",
@@ -1745,34 +1693,7 @@ const LABQ = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 78
-},
-{
-"part": "Reoviridae",
-"topic": "Rotavirus (포유류·조류) — 범위 외 항목 포함",
-"origin": "jokbo",
-"type": "single",
-"q": "포유류 및 조류의 로타바이러스 감염증에 대한 설명 중 가장 알맞지 않은 것은?",
-"choices": [
-"토끼에서 태반을 통해 모체항체를 받고 사망률은 낮지만 이환율은 높다.",
-"신생 생쥐의 로타바이러스 감염은 '유아 생쥐의 에피 동물성 설사(EDIM)'로 알려진 증후군을 유발하며 폐사율이 매우 높다.",
-"송아지, 새끼돼지, 망아지 및 어린 양의 로타바이러스 설사를 일으킨다.",
-"장 점막의 로타바이러스 감염으로 인한 락타아제 생산 감소가 삼투 조절 장애를 악화시켜 중증도가 높아진다.",
-"조류에서 감염시 설사, 탈수, 체중감소, 안절부절, 허들링, 발육 부진 및 폐사가 발생할 수 있다."
-],
-"answer": [
-2
-],
-"explain": "정답: ② 신생 생쥐 EDIM 폐사율 매우 높음 ✗ (족보 기준)\n\nA. 배경: 본 문항의 선지 다수(토끼 태반항체, 생쥐 EDIM, 조류 감염, lactase)는 제공된 강의안에 직접 서술이 없는 외부 교과서 기반 내용이다. 강의안은 소·돼지 Rotavirus와 일반 병기전(융모위축, 흡수장애, NSP4)만 다룬다.\nB. 포인트: 강의안 기준으로는 ③(가축 신생 설사)과 ④(흡수장애 악화)만 명확히 근거가 있고, 나머지는 범위 밖.\nC. 정답근거(족보): 족보는 ②를 정답으로, 'EDIM 폐사율은 낮다(폐사율 낮음)'를 근거로 든다. 강의안에는 EDIM·생쥐 폐사율 정보가 없어 독립 재판정 불가하므로 족보 정답을 따른다.\nD. 오답소거(강의안 근거 가능 범위): ③ 송아지·자돈·망아지·어린양 Rotavirus 설사 ✓(p.101, p.114 — 명확히 강의안 내). ④ 흡수장애로 중증도 상승 ✓(p.103 villous atrophy→malabsorption 맥락, lactase 언급은 강의안에 없으나 흡수장애 악화 방향은 일치). ①·⑤는 강의안에 근거 없음(토끼·조류 Rotavirus 미수록).\nE. 함정: 선지 ①②⑤는 강의안 시험범위 밖이라 강의안만으로 진위 판정 불가. 족보 정답 ②를 채택하되, 출제 근거가 강의안 외부임을 유의. 족보 정답(②)과 일치하나 근거 부족으로 flag.",
-"exam": "2023-기말",
-"exams": [
-"2023-기말",
-"2021-기말"
-],
-"freq": 2,
-"flag": true,
-"flagReason": "선지 ①(토끼 태반항체)·②(생쥐 EDIM 폐사율)·⑤(조류 Rotavirus)는 제공 강의안에 서술이 없는 외부 교과서 기반 내용. 강의안 독립 재판정으로 정오를 확정할 수 없어 족보 정답(②)을 채택. 강의안에 근거 있는 선지는 ③·④뿐.",
-"id": 79
+"id": 76
 },
 {
 "part": "Reoviridae",
@@ -1798,7 +1719,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 80
+"id": 77
 },
 {
 "part": "Reoviridae",
@@ -1817,7 +1738,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "",
-"id": 81
+"id": 78
 },
 {
 "part": "Reoviridae",
@@ -1837,7 +1758,7 @@ const LABQ = [
 "freq": 3,
 "flag": false,
 "flagReason": "",
-"id": 82
+"id": 79
 },
 {
 "part": "Reoviridae",
@@ -1858,7 +1779,7 @@ const LABQ = [
 "freq": 4,
 "flag": false,
 "flagReason": "",
-"id": 83
+"id": 80
 },
 {
 "part": "Arteriviridae",
@@ -1874,7 +1795,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 84
+"id": 81
 },
 {
 "part": "Arteriviridae",
@@ -1892,7 +1813,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 모범답안의 '모체이행항체(mAb)로 인한 vaccine failure 방지 위해 6-8개월령 접종' 내용은 본 Arteriviridae 강의안에 근거 없음(강의안은 사전검사·정액검사·carrier 제한·ARVAC MLV·연1회 재접종만 기술). 강의안 외 지식이라 만들지 않고 flag.",
-"id": 85
+"id": 82
 },
 {
 "part": "Arteriviridae",
@@ -1908,7 +1829,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 86
+"id": 83
 },
 {
 "part": "Arteriviridae",
@@ -1926,7 +1847,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 87
+"id": 84
 },
 {
 "part": "Arteriviridae",
@@ -1951,7 +1872,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 88
+"id": 85
 },
 {
 "part": "Arteriviridae",
@@ -1978,7 +1899,7 @@ const LABQ = [
 "freq": 3,
 "flag": true,
 "flagReason": "시험답은 ①PRRS(미보고)이나 본 강의안 slide147은 PRRS를 WOAH-등재로 명시 → 강의안과 모순. 황성수 총론 기준 출제로 추정. 시험답 ①로 외우되 강의안 모순 인지.",
-"id": 89
+"id": 86
 },
 {
 "part": "Arteriviridae",
@@ -1994,7 +1915,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 90
+"id": 87
 },
 {
 "part": "Bunyavirales",
@@ -2020,7 +1941,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 정답 ①, 그러나 강의안(슬라이드183 mortality~100%) 근거상 틀린 문장은 ②(자연치유). Claude 정답=②.",
-"id": 91
+"id": 88
 },
 {
 "part": "Bunyavirales",
@@ -2046,7 +1967,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 92
+"id": 89
 },
 {
 "part": "Bunyavirales",
@@ -2071,7 +1992,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 93
+"id": 90
 },
 {
 "part": "Bunyavirales",
@@ -2087,7 +2008,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 94
+"id": 91
 },
 {
 "part": "Bunyavirales",
@@ -2103,7 +2024,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 95
+"id": 92
 },
 {
 "part": "Bunyavirales",
@@ -2129,7 +2050,7 @@ const LABQ = [
 "freq": 1,
 "flag": true,
 "flagReason": "족보 정답 표기가 '4↵3'로 혼란. 강의안(슬라이드187 lymphoplasmacytic inflammation) 근거상 틀린 문장은 ④(염증세포 침윤 없음). Claude 정답=④.",
-"id": 96
+"id": 93
 },
 {
 "part": "Caliciviridae",
@@ -2147,7 +2068,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "Q0682(2024#47)·Q0684(2024#49) 동일 주제(FHV-1 감별) 병합.",
-"id": 97
+"id": 94
 },
 {
 "part": "Caliciviridae",
@@ -2166,7 +2087,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "Q0775(2023#42)·Q0844(2022#21) 동일 주제 병합.",
-"id": 98
+"id": 95
 },
 {
 "part": "Caliciviridae",
@@ -2182,7 +2103,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 99
+"id": 96
 },
 {
 "part": "Retroviridae",
@@ -2200,7 +2121,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "족보는 3단계, 강의안은 4단계(vague signs 추가)로 제시 — 둘 다 인정되나 4단계가 정식.",
-"id": 100
+"id": 97
 },
 {
 "part": "Retroviridae",
@@ -2219,7 +2140,7 @@ const LABQ = [
 "freq": 2,
 "flag": false,
 "flagReason": "Q0663(2024#26)·Q0779(2023#46) 동일 주제 병합. 2023 족보 답안은 원본 누락.",
-"id": 101
+"id": 98
 },
 {
 "part": "Retroviridae",
@@ -2235,7 +2156,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 102
+"id": 99
 },
 {
 "part": "Pneumoviridae",
@@ -2251,7 +2172,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 103
+"id": 100
 },
 {
 "part": "Pneumoviridae",
@@ -2277,7 +2198,7 @@ const LABQ = [
 "freq": 1,
 "flag": false,
 "flagReason": "",
-"id": 104
+"id": 101
 },
 {
 "part": "Togaviridae",
@@ -2293,7 +2214,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 105
+"id": 102
 },
 {
 "part": "Togaviridae",
@@ -2309,7 +2230,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 106
+"id": 103
 },
 {
 "part": "Prion",
@@ -2325,7 +2246,7 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 107
+"id": 104
 },
 {
 "part": "Prion",
@@ -2341,6 +2262,6 @@ const LABQ = [
 "freq": 0,
 "flag": false,
 "flagReason": "",
-"id": 108
+"id": 105
 }
 ];

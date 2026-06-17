@@ -45,13 +45,12 @@ const LABLAB = [
  hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:6, part:'RNA추출', topic:'추출 protocol·공회전', origin:'jokbo', type:'multi',
- q:`Silica membrane에 핵산이 **흡착(cation bridge 형성)되어 결합을 유지하는** 단계를 protocol 순서(1~7) 중 **모두 고르시오**. (2025 기말, 보기 제공형 변형)\n\n[1] 시료에 Lysis buffer 첨가 [2] Binding buffer 첨가 [3] lysate를 column에 load·원심 [4] Washing buffer A·B로 세척 [5] 공회전(건조) [6] Elution buffer 첨가 [7] 용출액 원심 회수`,
- choices:['[2] Binding buffer 첨가','[3] lysate load·원심','[4] Washing(세척)','[5] 공회전','[6] Elution buffer 첨가'],
+ q:`Silica membrane에 핵산이 **흡착(cation bridge 형성)되어 결합을 유지하는** 단계를 **모두 고르시오**. (2025 기말 — 강의안 영문 protocol 기준, 보기 제공형)\n\n**[자료] protocol 단계**\n[1] Add Lysis Buffer & vortex\n[2] Add Binding Buffer (high salt)\n[3] Load lysate (750 µl) and centrifuge 13,000 rpm 1 min\n[4] Add Washing Buffer A/B and centrifuge\n[5] Re-place column and centrifuge to dry the membrane\n[6] Add Elution Buffer onto the membrane and centrifuge\n[7] Recover the eluate as template`,
+ choices:['Add Binding Buffer (high salt)','Load lysate (750 µl) and centrifuge 13,000 rpm 1 min','Add Washing Buffer A/B and centrifuge','Re-place column and centrifuge to dry the membrane','Add Elution Buffer onto the membrane and centrifuge'],
  answer:[1,2,3,4],
- explain:`**정답: [2][3][4][5] (Binding~공회전까지 흡착 유지)**\n\n- **[2] Binding buffer**: high salt 조성 → cation bridge **형성 시작**\n- **[3] load·원심**: 핵산이 silica에 **흡착**\n- **[4] Washing**: 흡착 **유지**한 채 불순물만 제거(EtOH는 핵산을 떼지 않음)\n- **[5] 공회전**: 흡착 **유지**, ethanol만 건조\n- **[6] Elution(low salt)**: 여기서 **cation bridge 해제 → 핵산이 떨어짐**(흡착 끝)\n\n즉 흡착은 **Binding(2)부터 시작해 Elution(6) 직전(5)까지 유지**된다. 실제 시험은 "3~8단계" 식 보기로 출제. (강의안 protocol 슬라이드)`,
+ explain:`**정답: ①②③④ (Binding ~ dry membrane까지 흡착 유지)**\n\n- **① Add Binding Buffer**: high salt → cation bridge **형성 시작**\n- **② Load·centrifuge**: 핵산이 silica에 **흡착**\n- **③ Washing**: 흡착 **유지**(EtOH는 핵산 안 뗌)\n- **④ Dry membrane(공회전)**: 흡착 **유지**, ethanol만 건조\n- **⑤ Elution(low salt)**: 여기서 **cation bridge 해제 → 용출**(흡착 끝) → 제외\n\n즉 흡착은 **Binding부터 Elution 직전(dry)까지 유지**. (강의안 RNA Extraction Protocol 영문 슬라이드)`,
  hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
-/* ===================== RTqPCR ===================== */
 {id:7, part:'RTqPCR', topic:'RT-qPCR 용어·1·2-step', origin:'summary', type:'summary',
  explain:`## PCR · RT-PCR · qPCR · RT-qPCR 구분\n\n| 용어 | template | 핵심 |\n|---|---|---|\n| **PCR** | DNA | 중합효소로 목표 DNA 증폭 |\n| **RT-PCR** | RNA | 역전사효소로 RNA→cDNA 후 증폭 |\n| **qPCR**(real-time) | DNA | 실시간 **정량** |\n| **RT-qPCR** | RNA | RNA→cDNA→실시간 정량 |\n\n**1-step vs 2-step RT-qPCR**\n| | 진행 | 장점 | 단점 |\n|---|---|---|---|\n| **1-step** | 단일 tube에서 cDNA합성+증폭 한 번에(gene-specific primer) | PCR 1회로 결과, 편리·오염↓ | **cDNA 보관 불가** → 목표 외 서열 분석 불가 |\n| **2-step** | Step1 oligo dT/random primer로 RNA 전체→cDNA, Step2 gene-specific로 목표 증폭 | **cDNA 보관 가능** → 다른 서열도 증폭 | 시간 오래, 단계 많음 |\n\n⚠️ 함정: "1-step은 cDNA 보관이 가능하다" → **틀림(X)**. 보관 가능한 쪽은 **2-step**.\n\n**qPCR 정량 용어**\n- **Baseline**: 초기 3~15 cycle의 noise\n- **Threshold**: baseline 표준편차의 ~10배 높은 유의 신호선\n- **Ct(threshold cycle)**: 증폭곡선이 threshold와 만나는 cycle. **Ct 1 차이 = template 2배 차이**, **Ct 낮을수록 바이러스 많음**.\n\n**한 줄 요약**: RNA는 RT-PCR로 cDNA 만들고, 실시간 정량은 Ct로 읽는다(Ct↓=양↑). 2-step만 cDNA 보관 가능.`,
  exam:'', freq:2},

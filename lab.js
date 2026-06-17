@@ -15,7 +15,7 @@ const LABLAB = [
  q:`다음은 chaotropic salt를 설명하는 글이다. **틀린 부분 3곳**을 찾아 옳게 고치시오. (2025 기말 ⑯)\n\n"① 수소결합은 DNA, RNA, 단백질과 같은 고분자의 **2차 구조** 형성과 분자의 수용성에 큰 영향을 미친다. ② 일반 조건에서 핵산은 수화막에 둘러싸여 **소수성**을 유지한다. ③ **Tropic salt**를 넣으면 수화막 구조가 파괴되어 친수성 환경이 되고, 핵산이 silica에 결합한다."`,
  choices:[], answer:[],
  explain:`**모범답안 — 틀린 3곳**\n\n① "단백질의 **2차 구조**" → 단백질에서 수소결합이 핵심인 것은 맞으나, 출제 글의 의도상 **단백질의 고차(3차) 구조**까지 포함해야 정확. (단백질 입체구조 = 2차 α-helix/β-sheet + 3차·4차)\n\n② "핵산은 수화막에 둘러싸여 **소수성**을 유지" → **수용성(친수성)**을 유지가 맞다. 인산골격이 음전하라 물에 잘 녹음.\n\n③ "**Tropic salt**" → **Chaotropic salt** (오타). 그리고 "**친수성 환경**" → **소수성 환경**이 조성되어야 silica에 흡착된다.\n\n**핵심**: chaotropic salt = 수화막을 깨 소수성 환경을 만들어 핵산을 silica에 붙임. (강의안 'Chaotropic Salt' 슬라이드 근거)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== RNA추출 ===================== */
 {id:3, part:'RNA추출', topic:'Spin column 원리·buffer', origin:'summary', type:'summary',
@@ -26,20 +26,20 @@ const LABLAB = [
  q:`Spin column 원리 글의 빈칸에 **↑(높게) 또는 ↓(낮게)**를 채우시오. (2025 기말 ⑮)\n\n"핵산은 [ A ] salt, [ B ] temp 조건에서 silica·glass에 흡착된다. EtOH로 wash 후 [ C ] salt 조건을 만들어 흡착된 핵산을 용출 분리한다."`,
  choices:[], answer:[],
  explain:`**정답: A=↑(high), B=↓(low), C=↓(low)**\n\n- **흡착(bind)**: 염 **높게↑**, 온도 **낮게↓** → Na⁺ cation bridge로 silica에 결합\n- **용출(elute)**: 염 **낮게↓**(주로 DW) → 결합 해제, 핵산이 물에 녹아 떨어짐\n\n강의안 'Spin column method' 슬라이드 문장 그대로 출제됨. 빈칸 □ 위치에 ↑/↓ 기재.`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:5, part:'RNA추출', topic:'추출 protocol·공회전', origin:'jokbo', type:'essay',
  q:`RNA extraction protocol에서 ① **공회전(빈 원심)을 하는 단계는 언제이며 그 이유**는? ② **핵산(DNA)이 column membrane에 흡착되는 단계**는 어디인가? (2025 기말 ⑫/⑥)`,
  choices:[], answer:[],
  explain:`**① 공회전 단계와 이유**\n- 단계: **마지막 Washing buffer 제거 후**, buffer를 넣지 않고 13,000 rpm으로 한 번 더 원심하는 단계.\n- 이유: membrane에 남은 **잔류 ethanol(EtOH)이 downstream 반응(PCR/RT-PCR)을 방해**하므로, 공회전으로 **membrane을 완전히 건조**시켜 ethanol을 제거하기 위함.\n\n**② 핵산이 흡착되는 단계**\n- **Binding buffer(300 µl) 첨가 후 lysate(750 µl)를 column에 load → 13,000 rpm 1분 원심**하는 단계.\n- 이때 high salt 조건에서 cation bridge가 형성되어 핵산이 silica membrane에 붙는다.\n\n**protocol 순서 참고**: 시료 150 µl → Lysis 300 µl → vortex 15초 → RT 10분 → **Binding 300 µl** → spin column 장착 → lysate 750 µl load·원심(=흡착) → Wash A 500 µl → Wash B 500 µl → **공회전(건조)** → Elution 40 µl → 용출. (강의안 'RNA Extraction Protocol' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:6, part:'RNA추출', topic:'추출 protocol·공회전', origin:'jokbo', type:'multi',
  q:`Silica membrane에 핵산이 **흡착(cation bridge 형성)되어 결합을 유지하는** 단계를 protocol 순서(1~7) 중 **모두 고르시오**. (2025 기말, 보기 제공형 변형)\n\n[1] 시료에 Lysis buffer 첨가 [2] Binding buffer 첨가 [3] lysate를 column에 load·원심 [4] Washing buffer A·B로 세척 [5] 공회전(건조) [6] Elution buffer 첨가 [7] 용출액 원심 회수`,
  choices:['[2] Binding buffer 첨가','[3] lysate load·원심','[4] Washing(세척)','[5] 공회전','[6] Elution buffer 첨가'],
  answer:[1,2,3,4],
  explain:`**정답: [2][3][4][5] (Binding~공회전까지 흡착 유지)**\n\n- **[2] Binding buffer**: high salt 조성 → cation bridge **형성 시작**\n- **[3] load·원심**: 핵산이 silica에 **흡착**\n- **[4] Washing**: 흡착 **유지**한 채 불순물만 제거(EtOH는 핵산을 떼지 않음)\n- **[5] 공회전**: 흡착 **유지**, ethanol만 건조\n- **[6] Elution(low salt)**: 여기서 **cation bridge 해제 → 핵산이 떨어짐**(흡착 끝)\n\n즉 흡착은 **Binding(2)부터 시작해 Elution(6) 직전(5)까지 유지**된다. 실제 시험은 "3~8단계" 식 보기로 출제. (강의안 protocol 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== RTqPCR ===================== */
 {id:7, part:'RTqPCR', topic:'RT-qPCR 용어·1·2-step', origin:'summary', type:'summary',
@@ -66,20 +66,20 @@ const LABLAB = [
  q:`qPCR에서 **Probe의 원리**를 쓰고, **SYBR green과 비교하여 장단점**을 서술하시오. (2025 기말 ④·⑥, 서술형 4점)`,
  choices:[], answer:[],
  explain:`**Probe 원리**: Probe는 **형광물질(fluorophore)과 소광제(quencher)**로 구성되며 template에 상보적으로 결합. 평소 quencher가 형광을 억제하다가, polymerase의 **5'→3' exonuclease 활성**이 probe를 분해하면 fluorophore와 quencher가 분리되어 **형광을 발산**한다. 증폭량에 비례해 형광이 증가.\n\n**SYBR green 원리**: 모든 **ds-DNA에 끼어드는 intercalator**로, 증폭된 dsDNA에 결합해 형광 발산.\n\n**장단점 비교**\n- Probe 장점: 상보서열에만 붙어 **특이적·정확**, 형광색을 달리해 **동시 다중 검출(multiplex)** 가능. 단점: 서열마다 probe를 따로 합성해 **비용이 큼**.\n- SYBR 장점: 모든 dsDNA 검출 가능·**저비용**. 단점: 비특이 결합(primer-dimer 등도 검출).\n\n**결론**: Probe가 비용은 높지만 특이성·재현성이 우수해 정밀 정량에 적합. (강의안 'Probe', 'SYBR-green', '형광물질 비교' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:12, part:'RTqPCR', topic:'Probe vs SYBR green', origin:'jokbo', type:'ox',
  q:`"SYBR green은 증폭된 DNA에 삽입되어도 PCR을 저해하지 않는다." (2025 기말 ⑤, OX)`,
  choices:['O (맞음)','X (틀림)'], answer:[2],
  flag:true, flagReason:'강의안 슬라이드엔 "저해하지 않음(O)"으로 적혀 있으나 시험 정답은 X(저해함). 실제로 고농도 SYBR green은 PCR을 저해할 수 있어 시험은 과학사실 기준 채점.',
  explain:`**시험 정답: X (저해한다)** — ⚠️ 강의안과 충돌하는 문항\n\n- **강의안 슬라이드 문장**: "증폭된 DNA에 삽입되어도 PCR을 저해하지 않음" → 글자 그대로면 **O**.\n- **시험(선배) 정답**: **X** — 즉 "저해한다"가 옳다고 채점.\n- **과학 사실**: SYBR green은 **고농도에서 PCR을 저해**할 수 있다(모든 ds-DNA에 과량 결합 시 중합 방해). 그래서 최적 농도로 희석해 사용한다. 시험은 이 과학사실 기준으로 "저해하지 않음=틀림(X)"으로 본 것.\n\n**대비 전략**: 강의안 문장(저해 안 함)과 시험 정답(저해함)이 다르다. 시험은 **X**로 채점했으니 시험 기준 X로 외우되, 강의안 원문은 "저해하지 않음"임을 알아둘 것. 헷갈리면 ⚠️ 표시 문항.`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:13, part:'RTqPCR', topic:'Probe vs SYBR green', origin:'jokbo', type:'ox',
  q:`"Probe 방식은 서로 다른 형광물질을 이용해 한 반응에서 동시에 서로 다른 염기서열을 증폭·검출할 수 있다." (2025 기말 ②, OX)`,
  choices:['O (맞음)','X (틀림)'], answer:[1],
  explain:`**정답: O**\n\nProbe(TaqMan) 방식은 형광색이 다른 probe를 여러 개 써서 **multiplex(다중) 검출**이 가능하다. 이것이 모든 ds-DNA에 똑같이 끼어드는 SYBR green 대비 Probe의 장점.\n\n(강의안 '형광물질 비교' 슬라이드 — Probe 장점)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:14, part:'RTqPCR', topic:'qPCR 정량 용어(Ct)', origin:'jokbo', type:'multi',
  q:`다음 qPCR 용어 설명 중 **옳은 것을 모두 고르시오**. (2025 기말 ③④⑤ — 정답 모두 O)`,
@@ -91,7 +91,7 @@ const LABLAB = [
   'Ct가 높을수록(늦게 올라올수록) 시료 내 바이러스 양이 많다'],
  answer:[1,2,3,4],
  explain:`**정답: ①②③④ (⑤만 틀림)**\n\n①②③④는 강의안 'qPCR 용어' 슬라이드 그대로 옳다 — 실제 시험에서 ③④⑤(Baseline/Threshold/Ct) 세 OX 문장 모두 **O**로 채점됨.\n\n⑤ ✗: **Ct가 낮을수록**(곡선이 빨리 올라올수록) template(바이러스)가 **많다**. "높을수록 많다"는 반대로 틀림. (지수증폭이라 양이 많으면 일찍 threshold 도달)\n\n핵심: **Ct↓ = 바이러스↑**, Ct 1 차이 = 2배.`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:15, part:'RTqPCR', topic:'RT-qPCR mixture 재료', origin:'jokbo', type:'multi',
  q:`RT-(q)PCR 반응 mixture에 **직접 넣는 재료를 모두 고르시오**. (2025 기말 ⑦ — 14선지 중 다수 정답형)`,
@@ -107,7 +107,7 @@ const LABLAB = [
   'Binding buffer'],
  answer:[1,2,3,4,5,6,7],
  explain:`**정답: ①~⑦ (Template RNA, F/R primer, Taq, RTase, dNTP, buffer)**\n\nRT-PCR mixture 구성(강의안): **Template RNA + Forward/Reverse primer + DNA polymerase(Taq) + Reverse transcriptase + dNTP + reaction buffer**. 실제 kit는 buffer·RTase·dNTP·Taq가 합쳐진 **master mix(PrimeScript RT Master Mix)** 형태로 들어가기도 한다.\n\n**오답(넣지 않음)**\n- ⑧ Ethyl alcohol: RNA **추출(wash)** 시약이지 PCR mixture 성분 아님 ✗\n- ⑨ Binding buffer: spin column **추출** 시약 ✗\n\n함정: 추출 단계 시약(EtOH·binding/washing/elution buffer)을 PCR 재료에 섞어 끼워 넣는다. dNTP를 'dNDP/dTTP'로 오타 낸 선지도 등장. (강의안 'RT-PCR materials'·'mixture' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== PCR ===================== */
 {id:16, part:'PCR', topic:'PCR thermocycle 3단계', origin:'summary', type:'summary',
@@ -119,25 +119,25 @@ const LABLAB = [
  choices:['① 시작(~25℃)','② 94℃','③ 50℃','④ 72℃','①~④ 모든 단계'],
  answer:[4],
  explain:`**정답: ④ 72℃ (Extension·신장)**\n\n- ② 94℃ = Denaturation(변성): ds-DNA 분리\n- ③ 50℃대 = Annealing(결합): primer 결합\n- **④ 72℃ = Extension(신장): Taq DNA polymerase가 dNTP를 붙여 새 가닥 합성** ← DNA 합성이 일어나는 단계\n\n72℃가 Taq polymerase의 최적 활성 온도. 그래프의 중간 plateau(72℃)가 정답. (강의안 'PCR thermocycle' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:18, part:'PCR', topic:'PCR thermocycle 3단계', origin:'jokbo', type:'short',
  q:`PCR thermocycle에서 **50℃ 부근의 단계 이름**과, 이 온도에서 일어나는 일(=왜 이 온도인지)을 쓰시오. (2025 기말 ① 변형, 1점)`,
  choices:[], answer:[],
  explain:`**정답: Annealing(결합/어닐링) 단계**\n\n- 50~65℃에서 **primer가 template DNA에 상보적으로 결합**한다.\n- 온도는 **primer–template의 Tm(melting temperature)보다 2~3℃ 낮게** 설정 — 너무 높으면 primer가 안 붙고, 너무 낮으면 비특이 결합이 생기므로.\n\n이후 72℃ extension에서 이 primer를 시발점으로 polymerase가 합성을 시작한다. (강의안 'PCR thermocycle' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:19, part:'PCR', topic:'RT-PCR 첫 단계(역전사)', origin:'jokbo', type:'short',
  q:`RT-PCR의 **첫 번째 단계 이름**과 그 단계에서 **무슨 일**이 일어나는지 쓰시오. (2025 기말 ⑨)`,
  choices:[], answer:[],
  explain:`**정답: Reverse transcription(역전사)**\n\n- RT-PCR은 **RNA**를 template로 쓰므로, PCR thermocycle 전에 먼저 RNA를 DNA로 바꿔야 한다.\n- 첫 단계 = **역전사(reverse transcription)**: **40~60℃, 20~30분** 조건에서 **reverse transcriptase(RTase)**가 oligo dT/random primer를 시발점으로 RNA를 주형 삼아 **cDNA(상보 DNA)를 합성**한다.\n- 이후 RNase H로 RNA 제거(선택) → PCR thermocycle로 증폭.\n\n⚠️ 주의: 역전사는 **실험 기법(효소 RTase 사용)**이다. PRRSV 같은 +ssRNA 바이러스가 스스로 역전사하는 것이 아니다(아래 PRRS 파트 참고). (강의안 'RT-PCR' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:20, part:'PCR', topic:'PCR primer 설계', origin:'jokbo', type:'short',
  q:`Template 가닥이 **5'-...A A G G G-3'** 일 때, 이 부위에 상보적으로 결합하는 **primer 서열을 5'→3' 방향으로** 쓰시오. (2025 기말 ⑩, 빈칸 작성형)`,
  choices:[], answer:[],
  explain:`**정답: 5'-C C C T T-3'**\n\n상보 결합 규칙(A-T, G-C)으로 template 3'쪽부터 짝지으면:\n\n\`\`\`\ntemplate  5'- A A G G G -3'\nprimer    3'- T T C C C -5'\n\`\`\`\n\nprimer를 관례대로 **5'→3' 방향**으로 다시 쓰면 → **5'-CCCTT-3'**.\n\n포인트: ① A↔T, G↔C 상보 ② 두 가닥은 **역평행(antiparallel)** ③ 답은 항상 **5'→3'**로 표기. (강의안 'PCR Primers' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:21, part:'PCR', topic:'PCR template·target gene', origin:'jokbo', type:'essay',
  q:`서로 다른 두 PCR template를 한 반응에 넣었을 때, **처음 target gene과 길이가 다른 산물이 생기는 개수와 그 이유**를 설명하시오. (그림 설명 가능, 복기 1.5점)`,
@@ -155,7 +155,7 @@ const LABLAB = [
  q:`Agarose gel 전기영동 buffer 성분 중 **Acetate**와 **EDTA**의 역할을 각각 서술하시오. (2025 기말 ⑫)`,
  choices:[], answer:[],
  explain:`**Acetate**: TAE buffer의 Tris는 pH가 약 11로 매우 높은데, 이 상태면 **DNA가 해리(변성)**될 수 있다. **Acetate가 pH를 낮춰** DNA가 안정한 적정 pH를 유지하게 한다.\n\n**EDTA**: **Chelating agent**(킬레이트제)로 Mg²⁺ 등 **양이온을 붙잡는다**. ① **DNase**는 Mg²⁺를 보조인자로 쓰므로, EDTA가 양이온을 제거하면 **DNase 활성이 억제**되어 DNA가 분해되지 않는다. ② DNA의 (-)전하 상태를 유지하도록 돕는다.\n\n(추가) **EtBr**도 함께 출제됨 — UV에서 형광을 내 DNA band를 가시화. (강의안 'Agarose gel materials' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:24, part:'전기영동', topic:'전극·DNA 이동·band', origin:'jokbo', type:'single',
  q:`Agarose gel에서 well은 **위쪽**에 있고 아래로 ladder가 100→900 bp 순으로 찍혔다. **gel의 위/아래 전극**과 600 bp band 위치로 옳은 것은? (2025 기말 ⑬)`,
@@ -173,7 +173,7 @@ const LABLAB = [
  q:`Gel 전기영동에서 **DNA의 이동 속도에 영향을 주는 인자**를 (2~)3가지 쓰시오. (2025 기말 ⑭)`,
  choices:[], answer:[],
  explain:`**정답: ① Time(영동 시간) ② Voltage(전압) ③ Buffer(영동 버퍼)**\n\n- **Time**: 오래 걸수록 DNA가 더 멀리 내려감\n- **Voltage**: 전압이 높을수록 빨리 이동(단, 너무 높으면 발열로 gel 손상)\n- **Buffer**: 이온 농도가 높을수록 전류가 잘 흘러 빠르나 발열↑ → 적정 농도 필요\n\n(추가로 DNA **단편 크기**, agarose **농도**도 분리에 영향). 강의안 'Gel electrophoresis' 슬라이드에 Time·Voltage·Buffer 3개가 묶여 강조됨.`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== BLAST계통 ===================== */
 {id:26, part:'BLAST계통', topic:'BLAST·distance matrix·백신선택', origin:'summary', type:'summary',
@@ -196,7 +196,7 @@ const LABLAB = [
   '표의 수치는 절대값이 아니라 같은 표 안에서의 상대 비교에 쓴다'],
  answer:[4],
  explain:`**정답(옳지 않은 것): ④**\n\n- ④ ✗: distance가 **클수록 = 서열이 멀다 = 방어 떨어짐**. 백신은 **수치가 가장 낮은(발생주와 가장 가까운)** 것을 선택해야 한다.\n- ①② ✓: 낮을수록 가깝고, 클수록 멈.\n- ③ ✓: 발생 strain과 가장 가까운(낮은 수치) 백신 선택 = 실습 최종 목표(ORF5 일치도 높은 백신).\n- ⑤ ✓: distance는 상대 비교용.\n\n핵심: **가까운(낮은 수치) = 좋은 백신**. (강의안 '백신주 상동성 분석' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== PRRS ===================== */
 {id:29, part:'PRRS', topic:'PRRSV 분류·유전체', origin:'summary', type:'summary',
@@ -213,7 +213,7 @@ const LABLAB = [
   'Double-stranded DNA를 유전체로 가지며 역전사로 복제한다'],
  answer:[5],
  explain:`**정답(옳지 않은 것): ⑤**\n\n- ⑤ ✗: PRRSV는 **(+)ssRNA** 바이러스다. **dsDNA·역전사**는 전혀 아니다(역전사=Retroviridae). PRRSV는 RdRp로 RNA를 직접 복제.\n- ①②③④ 모두 옳음: Arteriviridae, 40~70nm enveloped, +ssRNA, 15kb·ORF1~7.\n\n⚠️ 단골 함정: "PRRS가 역전사한다"는 진술. RT-PCR(실험기법)과 바이러스 복제방식을 혼동시키는 함정. (강의안 'PRRSV' 분류 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:31, part:'PRRS', topic:'ORF5·ORF7 진단표적', origin:'jokbo', type:'single',
  q:`PRRSV의 ORF에 대한 설명으로 **옳지 않은 것**은? (2025 기말 ②③, ORF 함정)`,
@@ -225,7 +225,7 @@ const LABLAB = [
   '유전체는 ORF1~ORF7의 7개로 구성된다'],
  answer:[4],
  explain:`**정답(옳지 않은 것): ④**\n\n- ④ ✗: ORF7과 ORF5의 역할이 **뒤바뀜**. **ORF7 = 변이 최소 = 감염 진단**, **ORF5 = 변이 최대 = strain/genotype 구분**.\n- ①②③⑤ 모두 옳음.\n\n⚠️ 단골 함정: 출제자가 **ORF7 ↔ ORF5를 바꿔치기**(선배 메모 "ORF7→ORF5로 바꿔 냄"). 외우기: **7=적다=진단, 5=많다=strain**. (강의안 'Genome' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:32, part:'PRRS', topic:'ORF5·ORF7 진단표적', origin:'jokbo', type:'multi',
  q:`PRRSV의 **viral genomic sequence(ORF5)**에 대한 OX 묶음. **옳은 설명을 모두 고르시오**. (2025 기말 ⑪ / 복기 7·8)`,
@@ -236,7 +236,7 @@ const LABLAB = [
   'ORF5 서열 비교로 phylogenetic tree를 그려 strain 상동성을 평가할 수 있다'],
  answer:[1,2,4],
  explain:`**정답: ①②④ (③만 틀림)**\n\n- ① ✓: ORF5는 모든 PRRSV strain에 존재(그래서 진단 marker로 보편적).\n- ② ✓: strain마다 고유 **SNP** → **strain 구분(genotyping)**에 사용. (복기 Q8 = O)\n- ③ ✗: **housekeeping 유전자는 항상 보존적(일정)**으로 발현되어 기준(reference)으로 쓰는 세포 유전자다. ORF5는 정반대로 **변이가 큰(가변)** 부위라 housekeeping이 아니다. (복기 Q7 "viral genomic sequence가 housekeeping이다" = ✗)\n- ④ ✓: ORF5 서열로 계통수 작성·상동성 평가.\n\n핵심 대비: **"ORF5=housekeeping" = 틀림(가변이라서)**, **"ORF5=strain 구분" = 맞음(SNP)**. 이 둘이 짝 함정. (강의안 'PRRSV ORF5 RNA' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:33, part:'PRRS', topic:'PRRSV 임상·변이', origin:'jokbo', type:'multi',
  q:`PRRSV의 특징으로 **옳은 것을 모두 고르시오**. (2025 기말 ④⑤ / 복기 5 — 7선지 중 3택형)`,
@@ -248,7 +248,7 @@ const LABLAB = [
   'PRRSV-1(EU)과 PRRSV-2(NA)는 약 99% nucleotide가 동일하다'],
  answer:[1,2,3],
  explain:`**정답: ①②③**\n\n- ①②③ ✓: 모돈 번식장애 + 자돈 호흡기, RNA 바이러스라 변이 빨라 방어 곤란 — 모두 강의안 그대로.\n- ④ ✗: **ORF5는 변이가 많아**(적어가 아님) strain 구분에 쓴다.\n- ⑤ ✗: EU와 NA는 약 **60% 상동성**(99% 아님). 거의 동시 출현했지만 유전적으로 꽤 다름.\n\n함정: ④ "변이 적어", ⑤ "99% 동일" 같은 숫자·방향 바꿔치기. (강의안 '임상증상'·'유럽과 미국 분리주' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:34, part:'PRRS', topic:'EU/NA 분리주', origin:'jokbo', type:'single',
  q:`PRRSV 유럽형(EU)·북미형(NA) 분리주 설명으로 **옳지 않은 것**은? (2025 기말 ⑥⑦)`,
@@ -260,7 +260,7 @@ const LABLAB = [
   '기원은 명확치 않으나 유럽·북미에서 거의 동시에 출현했다'],
  answer:[3],
  explain:`**정답(옳지 않은 것): ③**\n\n- ③ ✗: **유럽형(PRRSV-1) = Lelystad(네덜란드)**, **북미형(PRRSV-2) = VR-2332(미국)**. 이름을 **바꿔치기**한 틀린 선지(선배 메모 "Lelystad→VR-2332로 바꿈").\n- ①②④⑤ 모두 옳음.\n\n외우기: **EU=유럽=Lelystad(1991 네덜란드)**, **NA=북미=VR-2332(미국)**, 둘 **60% 상동**. (강의안 '유럽과 미국 분리주' 슬라이드)`,
- exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
+ hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 /* ===================== 부검유제 (출제 안 됨 — 배경) ===================== */
 {id:35, part:'부검유제', topic:'부검·유제 (2025 미출제)', origin:'summary', type:'summary',

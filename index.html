@@ -313,7 +313,7 @@ function pillsHtml(q){
   let p=`<span class="pill" style="background:${PARTCOL[q.part]||'#999'};color:#0d1320">${PARTLBL[q.part]||q.part}</span>`;
   if(q.origin==='summary')p+=`<span class="pill pill-concept">📖 개념</span>`;
   else if(q.origin==='jokbo')p+=`<span class="pill pill-jokbo">📕 족보 ${esc(q.exam||'')}</span>`;
-  else p+=`<span class="pill pill-jakja">📝 자작</span>`;
+  else p+=`<span class="pill pill-jakja">✍️ 정창민 작성</span>`;
   if(q.origin!=='summary'){
     if(q.hl2025)p+=`<span class="pill" style="background:#ffd54f;color:#0d1320">🟡 2025기출</span>`;
     if(q.hl2024)p+=`<span class="pill pill-2024">🟣 2024기출</span>`;

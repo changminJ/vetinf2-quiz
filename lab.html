@@ -328,7 +328,9 @@ function cardHtml(q){
   const srcCls=q.origin==='summary'?'src-concept':(q.origin==='jokbo'?'src-jokbo':'src-jakja');
   let h=`<div class="qcard ${srcCls}${q.hl2024?' hl2024':''}"><div class="qmeta">${pillsHtml(q)}<span class="qno">#${q.id}</span><button class="bm${ST.bookmarks[q.id]?' on':''}" onclick="toggleBm(${q.id})">🔖</button></div>`;
   if(q.origin==='summary'){
-    h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div><div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
+    h+=`<div class="concept-title">📖 ${esc(q.topic)} — 핵심개념</div>`;
+    if(q.graph)h+=`<div class="graphbox" style="margin:11px 0 14px;background:var(--explanation-bg);border:1px solid var(--border);border-radius:11px;padding:14px 12px;overflow-x:auto">${q.graph}</div>`;
+    h+=`<div class="explanation" style="margin-top:0">${md(q.explain)}</div>`;
     return h+`</div>`;
   }
   h+=`<div class="qtext">${md(q.q)}</div>`;

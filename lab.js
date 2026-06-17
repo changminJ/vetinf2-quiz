@@ -314,4 +314,11 @@ const LABLAB = [
  explain:`**정답: O**\n\nBLAST 결과에서 ① 대부분이 PRRS와 매칭되는지로 **바이러스 동정**, ② Max score 높은 매칭의 세부 내용에서 **genotype(NA형/EU형)**을 확인한다. 이 genotype에 맞춰 reference(eu_ref/na_ref)를 골라 phylogenetic 분석으로 이어간다. (2024 강의안 'BLAST 진행' 슬라이드)`,
  exam:'2024-기말', hl2024:true, freq:1, source:'jokbo'},
 
+{id:42, part:'핵산구조', topic:'Phosphodiester bond·핵산 구조', origin:'jokbo', type:'essay',
+ q:`핵산을 설명한 다음 글에서 **틀린 부분 3곳**을 찾아 고치시오. (2025 기말 ④ — 복기 "phosphodiester bond" 문항)\n\n"① 핵산은 nucleotide가 **phosphodiester bond**로 연결된 중합체다. ② 이 결합은 한 nucleotide의 5'-인산과 다음 nucleotide의 3'-OH를 잇는 **당-인산 backbone**을 만들며, 이것이 핵산의 **1차 구조**다. ③ DNA·RNA·단백질 같은 고분자의 **2차 구조**와 수용성에는 수소결합이 큰 영향을 미친다."`,
+ choices:[], answer:[],
+ explain:`**핵심 — phosphodiester bond와 함정**\n\n실제 출제 글의 함정은 **단백질 구조**다(복기 메모와 일치).\n\n- ① ✓: 핵산 = nucleotide가 **phosphodiester bond**로 연결된 중합체. 맞음.\n- ② ✓ 개념: phosphodiester bond는 **인산(phosphate)이 한 당의 3'-OH와 다음 당의 5'에 이중 ester 결합**을 이뤄 **당-인산 backbone(1차구조)**을 만든다. 5'→3' 방향.\n- ③ ✗(함정): "**DNA·RNA·단백질의 2차 구조**" → **단백질은 2차(α-helix/β-sheet)뿐 아니라 3차·4차 고차구조**까지 수소결합·기타 결합으로 형성. "2차 구조"만으로 단정한 부분이 틀린 포인트(→ 고차/3차 구조 포함).\n\n**정리**: phosphodiester bond = 핵산 1차구조(당-인산 backbone, 5'→3'). 수소결합은 핵산 염기쌍 + 단백질 2차/3차 구조에 작용. ⚠️ 이 문항은 [핵산구조] Chaotropic salt 틀린문장(id2)과 같은 슬라이드 맥락 — 복기자는 "phosphodiester"로, 강의 슬라이드는 "chaotropic salt"로 표기. (강의안 'Chaotropic Salt' + 핵산 기본구조)`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo', flag:true,
+ flagReason:'복기는 "phosphodiester bond" 문항이라 했으나 2025 마킹 슬라이드는 "Chaotropic Salt"(수소결합·2차구조·수용성). 같은 문항일 가능성 높음 — phosphodiester 개념도 함께 정리해 양쪽 대비.'},
+
 ];

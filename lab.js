@@ -8,16 +8,15 @@ const LABLAB = [
 
 /* ===================== 핵산구조 ===================== */
 {id:1, part:'핵산구조', topic:'Chaotropic salt·고분자 구조', origin:'summary', type:'summary',
- explain:`## 핵산은 왜 silica에 붙는가 — chaotropic salt의 원리\n\n**Chaotropic salt(카오트로픽 염)**: 수용액 안의 물 분자가 만드는 **수소결합 그물망 구조를 깨뜨리는** 화합물(예: guanidine, NaI). RNA/DNA 추출 kit의 **Lysis·Binding buffer**에 들어간다.\n\n**평상시(물 속)**: 핵산은 음전하 인산골격 때문에 물 분자가 둘러싼 **수화막(hydration shell)**에 싸여 용해 상태로 존재한다 → silica에 안 붙음.\n\n**Chaotropic salt 첨가 시**: 물의 수소결합 정렬이 무너지고 수화막이 벗겨져 **소수성(hydrophobic) 환경**이 조성된다 → 핵산이 silica·glass 표면에 쉽게 흡착.\n\n**수소결합이 관여하는 곳**\n| 분자 | 수소결합이 만드는 구조 |\n|---|---|\n| DNA·RNA | 이중나선의 염기쌍(A=T, G≡C) |\n| 단백질 | **2차 구조**(α-helix, β-sheet)와 그 위의 3차·4차 |\n\n⚠️ 시험 함정: "수소결합이 단백질의 **2차 구조**에 영향" 자체는 맞지만, 출제자는 "**단백질의 고차(3차) 구조**"를 "2차"로 바꾸거나 "chaotropic"을 "tropic"으로 오타 내는 식으로 틀린 문장을 만든다.\n\n**한 줄 요약**: chaotropic salt가 핵산의 수화막을 깨 → 소수성 환경 → silica 흡착. 수소결합은 핵산 염기쌍·단백질 2차구조 형성에 핵심.`,
+ explain:`## 핵산은 왜 silica에 붙는가 — Chaotropic salt 원리\n\n**Chaotropic salt(카이오트로픽 염)**: 수용액 내부의 규칙적인 **수소결합 구조를 파괴**하는 화합물(guanidine, NaI 등). RNA/DNA 추출 kit의 Lysis·Binding buffer 성분.\n\n## 강의안 핵심 흐름 (이 순서·단어 그대로)\n- 수소결합은 **DNA·RNA·단백질** 고분자의 **2차 구조** 형성과 분자의 **수용성**에 큰 영향.\n- 평상시 핵산은 물 분자로 된 **수화물 껍질(hydration shell)**에 둘러싸여 **용해도(수용성)**를 유지 → silica에 안 붙음.\n- **Chaotropic salt 첨가** → 수화껍질 물분자의 질서 구조 파괴 → **소수성 환경** 조성 → 핵산 **2차 구조가 풀려** silica 등 고체 표면에 쉽게 결합.\n\n## ⚠️ 시험 함정 — 반대 단어 바꿔치기\n| 강의안(맞음) | 함정(틀림) |\n|---|---|\n| 분자의 **수용성** | 소수성 |\n| 용해도 **유지** | 불용성 유지 |\n| **소수성** 환경 조성 | 친수성 환경 |\n| **chaotropic** | tropic(오타) |\n\n🔴 **주의**: "단백질의 **2차 구조**"·"핵산 2차구조가 풀린다"는 **강의안 그대로라 틀린 게 아니다** — 절대 고치지 말 것.\n\n## 한 줄 요약\n수소결합=2차구조·수용성 핵심. chaotropic salt가 수화막 깨 → **소수성 환경** → 핵산 2차구조 풀려 silica 흡착.`,
  exam:'', freq:1},
 
-{id:2, part:'핵산구조', topic:'Chaotropic salt·고분자 구조', origin:'jokbo', type:'essay',
- q:`다음은 chaotropic salt를 설명하는 글이다. **틀린 부분 3곳**을 찾아 옳게 고치시오. (2025 기말 ⑯)\n\n"① 수소결합은 DNA, RNA, 단백질과 같은 고분자의 **2차 구조** 형성과 분자의 수용성에 큰 영향을 미친다. ② 일반 조건에서 핵산은 수화막에 둘러싸여 **소수성**을 유지한다. ③ **Tropic salt**를 넣으면 수화막 구조가 파괴되어 친수성 환경이 되고, 핵산이 silica에 결합한다."`,
+{id:2, part:'핵산구조', topic:'Chaotropic salt 틀린문장 고치기', origin:'jokbo', type:'essay',
+ q:`다음은 강의안 'Chaotropic Salt' 설명을 변형한 글이다. **틀린 부분 3곳**을 찾아 옳게 고치시오. (2025 기말 ⑯)\n\n"① 수소결합은 DNA·RNA·단백질 고분자의 2차 구조 형성과 분자의 **소수성**에 큰 영향을 미친다. ② 일반 조건에서 핵산은 수화물 껍질에 둘러싸여 **불용성**을 유지한다. ③ Chaotropic salt를 넣으면 수화껍질이 파괴되어 **친수성** 환경이 조성되고, 핵산의 2차 구조가 풀려 silica에 결합한다."`,
  choices:[], answer:[],
- explain:`**모범답안 — 틀린 3곳**\n\n① "단백질의 **2차 구조**" → 단백질에서 수소결합이 핵심인 것은 맞으나, 출제 글의 의도상 **단백질의 고차(3차) 구조**까지 포함해야 정확. (단백질 입체구조 = 2차 α-helix/β-sheet + 3차·4차)\n\n② "핵산은 수화막에 둘러싸여 **소수성**을 유지" → **수용성(친수성)**을 유지가 맞다. 인산골격이 음전하라 물에 잘 녹음.\n\n③ "**Tropic salt**" → **Chaotropic salt** (오타). 그리고 "**친수성 환경**" → **소수성 환경**이 조성되어야 silica에 흡착된다.\n\n**핵심**: chaotropic salt = 수화막을 깨 소수성 환경을 만들어 핵산을 silica에 붙임. (강의안 'Chaotropic Salt' 슬라이드 근거)`,
- hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ explain:`**틀린 3곳 (강의안 기준 정정)**\n\n① "분자의 **소수성**" → **수용성**. (수소결합은 고분자 2차구조 + 분자의 **수용성**에 영향)\n② "수화물 껍질에 둘러싸여 **불용성** 유지" → **용해도(수용성)** 유지. (수화막이 DNA 용해도를 유지함)\n③ "**친수성** 환경 조성" → **소수성** 환경. (chaotropic salt가 물 질서 깨 → 소수성 환경 → 핵산이 silica에 결합)\n\n✅ **헷갈림 주의**: "**단백질의 2차 구조**"와 "핵산의 2차 구조가 풀린다"는 **강의안 원문 그대로 옳다 — 고치면 안 됨!**\n\n**핵심**: 이 문항 함정은 전부 **수용성/소수성/친수성·용해도 단어 뒤집기**. 구조(2차) 표현은 건드리지 마라. (강의안 'Chaotropic Salt' 슬라이드)`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
-/* ===================== RNA추출 ===================== */
 {id:3, part:'RNA추출', topic:'Spin column 원리·buffer', origin:'summary', type:'summary',
  explain:`## Spin column 핵산 추출 — 흡착·세척·용출\n\n**정의**: molecular biology에서 spin column method는 **silica membrane에 핵산을 흡착시켜 정제·분리**하는 기술. 4단계 흐름:\n\n**Lyse(용해) → Bind(흡착) → Wash(세척) → Elute(용출)**\n\n**핵심 조건(시험 단골 ↑/↓)**\n| 단계 | salt | 원리 |\n|---|---|---|\n| Bind(흡착) | **High salt↑**, low temp↓ | chaotropic salt의 Na⁺가 **cation bridge**(양이온 다리)로 silica(-O⁻)와 핵산 인산(-O⁻P)을 연결 |\n| Wash(세척) | — | **80% EtOH**로 단백질·염 등 불순물 제거 (핵산은 붙은 채 유지) |\n| Elute(용출) | **Low salt↓** (주로 DW) | cation bridge 해제 → 핵산이 물에 다시 녹아 떨어짐 |\n\n**Buffer 3종 역할**\n- **Binding buffer**: high salt → DNA–silica hybrid 형성 유도\n- **Washing buffer**: 80% EtOH(수화막 제거)·Tris-HCl(pH 완충, DNA 변성 방지)·NaCl(흡착 해리 방지)\n- **Elution buffer**: low salt(DW) → 흡착 해제·용출\n\n**공회전(빈 원심)**: 마지막 wash 뒤 buffer 없이 한 번 더 원심 → **잔류 EtOH로 membrane 건조**. 이유: **잔류 ethanol이 하류 반응(PCR)을 방해**하기 때문.\n\n**한 줄 요약**: 높은 염↑·낮은 온도에서 붙이고(cation bridge), EtOH로 씻고, 낮은 염↓ 물로 떼어낸다. 공회전=ethanol 말리기.`,
  exam:'', freq:2},
@@ -69,11 +68,20 @@ const LABLAB = [
  hl2024:true, exam:'2025-기말', hl2025:true, freq:2, source:'jokbo'},
 
 {id:12, part:'RTqPCR', topic:'Probe vs SYBR green', origin:'jokbo', type:'ox',
- q:`"SYBR green은 증폭된 DNA에 삽입되어도 PCR을 저해하지 않는다." (2025 기말 ⑤, OX)`,
- choices:['O (맞음)','X (틀림)'], answer:[2],
- flag:true, flagReason:'강의안 슬라이드엔 "저해하지 않음(O)"으로 적혀 있으나 시험 정답은 X(저해함). 실제로 고농도 SYBR green은 PCR을 저해할 수 있어 시험은 과학사실 기준 채점.',
- explain:`**시험 정답: X (저해한다)** — ⚠️ 강의안과 충돌하는 문항\n\n- **강의안 슬라이드 문장**: "증폭된 DNA에 삽입되어도 PCR을 저해하지 않음" → 글자 그대로면 **O**.\n- **시험(선배) 정답**: **X** — 즉 "저해한다"가 옳다고 채점.\n- **과학 사실**: SYBR green은 **고농도에서 PCR을 저해**할 수 있다(모든 ds-DNA에 과량 결합 시 중합 방해). 그래서 최적 농도로 희석해 사용한다. 시험은 이 과학사실 기준으로 "저해하지 않음=틀림(X)"으로 본 것.\n\n**대비 전략**: 강의안 문장(저해 안 함)과 시험 정답(저해함)이 다르다. 시험은 **X**로 채점했으니 시험 기준 X로 외우되, 강의안 원문은 "저해하지 않음"임을 알아둘 것. 헷갈리면 ⚠️ 표시 문항.`,
- hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+ q:`(⚠️ 강력한 과학적 오류 의심 문항) "SYBR green은 증폭된 DNA에 삽입되어도 PCR을 저해하지 않는다." — **강의안 기준**으로 O/X 판정하시오. (2025 기말 ⑤)`,
+ choices:['O (맞음)','X (틀림)'], answer:[1],
+ flag:true, flagReason:'⚠️ 강력한 과학적 오류 의심 — 실제 과학적으로는 SYBR green이 고농도에서 PCR을 저해할 수 있다(틀린 진술). 그러나 본 강의안은 "저해하지 않음"으로 명시 → 시험은 강의안 기준 채점이므로 답을 O로 둔다. 강의안 기준으로 외울 것.',
+ explain:`**강의안 기준 정답: O (저해하지 않음)**
+
+강의안 'SYBR-green' 슬라이드: "증폭된 DNA에 삽입되어도 PCR을 저해하지 않음" → 글자 그대로 **O**.
+
+⚠️ **그러나 강력한 과학적 오류 의심**:
+- 실제 SYBR green은 **고농도에서 PCR을 저해**할 수 있다(모든 ds-DNA에 과량 결합 → 중합 방해). 그래서 최적 농도로 희석해 쓴다 — 즉 과학적으로는 "저해할 수 있다"가 맞다.
+- 강의안 진술("저해 안 함")은 이 점에서 과학적 사실과 배치된다.
+- **시험·강의안 기준으로는 O로 채점**되므로, 어쩔 수 없이 **강의안 기준 O로 외운다**. 단 실제론 저해 가능함을 알아둘 것.
+
+(참고: Probe vs SYBR 장단점 — SYBR 단점 = 비특이 결합. 강의안 'SYBR-green'·'형광물질 비교' 슬라이드)`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:13, part:'RTqPCR', topic:'Probe vs SYBR green', origin:'jokbo', type:'ox',
  q:`"Probe 방식은 서로 다른 형광물질을 이용해 한 반응에서 동시에 서로 다른 염기서열을 증폭·검출할 수 있다." (2025 기말 ②, OX)`,
@@ -324,5 +332,55 @@ const LABLAB = [
 - 방향성: **5'→3'** (한쪽 끝 5'-인산, 반대쪽 3'-OH).
 
 **참고(복기 관련)**: 복기엔 "phosphodiester bond 문항"으로 적혀 있으나, 2025 마킹 슬라이드는 'Chaotropic Salt'(수소결합·단백질 구조·수용성)의 **틀린 문장 3곳 고치기**(이 파트의 다른 문항)였다. 둘은 같은 문항으로 추정 — phosphodiester 개념은 보조로 알아둘 것.`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+{id:43, part:'RNA추출', topic:'Cation bridge 생성·해제', origin:'jokbo', type:'essay',
+ q:`Spin column RNA 추출에서 **cation bridge(양이온 다리)가 언제 생성되고 언제 해제되는지**, 그 원리와 함께 설명하시오. (2025 기말 출제부위)`,
+ choices:[], answer:[],
+ explain:`**생성 시점 = Binding 단계 (high salt 조건)**
+- Binding buffer의 **chaotropic salt(high salt)** 속 **Na⁺(양이온)**가, 음전하인 **silica 표면(-O⁻)**과 핵산의 **인산골격(-O⁻-P)** 사이를 다리처럼 연결 → 핵산이 silica에 **흡착**.
+- 즉 **Binding buffer 첨가 + lysate load·원심**하는 순간 cation bridge가 형성된다.
+
+**유지 = Washing·공회전 단계**
+- 80% EtOH wash·공회전 동안에도 high salt 흡착 상태 **유지**(EtOH는 핵산을 떼지 않음).
+
+**해제 시점 = Elution 단계 (low salt 조건)**
+- **Elution buffer(low salt, 주로 DW)**를 넣으면 양이온이 사라져 cation bridge가 **해제** → 핵산이 다시 물에 녹아 떨어지며 용출.
+
+**한 줄**: high salt(Binding)서 생성 → wash·공회전 유지 → low salt(Elution)서 해제. (강의안 'silica 결합 원리'·'spin column' 슬라이드)`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+
+{id:44, part:'PRRS', topic:'PRRSV 유전체 크기·구성', origin:'jokbo', type:'single',
+ q:`PRRSV 유전체에 대한 설명으로 **옳지 않은 것**은?`,
+ choices:[
+  'Positive-sense single-stranded RNA(+ssRNA)이다',
+  '약 25 kb의 유전체를 가진다',
+  'ORF1~ORF7의 7개 ORF로 구성된다',
+  'ORF7은 변이가 가장 적어 감염 진단(RT-PCR) 표적으로 쓴다',
+  'ORF5는 변이가 가장 많아 genotype 구분에 쓴다'],
+ answer:[2],
+ explain:`**정답(옳지 않은 것): ②**
+
+- ② ✗: PRRSV 유전체는 약 **15 kb**이다. "약 25 kb"는 틀림(크기를 부풀린 함정).
+- ① ✓ +ssRNA, ③ ✓ ORF1~7, ④ ✓ ORF7=변이최소=진단, ⑤ ✓ ORF5=변이최대=genotype.
+
+⚠️ 함정: 숫자(15→25 kb) 바꿔치기. **PRRSV = 약 15 kb +ssRNA**로 외울 것. (강의안 'Genome' 슬라이드)`,
+ exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
+{id:45, part:'PCR', topic:'RT-PCR 2단계 RNase H treatment', origin:'jokbo', type:'single',
+ q:`RT-PCR 3단계 중 **두 번째 단계인 RNase H treatment**에 대한 설명으로 옳은 것은?`,
+ choices:[
+  'RNA를 주형으로 cDNA를 합성하는 단계이다',
+  'cDNA-RNA hybrid에서 **RNA 가닥을 제거**하는 단계이다',
+  'dsDNA를 단일가닥으로 변성시키는 단계이다',
+  'primer가 template에 결합하는 단계이다',
+  'Taq polymerase가 DNA를 신장하는 단계이다'],
+ answer:[2],
+ explain:`**정답: ②**
+
+RT-PCR 3단계: ① **Reverse transcription**(40~60℃, RNA→cDNA 합성) → ② **RNase H treatment** → ③ **PCR**(thermocycle 증폭).
+
+- ② RNase H treatment = 역전사로 생긴 **cDNA–RNA hybrid에서 RNase H가 RNA 가닥을 분해·제거**하는 (선택적) 단계. → 단일가닥 cDNA만 남겨 이후 PCR이 잘 되게 함.
+- ① 은 1단계(역전사), ③④⑤ 는 3단계(PCR의 변성·결합·신장) 설명이라 오답.
+
+핵심: **1)역전사 → 2)RNase H로 RNA 제거 → 3)PCR**. (강의안 'RT-PCR' 3단계 슬라이드)`,
  exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'}
 ];

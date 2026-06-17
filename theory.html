@@ -192,7 +192,7 @@
       <button class="collapse-btn" onclick="toggleSideCollapse()" title="사이드바 접기">◀</button>
     </div>
     <div class="user-info">
-      <span class="user-name">족보 73 · 개념 32 · ⚠️12</span>
+      <span class="user-name">개념32·기본24·족보73·자작55</span>
       <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="테마">🌙</button>
     </div>
     <a href="lab.html" style="display:block;text-align:center;padding:9px;background:rgba(124,224,192,.15);color:#34c79a;border:1px solid #34c79a;border-radius:8px;font-size:12.5px;font-weight:800;text-decoration:none">🔬 실습 퀴즈로 이동 →</a>
@@ -217,13 +217,14 @@
 <script>
 const QUESTIONS = LABQ;
 const CIRC=['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
-const PARTORDER=['Herpesviridae','Poxviridae','Picornaviridae','Rhabdoviridae','Reoviridae','Arteriviridae','Bunyavirales','Caliciviridae','Retroviridae','Pneumoviridae','Togaviridae','Prion'];
+const PARTORDER=['Herpesviridae','Poxviridae','Picornaviridae','Arteriviridae','Caliciviridae','Togaviridae','Rhabdoviridae','Bunyavirales','Pneumoviridae','Reoviridae','Retroviridae','Prion'];
 const PARTLBL={'Herpesviridae':'헤르페스 Herpes','Poxviridae':'폭스 Pox(두창)','Picornaviridae':'피코르나 Picorna(FMD)','Rhabdoviridae':'랍도 Rhabdo(광견병)','Reoviridae':'레오 Reo','Arteriviridae':'아테리 Arteri(PRRS)','Bunyavirales':'부니아 Bunya(SFTS)','Caliciviridae':'칼리시 Calici','Retroviridae':'레트로 Retro','Pneumoviridae':'뉴모 Pneumo(BRSV)','Togaviridae':'토가 Toga(말뇌염)','Prion':'프리온 Prion'};
 const PARTCOL={'Herpesviridae':'#ff6b6b','Poxviridae':'#ffb74d','Picornaviridae':'#4fc3f7','Rhabdoviridae':'#f47fb0','Reoviridae':'#81c784','Arteriviridae':'#a884ff','Bunyavirales':'#5ca8ff','Caliciviridae':'#7ee0c0','Retroviridae':'#ff8a65','Pneumoviridae':'#ba68c8','Togaviridae':'#aed581','Prion':'#bdbdbd'};
 const NOSUM=q=>q.origin!=='summary';
 const FILTERS=[
   ['🔥 찐핵심 객관식 (주제별 1문항)','#ff3b30','CORE_MC'],
   ['✍️ 찐핵심 주관식 (주제별 1문항)','#ff8aae','CORE_SA'],
+  ['🆕 2026자작 몰아풀기','#1ED760','EXAM'],
   ['⚡ 전체 ① 객관식','#ffd54f','MC'],
   ['⚡ 전체 ② 주관식','#ffce54','SA'],
   ['전체','#1DB954',q=>true],
@@ -240,7 +241,8 @@ const FILTERS=[
   ['토가 Toga(말뇌염)','#aed581',q=>q.part==='Togaviridae'],
   ['프리온 Prion','#bdbdbd',q=>q.part==='Prion'],
   ['📕 족보 기출','var(--c-jokbo)',q=>q.origin==='jokbo'],
-  ['📝 자작 문제','#1ED760',q=>q.origin==='concept'],
+  ['📗 기본예제(개념학습)','#7ee0c0',q=>q.origin==='concept'&&q.level==='basic'],
+  ['🆕 2026 자작(현지연·이선학)','#1ED760',q=>q.origin==='concept'&&q.level==='exam'],
   ['🔴 빈출(2회+)','#f15e6c',q=>(q.freq||0)>=2],
   ['☑️ 모두고르시오','var(--c-multi)',q=>q.type==='multi'],
   ['✍️ 주관식','#7ee0c0',q=>q.type==='short'&&NOSUM(q)],
@@ -258,6 +260,7 @@ function soloMode(){return FILTERS[ST.filter][2];}
 function soloListFor(m){
   if(m==='CORE_MC')return CORE.filter(q=>['ox','single','multi'].includes(q.type));
   if(m==='CORE_SA')return CORE.filter(q=>['short','calc','essay'].includes(q.type));
+  if(m==='EXAM')return QUESTIONS.filter(q=>q.origin==='concept'&&q.level==='exam'&&['ox','single','multi'].includes(q.type));
   return QUESTIONS.filter(q=>q.origin==='jokbo'&&(m==='SA'?['short','calc','essay']:['ox','single','multi']).includes(q.type));}
 function soloList(){return soloListFor(soloMode());}
 function save(){localStorage.setItem(LS,JSON.stringify(ST));}
@@ -320,7 +323,8 @@ function pillsHtml(q){
   if(q.origin==='summary')p+=`<span class="pill pill-concept">📖 개념</span>`;
   else if(q.origin==='core')p+=`<span class="pill pill-freq">⭐ 통합${(q.exams&&q.exams.length>1)?' '+q.exams.length+'회':''}</span>`;
   else if(q.origin==='jokbo')p+=`<span class="pill pill-jokbo">📕 족보 ${esc(q.exam||'')}</span>`;
-  else p+=`<span class="pill pill-jakja">📝 자작</span>`;
+  else if(q.level==='basic')p+=`<span class="pill" style="background:#7ee0c0;color:#0d1320">📗 기본예제</span>`;
+  else p+=`<span class="pill" style="background:#1ED760;color:#0d1320">🆕 2026자작</span>`;
   if(q.origin!=='summary'){
     if(q.flag)p+=`<span class="pill" style="background:#ff5c5c;color:#fff">⚠️ 오류주의</span>`;
     if((q.freq||0)>=2&&q.origin!=='core')p+=`<span class="pill pill-freq">🔴 ${q.freq}회</span>`;
@@ -397,10 +401,13 @@ function render(){
   // group by part>topic, preserve order
   const groups={};const gorder=[];
   view.forEach(q=>{const k=q.part+'||'+q.topic;if(!groups[k]){groups[k]=[];gorder.push(k);}groups[k].push(q);});
+  const TLV=x=>x.origin==='summary'?0:(x.origin==='concept'?(x.level==='basic'?1:3):2);
+  const GT=g=>Math.min(...groups[g].map(TLV));
   gorder.sort((a,b)=>{
     const qa=groups[a][0],qb=groups[b][0];
     const pa=PARTORDER.indexOf(qa.part),pb=PARTORDER.indexOf(qb.part);
     if(pa!==pb)return pa-pb;
+    const ta=GT(a),tb=GT(b);if(ta!==tb)return ta-tb;  // 개념→기본예제→족보→2026자작
     const fa=Math.max(...groups[a].map(x=>x.freq||0)),fb=Math.max(...groups[b].map(x=>x.freq||0));
     return fb-fa;
   });
@@ -421,7 +428,7 @@ function render(){
   if(!view.length){h+=`<div class="empty-card"><div style="font-size:42px">📭</div>해당 문항 없음</div>`;main.innerHTML=h;bindSearch();return;}
   gorder.forEach((k,gi)=>{
     const items=groups[k];const q0=items[0];const maxf=Math.max(...items.map(x=>x.freq||0));const nq=items.filter(NOSUM).length;
-    const ordered=items.filter(x=>x.origin==='summary').concat(items.filter(x=>x.origin!=='summary'));
+    const LV=x=>x.origin==='summary'?0:(x.origin==='concept'?(x.level==='basic'?1:3):2);const ordered=[...items].sort((a,b)=>LV(a)-LV(b));
     h+=`<div class="grp" id="grp${gi}"><div class="grphd"><span class="pl" style="color:${PARTCOL[q0.part]}">${PARTLBL[q0.part]}</span><h2>${esc(q0.topic)}</h2>`;
     if(maxf>=2)h+=`<span class="pill pill-freq">🔴 ${maxf}회</span>`;
     h+=`<span class="pill pill-tag">${nq}문항</span></div>`;

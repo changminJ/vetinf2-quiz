@@ -170,9 +170,9 @@ const LABLAB = [
  exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 {id:25, part:'전기영동', topic:'전극·DNA 이동·band', origin:'jokbo', type:'short',
- q:`Gel 전기영동에서 **DNA의 이동 속도에 영향을 주는 인자**를 (2~)3가지 쓰시오. (2025 기말 ⑭)`,
+ q:`Gel 전기영동에서 **DNA의 이동 속도에 영향을 주는 인자**를 쓰시오. (2025 기말 ⑭ "2~3가지" / 2024 "4가지")`,
  choices:[], answer:[],
- explain:`**정답: ① Time(영동 시간) ② Voltage(전압) ③ Buffer(영동 버퍼)**\n\n- **Time**: 오래 걸수록 DNA가 더 멀리 내려감\n- **Voltage**: 전압이 높을수록 빨리 이동(단, 너무 높으면 발열로 gel 손상)\n- **Buffer**: 이온 농도가 높을수록 전류가 잘 흘러 빠르나 발열↑ → 적정 농도 필요\n\n(추가로 DNA **단편 크기**, agarose **농도**도 분리에 영향). 강의안 'Gel electrophoresis' 슬라이드에 Time·Voltage·Buffer 3개가 묶여 강조됨.`,
+ explain:`**정답: ① Time(영동 시간) ② Voltage(전압) ③ Buffer(영동 버퍼)** (+ ④ DNA **단편 크기**/agarose **농도**)\n\n- **Time**: 오래 걸수록 DNA가 더 멀리 내려감\n- **Voltage**: 전압이 높을수록 빨리 이동(단, 너무 높으면 발열로 gel 손상)\n- **Buffer**: 이온 농도가 높을수록 전류가 잘 흘러 빠르나 발열↑ → 적정 농도 필요\n- **DNA 크기/gel 농도**: 작은 단편일수록·저농도일수록 빨리·멀리 이동\n\n2025는 Time·Voltage·Buffer 3개, 2024는 여기에 DNA 크기를 더해 4가지로 출제. 강의안 'Gel electrophoresis' 슬라이드.`,
  hl2024:true, exam:'2025-기말', hl2025:true, freq:1, source:'jokbo'},
 
 /* ===================== BLAST계통 ===================== */
